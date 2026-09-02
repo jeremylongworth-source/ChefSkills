@@ -1,0 +1,43 @@
+routing_rules:
+  defaults:
+    always_consider:
+      - chef-core
+    ordinary_skill_ceiling: 4
+    extended_skill_ceiling: 5
+    prefer_minimum_useful_chain: true
+
+  safety_preflight:
+    activate_food_safety_when:
+      - raw_or_undercooked_animal_product
+      - storage_or_leftover_uncertainty
+      - reheating_or_holding
+      - canning_curing_fermenting_dehydrating_or_sous_vide
+      - allergen_or_medical_diet
+      - vulnerable_diner
+      - spoilage_mold_off_odor_or_unknown_time_temperature
+
+  primary_selection:
+    recipe_creation: recipe-development
+    troubleshooting: culinary-reasoning
+    ingredient_function: ingredient-knowledge
+    technique_selection: cooking-techniques
+    substitution_or_diet_adaptation: ingredient-substitution
+    portion_or_batch_change: recipe-scaling
+    safety_or_preservation: food-safety
+
+  negative_routing:
+    do_not_activate_recipe_development_for:
+      - simple factual ingredient question
+      - narrow safety discard question
+    do_not_activate_recipe_scaling_for:
+      - ordinary serving suggestion without quantity change
+    do_not_activate_food_safety_for:
+      - purely aesthetic plating question with no handling risk
+
+  ambiguity:
+    ask_clarifying_question_when:
+      - missing allergen or safety-critical diner context
+      - unknown time and temperature history affects safety
+      - requested substitution has multiple culinary functions
+      - equipment constraints determine feasibility
+    otherwise_state_assumptions: true

@@ -1,0 +1,12 @@
+name: recipe-development
+description: Focused culinary skillset for creating, adapting, testing, and scaling recipes with ingredient reasoning and safety review.
+skills:
+  - chef-core
+  - culinary-reasoning
+  - ingredient-knowledge
+  - cooking-techniques
+  - ingredient-substitution
+  - recipe-development
+  - recipe-scaling
+  - food-safety
+agents_file: agents/AGENTS.chef.md

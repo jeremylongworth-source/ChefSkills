@@ -1,0 +1,31 @@
+culinary_state:
+  goal:
+    dish: null
+    service_context: null
+    diner_constraints: []
+
+  current_state:
+    ingredients: []
+    equipment: []
+    workflow_stage: unknown
+    observations: []
+    safety_status: unknown
+
+  target_state:
+    texture: []
+    flavor: []
+    doneness: []
+    appearance: []
+    service: []
+
+  reasoning:
+    likely_mechanisms: []
+    candidate_interventions: []
+    side_effects: []
+    verification_cues: []
+
+  decision:
+    recommended_action: null
+    safety_gate: not_evaluated
+    assumptions: []
+    open_questions: []

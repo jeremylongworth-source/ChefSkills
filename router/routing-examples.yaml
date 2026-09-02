@@ -1,0 +1,31 @@
+examples:
+  broken_mayonnaise:
+    prompt: My mayonnaise broke. How do I fix it?
+    task_type: FIX
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+
+  buttermilk_substitution:
+    prompt: I do not have buttermilk. Can I use milk?
+    task_type: ADAPT
+    route:
+      - chef-core
+      - ingredient-knowledge
+      - ingredient-substitution
+
+  cooked_chicken_overnight:
+    prompt: I left cooked chicken on the counter overnight. Can I reheat it?
+    task_type: PRESERVE
+    route:
+      - chef-core
+      - food-safety
+
+  sauce_for_forty:
+    prompt: Scale this pan sauce from 4 portions to 40 portions.
+    task_type: ADAPT
+    route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling

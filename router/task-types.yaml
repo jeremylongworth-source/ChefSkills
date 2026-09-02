@@ -1,0 +1,22 @@
+task_types:
+  MAKE:
+    description: Create a dish, recipe, menu, prep plan, or cooking workflow.
+    default_primary_skill: recipe-development
+  FIX:
+    description: Diagnose and recover a dish, process, texture, flavor, or workflow problem.
+    default_primary_skill: culinary-reasoning
+  JUDGE:
+    description: Evaluate a recipe, substitution, safety decision, dish, or plan.
+    default_primary_skill: culinary-reasoning
+  PLAN:
+    description: Organize prep, shopping, timing, service, or cooking sequence.
+    default_primary_skill: chef-core
+  LEARN:
+    description: Explain culinary mechanisms, ingredients, methods, or technique choices.
+    default_primary_skill: culinary-reasoning
+  ADAPT:
+    description: Modify for constraints, portions, diet, equipment, or ingredient availability.
+    default_primary_skill: ingredient-substitution
+  PRESERVE:
+    description: Store, hold, reheat, freeze, ferment, cure, can, dehydrate, or assess leftovers.
+    default_primary_skill: food-safety

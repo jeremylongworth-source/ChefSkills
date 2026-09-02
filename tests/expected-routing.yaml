@@ -1,0 +1,31 @@
+broken-mayonnaise:
+  - chef-core
+  - culinary-reasoning
+  - cooking-techniques
+thin-gravy:
+  - chef-core
+  - culinary-reasoning
+  - cooking-techniques
+oversalted-soup:
+  - chef-core
+  - culinary-reasoning
+  - ingredient-knowledge
+buttermilk-substitution:
+  - chef-core
+  - ingredient-knowledge
+  - ingredient-substitution
+sauce-for-forty:
+  - chef-core
+  - recipe-development
+  - recipe-scaling
+chicken-counter-overnight:
+  - chef-core
+  - food-safety
+tomato-sauce-flat:
+  - chef-core
+  - culinary-reasoning
+  - ingredient-knowledge
+weeknight-vegetarian-menu:
+  - chef-core
+  - recipe-development
+  - ingredient-knowledge

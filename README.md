@@ -1,0 +1,81 @@
+# ChefSkills
+
+Portable culinary Agent Skills, skillsets, routing rules, state models, and evaluation scenarios for AI agents that need to reason like a chef.
+
+## Why This Exists
+
+Most recipe assistants can produce plausible instructions. ChefSkills is intended to make an agent reason about food as a changing physical system:
+
+- ingredients and their functional roles
+- heat, time, moisture, fat, starch, acid, salt, texture, and aroma
+- observable cues rather than time-only instructions
+- substitutions, scaling, troubleshooting, planning, and safety boundaries
+- kitchen workflow and recovery decisions
+
+The project starts small on purpose. The first milestone is a testable operating framework, not a large recipe database.
+
+## Core Idea
+
+ChefSkills separates culinary expertise into four layers:
+
+- Skills: focused reusable instructions under `skills/`
+- Skillsets: installable bundles under `skillsets/`
+- Router: task classification and minimum useful skill selection under `router/`
+- State model: structured cooking state and transformation concepts under `state/`
+
+Food safety is a hard gate. It is not averaged against good cooking advice.
+
+## Initial Skills
+
+| Skill | Purpose |
+|---|---|
+| `chef-core` | Core chef operating model and safety-first behavior |
+| `culinary-reasoning` | Mechanism-based culinary diagnosis and intervention |
+| `ingredient-knowledge` | Ingredient roles, properties, and behavior |
+| `cooking-techniques` | Technique selection, cues, and failure points |
+| `ingredient-substitution` | Functional substitution reasoning |
+| `recipe-development` | Recipe design, formatting, and iteration |
+| `recipe-scaling` | Scaling quantities, vessels, heat transfer, and workflow |
+| `food-safety` | Safety hazard recognition and conservative guidance |
+
+## Repository Structure
+
+```text
+ChefSkills/
+|-- skills/
+|-- skillsets/
+|-- router/
+|-- state/
+|-- agents/
+|-- docs/
+|-- scripts/
+`-- tests/
+```
+
+## Validation
+
+Run the local validators from the repository root:
+
+```powershell
+python .\scripts\validate-skill-files.py
+python .\scripts\validate-skillsets.py
+python .\scripts\validate-scenarios.py
+```
+
+Or run all current checks:
+
+```powershell
+.\scripts\validate-all.ps1
+```
+
+## Development Roadmap
+
+1. `CHEFSKILLS-01`: Foundation skills, skillsets, docs, and scenario checks.
+2. `CHEFSKILLS-02`: Culinary router specification with task classes, routing ceilings, and ambiguity handling.
+3. `CHEFSKILLS-03`: Culinary state model for ingredients, transformations, workflow, and observed vs. target states.
+4. `CHEFSKILLS-04`: Evaluation engine for reasoning, troubleshooting, substitutions, scaling, and safety gates.
+5. `CHEFSKILLS-05`: Specialist expansion into sauces, proteins, baking, pastry, fermentation, cuisines, equipment, service, and costing.
+
+## License
+
+MIT

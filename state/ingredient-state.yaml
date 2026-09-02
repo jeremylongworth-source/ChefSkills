@@ -1,0 +1,32 @@
+ingredient_state:
+  identity:
+    name: null
+    form: null
+    amount: null
+
+  culinary_role:
+    flavor: []
+    structure: []
+    moisture: []
+    fat: []
+    starch: []
+    protein: []
+    acid: []
+    sweetness: []
+    salt: []
+    aroma: []
+
+  preparation_state:
+    raw: false
+    washed: null
+    cut: null
+    salted: null
+    marinated: null
+    cooked_level: null
+    cooled: null
+    stored: null
+
+  constraints:
+    allergen: null
+    dietary: []
+    safety_notes: []

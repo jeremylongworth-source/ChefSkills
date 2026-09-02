@@ -1,0 +1,35 @@
+transformation_state:
+  transformation:
+    type: null
+    examples:
+      - browning
+      - gelatinization
+      - denaturation
+      - emulsification
+      - reduction
+      - hydration
+      - fermentation
+
+  inputs:
+    ingredients: []
+    equipment: []
+    heat_level: null
+    time: null
+
+  observed_cues:
+    visual: []
+    aroma: []
+    texture: []
+    sound: []
+    temperature: null
+
+  failure_modes:
+    causes: []
+    symptoms: []
+    recovery_options: []
+    irreversible_conditions: []
+
+  verification:
+    target_cues: []
+    measurement: []
+    stop_condition: null
