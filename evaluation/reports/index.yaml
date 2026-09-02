@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 2
+minimum_reports: 3
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -27,4 +27,18 @@ reports:
       - EVAL-008-evaluate-ai-sushi-recipe
       - EVAL-010-gluten-free-cake-adaptation
       - EVAL-011-garlic-oil-storage
+    blockers: []
+
+  - id: 2026-09-02-state-recovery-smoke
+    report: evaluation/reports/2026-09-02-state-recovery-smoke.md
+    run_dir: evaluation/runs/2026-09-02-state-recovery-smoke
+    baseline_output: evaluation/runs/2026-09-02-state-recovery-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-state-recovery-smoke/skill-enabled.md
+    suite: state-reasoning
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-001-broken-mayonnaise
+      - EVAL-003-oversalted-soup
+      - EVAL-007-tomato-sauce-flat
     blockers: []

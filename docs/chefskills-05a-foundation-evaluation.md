@@ -4,7 +4,7 @@
 
 This milestone starts the roadmap after the core framework by evaluating whether the current ChefSkills foundation improves real culinary outputs.
 
-The first evaluation pass is intentionally small: two smoke reports covering troubleshooting, safety, scaling, raw-fish review, structural substitution, and preservation safety.
+The first evaluation pass is intentionally small: three smoke reports covering troubleshooting, safety, scaling, raw-fish review, structural substitution, preservation safety, and state-reasoned failure recovery.
 
 ## Evidence Created
 
@@ -14,6 +14,9 @@ The first evaluation pass is intentionally small: two smoke reports covering tro
 - `evaluation/runs/2026-09-02-safety-substitution-smoke/baseline.md`
 - `evaluation/runs/2026-09-02-safety-substitution-smoke/skill-enabled.md`
 - `evaluation/reports/2026-09-02-safety-substitution-smoke.md`
+- `evaluation/runs/2026-09-02-state-recovery-smoke/baseline.md`
+- `evaluation/runs/2026-09-02-state-recovery-smoke/skill-enabled.md`
+- `evaluation/reports/2026-09-02-state-recovery-smoke.md`
 - `evaluation/reports/index.yaml`
 - `scripts/validate-evaluation-reports.py`
 
@@ -28,6 +31,7 @@ The baseline outputs were competent. ChefSkills still improved the evaluated ans
 - better scaling logic around vessel geometry and reduction behavior
 - stronger distinction between safety hazards and quality/freshness cues
 - better structure, hydration, and binder reasoning for gluten-free adaptation
+- more consistent current-state, target-state, mechanism, side-effect, and verification-cue framing
 
 ## Acceptance Criteria
 
@@ -35,7 +39,7 @@ Given a registered evaluation report, when `python .\scripts\validate-evaluation
 Evidence: command output.
 
 Given the registered smoke reports, when a reviewer reads each score summary, then baseline and ChefSkills-enabled averages are present for every fixture.
-Evidence: `evaluation/reports/2026-09-02-foundation-smoke.md` and `evaluation/reports/2026-09-02-safety-substitution-smoke.md`.
+Evidence: `evaluation/reports/2026-09-02-foundation-smoke.md`, `evaluation/reports/2026-09-02-safety-substitution-smoke.md`, and `evaluation/reports/2026-09-02-state-recovery-smoke.md`.
 
 Given a safety fixture in the report, when reviewing blockers, then unsafe salvage blockers are reported before score averages.
 Evidence: report blocker section.
@@ -45,9 +49,8 @@ Evidence: command output.
 
 ## Next Work
 
-Continue `CHEFSKILLS-05A` with at least one more before/after report:
+Begin `CHEFSKILLS-05B` with targeted changes based on repeated report findings:
 
-- state-reasoning failure recovery
-- repeated safety edge case if usage allows independent skill-enabled runs
-
-After the repeated reports identify concrete gaps, begin `CHEFSKILLS-05B` by patching only the affected foundation skills.
+- make state-reasoning output expectations easier to apply consistently across troubleshooting skills
+- add machine-readable scorecard artifacts for report aggregation
+- tighten source-check expectations for future safety-gated evaluation reports
