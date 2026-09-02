@@ -129,7 +129,21 @@ def build_readiness(
 
     suite_ids = {card["suite"] for card in cards}
 
-    if "fermentation-05c-stabilization" in suite_ids:
+    if "equipment-05c-smoke" in suite_ids:
+        status = "ready_for_equipment_stabilization"
+        rationale = (
+            "ChefSkills cleared the equipment smoke pass with no blockers and a skill-enabled "
+            "average above the release threshold. Equipment should be stabilized before the next "
+            "specialist because all report confidence values are medium and the domain has only one smoke report."
+        )
+        next_milestone = "CHEFSKILLS-05C Equipment Specialist Stabilization"
+        constraints = [
+            "Add lower-risk equipment quality fixtures and additional appliance safety cases before broadening specialist coverage.",
+            "Every new or stabilized specialist skill needs fixtures, routing cases, and scorecard coverage.",
+            "Safety-critical equipment advice still requires current authoritative source checks.",
+            "Do not treat current medium-confidence reports as release-grade proof.",
+        ]
+    elif "fermentation-05c-stabilization" in suite_ids:
         status = "ready_for_next_05c_specialist"
         rationale = (
             "ChefSkills cleared the fermentation stabilization pass with no blockers and a skill-enabled "

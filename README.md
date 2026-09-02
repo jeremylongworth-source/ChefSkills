@@ -37,6 +37,7 @@ Food safety is a hard gate. It is not averaged against good cooking advice.
 | `baking-structure` | Baked-good structure, crumb, rise, set, and texture recovery |
 | `protein-cookery` | Doneness, carryover, moisture, and safety-aware protein handling |
 | `fermentation` | Home fermentation, brines, pH, salt, gas, spoilage, and storage boundaries |
+| `equipment-cookery` | Appliances, vessels, heat transfer, capacity, airflow, pressure, and tool substitutions |
 | `ingredient-substitution` | Functional substitution reasoning |
 | `recipe-development` | Recipe design, formatting, and iteration |
 | `recipe-scaling` | Scaling quantities, vessels, heat transfer, and workflow |
@@ -86,7 +87,7 @@ Or run all current checks:
 4. `CHEFSKILLS-04`: Evaluation engine for rubric scoring, fixtures, regression suites, and safety gates.
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
-7. `CHEFSKILLS-05C`: Specialist expansion, started and stabilized with sauce work, baking structure, protein cookery, and fermentation before the next equipment, pastry, cuisine, service, and costing work.
+7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, and fermentation, then added equipment cookery before the next pastry, cuisine, service, and costing work.
 
 ## License
 

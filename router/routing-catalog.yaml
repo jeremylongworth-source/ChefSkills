@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 78
+minimum_cases: 83
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -272,6 +272,15 @@ cases:
       - fermentation
       - food-safety
       - culinary-reasoning
+  - id: crowded-sheet-pan-vegetables
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My roasted vegetables came out pale and wet on a full sheet pan. Should I just turn the oven hotter?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - culinary-reasoning
+      - cooking-techniques
   - id: evaluate-ai-sushi-recipe
     task_type: JUDGE
     safety_relevant: true
@@ -330,6 +339,15 @@ cases:
       - fermentation
       - food-safety
       - culinary-reasoning
+  - id: slow-cooker-frozen-chicken
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "Can I put frozen chicken breasts in my slow cooker before work and let them cook all day?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - protein-cookery
   - id: compare-roux-slurry
     task_type: JUDGE
     safety_relevant: false
@@ -419,6 +437,15 @@ cases:
       - chef-core
       - fermentation
       - food-safety
+      - ingredient-knowledge
+  - id: small-skillet-stir-fry
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "I do not own a wok, only a small skillet. How should I cook a stir-fry for four without everything steaming?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - cooking-techniques
       - ingredient-knowledge
   - id: explain-searing-vs-braising
     task_type: LEARN
@@ -643,6 +670,23 @@ cases:
       - fermentation
       - food-safety
       - ingredient-knowledge
+  - id: microwave-casserole-cold-spots
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "I reheated a leftover casserole in the microwave and some bites were still cold. Is it enough to microwave it longer until the plate feels hot?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - cooking-techniques
+  - id: pressure-cooker-canning-beans
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "Can I pressure-can beans in my electric pressure cooker if I use the same time as a pressure canner?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
   - id: can-tomato-sauce
     task_type: PRESERVE
     safety_relevant: true

@@ -2,19 +2,19 @@
   "summary_version": "0.1",
   "date": "2026-09-02",
   "source": "evaluation/reports/index.yaml",
-  "report_count": 7,
-  "fixture_count": 27,
+  "report_count": 8,
+  "fixture_count": 32,
   "blocker_count": 0,
   "decision_counts": {
-    "keep": 7
+    "keep": 8
   },
   "confidence_counts": {
-    "medium": 7
+    "medium": 8
   },
   "overall": {
-    "baseline_average": 3.7778,
-    "chefskills_average": 4.8148,
-    "delta": 1.037
+    "baseline_average": 3.7656,
+    "chefskills_average": 4.8125,
+    "delta": 1.0469
   },
   "by_report": [
     {
@@ -93,88 +93,99 @@
       "chefskills_average": 4.875,
       "delta": 1.075,
       "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-equipment-smoke",
+      "suite": "equipment-05c-smoke",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 5,
+      "baseline_average": 3.7,
+      "chefskills_average": 4.8,
+      "delta": 1.1,
+      "blockers": []
     }
   ],
   "by_criterion": {
     "technical_accuracy": {
-      "baseline_average": 4.0741,
+      "baseline_average": 4.0625,
       "chefskills_average": 5.0,
-      "delta": 0.9259
+      "delta": 0.9375
     },
     "culinary_reasoning": {
-      "baseline_average": 3.1111,
+      "baseline_average": 3.0938,
       "chefskills_average": 5.0,
-      "delta": 1.8889
+      "delta": 1.9063
     },
     "ingredient_understanding": {
-      "baseline_average": 3.5185,
-      "chefskills_average": 4.8519,
-      "delta": 1.3333
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375
     },
     "workflow_quality": {
-      "baseline_average": 3.8889,
-      "chefskills_average": 4.9259,
-      "delta": 1.037
+      "baseline_average": 3.9063,
+      "chefskills_average": 4.9375,
+      "delta": 1.0313
     },
     "sensory_reasoning": {
-      "baseline_average": 2.9259,
-      "chefskills_average": 4.6667,
-      "delta": 1.7407
+      "baseline_average": 2.9063,
+      "chefskills_average": 4.625,
+      "delta": 1.7188
     },
     "safety": {
-      "baseline_average": 4.7407,
-      "chefskills_average": 4.963,
-      "delta": 0.2222
+      "baseline_average": 4.6875,
+      "chefskills_average": 4.9688,
+      "delta": 0.2813
     },
     "constraint_handling": {
-      "baseline_average": 3.8519,
-      "chefskills_average": 4.9259,
-      "delta": 1.0741
+      "baseline_average": 3.875,
+      "chefskills_average": 4.9375,
+      "delta": 1.0625
     },
     "communication": {
-      "baseline_average": 4.1111,
-      "chefskills_average": 4.1852,
-      "delta": 0.0741
+      "baseline_average": 4.0938,
+      "chefskills_average": 4.1563,
+      "delta": 0.0625
     }
   },
   "largest_criterion_gains": [
     {
       "criterion": "culinary_reasoning",
-      "baseline_average": 3.1111,
+      "baseline_average": 3.0938,
       "chefskills_average": 5.0,
-      "delta": 1.8889
+      "delta": 1.9063
     },
     {
       "criterion": "sensory_reasoning",
-      "baseline_average": 2.9259,
-      "chefskills_average": 4.6667,
-      "delta": 1.7407
+      "baseline_average": 2.9063,
+      "chefskills_average": 4.625,
+      "delta": 1.7188
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.5185,
-      "chefskills_average": 4.8519,
-      "delta": 1.3333
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375
     }
   ],
   "weakest_chefskills_criteria": [
     {
       "criterion": "communication",
-      "baseline_average": 4.1111,
-      "chefskills_average": 4.1852,
-      "delta": 0.0741
+      "baseline_average": 4.0938,
+      "chefskills_average": 4.1563,
+      "delta": 0.0625
     },
     {
       "criterion": "sensory_reasoning",
-      "baseline_average": 2.9259,
-      "chefskills_average": 4.6667,
-      "delta": 1.7407
+      "baseline_average": 2.9063,
+      "chefskills_average": 4.625,
+      "delta": 1.7188
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.5185,
-      "chefskills_average": 4.8519,
-      "delta": 1.3333
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375
     }
   ],
   "by_fixture": [
@@ -420,6 +431,51 @@
       "chefskills_average": 4.75,
       "delta": 1.0,
       "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-031-crowded-sheet-pan-vegetables",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-032-small-skillet-stir-fry",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-033-slow-cooker-frozen-chicken",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.5,
+      "chefskills_average": 4.75,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-034-microwave-casserole-cold-spots",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-035-pressure-cooker-canning-beans",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
     }
   ],
   "largest_fixture_gains": [
@@ -433,20 +489,20 @@
       "blockers": []
     },
     {
+      "fixture_id": "EVAL-033-slow-cooker-frozen-chicken",
+      "report_id": "2026-09-02-equipment-smoke",
+      "decision": "keep",
+      "baseline_average": 3.5,
+      "chefskills_average": 4.75,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
       "fixture_id": "EVAL-027-cloudy-carrot-brine",
       "report_id": "2026-09-02-fermentation-stabilization",
       "decision": "keep",
       "baseline_average": 3.75,
       "chefskills_average": 5.0,
-      "delta": 1.25,
-      "blockers": []
-    },
-    {
-      "fixture_id": "EVAL-016-curdled-cream-pan-sauce",
-      "report_id": "2026-09-02-specialist-stabilization",
-      "decision": "keep",
-      "baseline_average": 3.625,
-      "chefskills_average": 4.875,
       "delta": 1.25,
       "blockers": []
     }
@@ -481,13 +537,13 @@
     }
   ],
   "readiness": {
-    "status": "ready_for_next_05c_specialist",
-    "rationale": "ChefSkills cleared the fermentation stabilization pass with no blockers and a skill-enabled average above the release threshold. Expansion should still stay narrow because all report confidence values are medium and the next specialist needs its own smoke evidence.",
-    "next_milestone": "CHEFSKILLS-05C Equipment Specialist Expansion",
+    "status": "ready_for_equipment_stabilization",
+    "rationale": "ChefSkills cleared the equipment smoke pass with no blockers and a skill-enabled average above the release threshold. Equipment should be stabilized before the next specialist because all report confidence values are medium and the domain has only one smoke report.",
+    "next_milestone": "CHEFSKILLS-05C Equipment Specialist Stabilization",
     "constraints": [
-      "Add only one specialist domain before the next stabilization pass.",
-      "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
-      "Safety-critical specialist domains still require current authoritative source checks.",
+      "Add lower-risk equipment quality fixtures and additional appliance safety cases before broadening specialist coverage.",
+      "Every new or stabilized specialist skill needs fixtures, routing cases, and scorecard coverage.",
+      "Safety-critical equipment advice still requires current authoritative source checks.",
       "Do not treat current medium-confidence reports as release-grade proof."
     ],
     "lowest_scored_fixture": "EVAL-002-thin-gravy",

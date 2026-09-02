@@ -11,6 +11,7 @@ skills:
   - baking-structure
   - protein-cookery
   - fermentation
+  - equipment-cookery
   - recipe-scaling
   - food-safety
 agents_file: agents/AGENTS.chef.md

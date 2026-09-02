@@ -153,3 +153,27 @@ fermented-hot-sauce-storage:
   - fermentation
   - food-safety
   - ingredient-knowledge
+crowded-sheet-pan-vegetables:
+  - chef-core
+  - equipment-cookery
+  - culinary-reasoning
+  - cooking-techniques
+small-skillet-stir-fry:
+  - chef-core
+  - equipment-cookery
+  - cooking-techniques
+  - ingredient-knowledge
+slow-cooker-frozen-chicken:
+  - chef-core
+  - equipment-cookery
+  - food-safety
+  - protein-cookery
+microwave-casserole-cold-spots:
+  - chef-core
+  - equipment-cookery
+  - food-safety
+  - cooking-techniques
+pressure-cooker-canning-beans:
+  - chef-core
+  - equipment-cookery
+  - food-safety

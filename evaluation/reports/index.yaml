@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 7
+minimum_reports: 8
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -110,4 +110,21 @@ reports:
       - EVAL-028-sluggish-sourdough-starter
       - EVAL-029-cold-sauerkraut-stall
       - EVAL-030-fermented-hot-sauce-storage
+    blockers: []
+
+  - id: 2026-09-02-equipment-smoke
+    report: evaluation/reports/2026-09-02-equipment-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-equipment-smoke.json
+    run_dir: evaluation/runs/2026-09-02-equipment-smoke
+    baseline_output: evaluation/runs/2026-09-02-equipment-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-equipment-smoke/skill-enabled.md
+    suite: equipment-05c-smoke
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-031-crowded-sheet-pan-vegetables
+      - EVAL-032-small-skillet-stir-fry
+      - EVAL-033-slow-cooker-frozen-chicken
+      - EVAL-034-microwave-casserole-cold-spots
+      - EVAL-035-pressure-cooker-canning-beans
     blockers: []

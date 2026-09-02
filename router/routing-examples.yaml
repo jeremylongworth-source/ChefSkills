@@ -104,3 +104,29 @@ examples:
       - fermentation
       - food-safety
       - ingredient-knowledge
+
+  crowded_sheet_pan_vegetables:
+    prompt: My roasted vegetables came out pale and wet on a full sheet pan.
+    task_type: FIX
+    route:
+      - chef-core
+      - equipment-cookery
+      - culinary-reasoning
+      - cooking-techniques
+
+  slow_cooker_frozen_chicken:
+    prompt: Can I put frozen chicken breasts in my slow cooker before work?
+    task_type: JUDGE
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - protein-cookery
+
+  pressure_cooker_canning_beans:
+    prompt: Can I pressure-can beans in my electric pressure cooker using pressure-canner timing?
+    task_type: PRESERVE
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety

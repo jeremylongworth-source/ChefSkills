@@ -18,3 +18,4 @@
 - Stabilized the first `CHEFSKILLS-05C` specialist wave with six more scenarios, action-first communication guidance, source-checked safety fixtures, and another specialist scorecard.
 - Expanded `CHEFSKILLS-05C` with a fermentation specialist, preservation-focused safety gates, four fermentation scenarios and fixtures, source-checked report evidence, and an updated aggregate scorecard summary.
 - Stabilized the fermentation specialist with five more scenarios covering quality recovery, normal active-ferment triage, sourdough starter strength, low-temperature stalls, storage boundaries, and updated scorecard readiness for equipment expansion.
+- Expanded `CHEFSKILLS-05C` with an equipment cookery specialist, appliance and vessel routing, five equipment scenarios, source-checked slow cooker, microwave, and pressure-canning safety gates, and equipment smoke scorecard coverage.

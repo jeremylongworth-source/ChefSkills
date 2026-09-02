@@ -20,6 +20,7 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - `baking-structure`: baked-good structure, hydration, leavening, and crumb troubleshooting.
 - `protein-cookery`: protein doneness, method choice, carryover, and safety-aware quality tradeoffs.
 - `fermentation`: fermented foods, brines, pH, salt, spoilage, gas pressure, and storage controls.
+- `equipment-cookery`: appliance behavior, vessels, heat transfer, capacity, airflow, pressure, and tool substitutions.
 - `recipe-scaling`: portions, batch size, and workflow.
 - `food-safety`: safety review for risky ingredients or processes.
 
@@ -44,6 +45,7 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - Substitutions preserve functional role or explain tradeoffs.
 - Specialist work on sauces, baked structure, and proteins includes mechanism and verification cues.
 - Fermentation work uses tested proportions and source-checked safety boundaries.
+- Equipment work separates feasibility, culinary quality, and safety when appliances or vessel limits drive the result.
 
 ## Acceptance Criteria
 
@@ -53,3 +55,4 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - Safety review is triggered when relevant.
 - Sauce, baking, and protein cases route to the relevant specialist skill.
 - Fermentation cases route to `fermentation` and keep `food-safety` active when preservation or spoilage risks exist.
+- Equipment cases route to `equipment-cookery` and include safety gates for slow cookers, microwaves, reheating, raw animal products, and pressure canning.

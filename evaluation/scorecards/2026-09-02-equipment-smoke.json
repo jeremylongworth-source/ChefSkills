@@ -1,0 +1,177 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-equipment-smoke",
+  "report": "evaluation/reports/2026-09-02-equipment-smoke.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "equipment-05c-smoke",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.7,
+    "chefskills_average": 4.8,
+    "delta": 1.1
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-031-crowded-sheet-pan-vegetables",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills identifies sheet-pan crowding, steam capture, airflow, and surface moisture before escalating oven temperature."
+    },
+    {
+      "fixture_id": "EVAL-032-small-skillet-stir-fry",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills adapts wok technique to a small skillet through batching, pan recovery, ingredient sequence, and moisture cues."
+    },
+    {
+      "fixture_id": "EVAL-033-slow-cooker-frozen-chicken",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.5,
+      "chefskills_average": 4.75,
+      "delta": 1.25,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 2,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills rejects frozen chicken in a slow cooker, explains gradual heating risk, and requires thawing, tested process, and thermometer verification."
+    },
+    {
+      "fixture_id": "EVAL-034-microwave-casserole-cold-spots",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills treats microwave cold spots as safety relevant and requires cover, stir, rotate, stand, and thermometer checks for leftovers."
+    },
+    {
+      "fixture_id": "EVAL-035-pressure-cooker-canning-beans",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 2,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills rejects converting low-acid bean canning to an electric pressure cooker and requires tested pressure-canner guidance."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

@@ -18,6 +18,7 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - `baking-structure`: baked-good structure, crumb, rise, set, and texture recovery.
 - `protein-cookery`: doneness, carryover, texture, moisture, and safety-aware protein handling.
 - `fermentation`: fermentation planning, brines, salt, pH, gas, spoilage, storage, and safety gates.
+- `equipment-cookery`: appliances, vessels, heat transfer, capacity, airflow, pressure, and tool substitutions.
 - `ingredient-substitution`: substitutions and adaptations.
 - `recipe-development`: recipe design and iteration.
 - `recipe-scaling`: scaling and batch workflow.
@@ -46,6 +47,7 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Better recipe scaling through workflow and vessel reasoning, not linear multiplication alone.
 - Better specialist coverage for sauces, baking structure, and protein cookery without loading the full culinary library.
 - Safer fermentation guidance that distinguishes active fermentation from shelf-stable preservation.
+- Better equipment-aware guidance for browning, stovetop substitutions, microwaves, slow cookers, pressure equipment, and vessel constraints.
 
 ## Acceptance Criteria
 
@@ -55,3 +57,4 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Troubleshooting outputs identify current state, target state, cause, intervention, side effects, and verification cues.
 - Specialist scenarios activate the relevant specialist skill while staying inside the routing ceiling.
 - Fermentation scenarios keep `food-safety` active when preservation controls or spoilage signs matter.
+- Equipment scenarios route to `equipment-cookery` and keep `food-safety` active for raw animal products, reheating, slow cookers, microwaves, and pressure canning.

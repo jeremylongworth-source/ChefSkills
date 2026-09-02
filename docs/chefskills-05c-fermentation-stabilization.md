@@ -58,4 +58,4 @@ Evidence: command output.
 
 Fermentation now has nine evaluated fixtures across smoke and stabilization reports.
 
-Recommended next milestone: `CHEFSKILLS-05C Equipment Specialist Expansion`, because it can test heat-transfer, vessel capacity, appliance constraints, workflow, and tool-substitution reasoning without adding another high-preservation-risk domain.
+Followed by `docs/chefskills-05c-equipment-expansion.md`, which adds equipment cookery as the next specialist domain for heat-transfer, vessel capacity, appliance constraints, workflow, tool substitution, microwaves, slow cookers, and pressure-canning boundaries.

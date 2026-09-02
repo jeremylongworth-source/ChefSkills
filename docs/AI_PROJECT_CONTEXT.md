@@ -40,6 +40,8 @@ The `CHEFSKILLS-05C Specialist Stabilization` milestone adds two more fixtures p
 
 The `CHEFSKILLS-05C Fermentation Expansion` milestone adds `fermentation` as the next specialist domain, with source-checked preservation controls, routing scenarios, state examples, fixtures, and a fermentation smoke scorecard.
 
-The `CHEFSKILLS-05C Fermentation Stabilization` milestone adds lower-risk fermentation quality, starter, brine, temperature, and storage-boundary fixtures. The aggregate evidence now covers 7 reports and 27 fixtures with no blockers.
+The `CHEFSKILLS-05C Fermentation Stabilization` milestone adds lower-risk fermentation quality, starter, brine, temperature, and storage-boundary fixtures. The aggregate evidence covers 7 reports and 27 fixtures with no blockers.
 
-The next major artifact should add one more specialist domain. Recommended next candidate: equipment, because it tests heat transfer, vessel capacity, appliance constraints, workflow, and tool substitution without adding another high-preservation-risk domain.
+The `CHEFSKILLS-05C Equipment Expansion` milestone adds `equipment-cookery` as the next specialist domain, with source-checked safety handling for slow cookers, microwaves, and pressure canning plus lower-risk coverage for sheet-pan browning and skillet substitution.
+
+The next major artifact should stabilize equipment with additional lower-risk fixtures before moving to pastry, cuisine, service, and costing work.

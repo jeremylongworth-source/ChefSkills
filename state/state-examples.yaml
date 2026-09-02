@@ -731,3 +731,120 @@ examples:
       type: store
       action: refrigerate the sauce unless using a tested hot-sauce canning recipe or source-checked shelf-stable process with verified pH and processing controls
     verification_cue: storage method is refrigerated or follows a tested shelf-stable process, and the decision is not based on taste alone
+
+  - id: crowded-sheet-pan-vegetables
+    surface:
+      - dish_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      food: roasted vegetables
+      vessel: full sheet pan
+      visual: pale and wet
+    target_state:
+      texture: browned vegetables with evaporated surface moisture
+    likely_mechanism: crowding traps steam and limits airflow, so moisture evaporates slowly and browning stalls
+    intervention:
+      type: rework
+      action: use more pan surface, dry the vegetables, leave space between pieces, preheat the oven, and adjust rack position before raising temperature
+    verification_cue: vegetables sizzle, edges brown, and steam clears instead of pooling moisture on the pan
+
+  - id: small-skillet-stir-fry
+    surface:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: planning
+    workflow_stage: planning
+    current_observation:
+      missing_equipment: wok
+      available_equipment: small skillet
+      servings: four
+    target_state:
+      texture: stir-fry with seared vegetables and controlled moisture
+    likely_mechanism: a small skillet loses heat and surface area when overloaded, causing ingredients to steam
+    intervention:
+      type: rework
+      action: cook in small batches, preheat between batches, sequence high-moisture ingredients, and combine with sauce only at the end
+    verification_cue: each batch sears quickly, liquid does not pool, and vegetables remain crisp-tender
+
+  - id: slow-cooker-frozen-chicken
+    surface:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: safety_review
+    workflow_stage: planning
+    current_observation:
+      food: frozen chicken breasts
+      equipment: slow cooker
+      plan: cook all day before work
+    target_state:
+      safety: chicken cooked only from a safe starting plan with verified endpoint
+    safety_gate:
+      status: unsafe
+      reason: frozen poultry may spend too long in the danger zone in a slow cooker before reaching safe cooking temperatures
+    likely_mechanism: slow cookers heat gradually and frozen meat slows temperature rise through the center
+    intervention:
+      type: rework
+      action: thaw chicken safely first, use a tested slow-cooker recipe with proper fill level, keep the lid on, and verify safe internal temperature with a thermometer
+    verification_cue: chicken starts thawed, reaches the safe endpoint by thermometer, and the plan does not rely on all-day low heat from frozen
+
+  - id: microwave-casserole-cold-spots
+    surface:
+      - dish_state
+      - equipment_state
+      - workflow_state
+      - observation_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: reheating
+    current_observation:
+      food: leftover casserole
+      equipment: microwave
+      temperature: some bites still cold
+    target_state:
+      safety: evenly reheated leftovers with verified internal temperature
+    safety_gate:
+      status: time_limited
+      reason: microwave cold spots can leave leftovers underheated even when the dish or plate feels hot
+    likely_mechanism: microwave energy heats unevenly, so stirring, rotation, and standing time are needed to distribute heat
+    intervention:
+      type: reheat
+      action: cover, stir, rotate, allow standing time, and check the internal temperature in multiple spots
+    verification_cue: the casserole reaches the safe leftover reheating temperature throughout, not just a hot plate
+
+  - id: pressure-cooker-canning-beans
+    surface:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: planning
+    current_observation:
+      food: beans
+      equipment: electric pressure cooker
+      proposed_change: use pressure-canner timing
+    target_state:
+      safety: low-acid food preserved only with tested pressure-canner guidance
+    safety_gate:
+      status: unsafe
+      reason: electric pressure cookers and small pressure cookers are not interchangeable with pressure canners for low-acid canning
+    likely_mechanism: heat-up, venting, pressure stability, and cool-down differ by equipment and affect delivered lethality
+    intervention:
+      type: preserve
+      action: use a tested pressure-canner process and do not convert bean canning times to an electric pressure cooker
+    verification_cue: preservation plan names an approved pressure canner and tested bean process rather than copied appliance timing

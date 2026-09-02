@@ -73,3 +73,12 @@ suites:
       - EVAL-028-sluggish-sourdough-starter
       - EVAL-029-cold-sauerkraut-stall
       - EVAL-030-fermented-hot-sauce-storage
+
+  - id: equipment-05c-smoke
+    description: Equipment cookery fixtures for vessel capacity, appliance behavior, tool substitution, microwaves, slow cookers, and pressure-canning boundaries.
+    fixtures:
+      - EVAL-031-crowded-sheet-pan-vegetables
+      - EVAL-032-small-skillet-stir-fry
+      - EVAL-033-slow-cooker-frozen-chicken
+      - EVAL-034-microwave-casserole-cold-spots
+      - EVAL-035-pressure-cooker-canning-beans
