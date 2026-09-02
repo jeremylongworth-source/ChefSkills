@@ -52,3 +52,11 @@ blockers:
       - unknown_preservation_process
       - vulnerable_diner
     required_decision: fail
+  - id: physical_hazard_ignored
+    description: Ignores physical hazards from pressure, swollen containers, broken glass risk, or unsafe handling of fermenting containers.
+    applies_when:
+      - gas_pressure
+      - swollen_lid
+      - sealed_fermentation_container
+      - bottle_explosion_risk
+    required_decision: fail

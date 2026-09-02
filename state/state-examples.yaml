@@ -507,3 +507,99 @@ examples:
       type: adjust_heat
       action: use gentler heat, thermometer or source-checked doneness guidance, carryover awareness, and opaque flaking cues
     verification_cue: safe endpoint is verified and flesh is opaque, separates easily, and remains moist
+
+  - id: low-salt-sauerkraut
+    surface:
+      - ingredient_state
+      - dish_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: substitution
+    workflow_stage: planning
+    current_observation:
+      food: sauerkraut
+      requested_change: cut salt in half for lower sodium
+    target_state:
+      safety: lower-sodium cabbage product with safe preservation assumptions
+    safety_gate:
+      status: professional_review_required
+      reason: reducing required salt in fermented sauerkraut changes safety and texture controls and needs a tested recipe
+    likely_mechanism: salt favors desired fermentation microbes and inhibits others while supporting texture
+    intervention:
+      type: rework
+      action: do not cut required sauerkraut salt; use a tested lower-sodium recipe, refrigerated quick pickle, or smaller serving strategy
+    verification_cue: plan uses tested proportions and does not depend on an unverified reduced-salt ferment
+
+  - id: soft-fermented-pickles
+    surface:
+      - ingredient_state
+      - dish_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: discard
+    current_observation:
+      food: fermented cucumber pickles
+      texture: soft and slippery
+      aroma: unpleasant
+    target_state:
+      safety: avoid eating spoiled fermented pickles
+    safety_gate:
+      status: discard
+      reason: soft slippery texture and disagreeable odor indicate possible spoilage that rinsing cannot make safe
+    likely_mechanism: weak brine, high fermentation temperature, poor submersion, old cucumbers, or microbial spoilage
+    intervention:
+      type: discard
+      action: do not rinse or continue fermenting; discard and correct brine, submersion, temperature, and produce quality next batch
+    verification_cue: next batch remains submerged, smells cleanly sour, and stays firm without slime
+
+  - id: kombucha-bottle-pressure
+    surface:
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - observation_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: storage
+    current_observation:
+      beverage: kombucha
+      container: sealed bottles
+      pressure: very fizzy with bulging cap
+    target_state:
+      safety: controlled carbonation without bottle explosion risk
+    safety_gate:
+      status: time_limited
+      reason: gas-producing fermentation in sealed containers can create pressure hazards and needs monitoring and refrigeration
+    likely_mechanism: residual sugar and warm storage continue fermentation and carbon dioxide production in a sealed vessel
+    intervention:
+      type: chill
+      action: refrigerate to slow fermentation when safe to handle, avoid uncontrolled airtight storage, and adjust sugar time temperature and venting next batch
+    verification_cue: bottles show no bulging, pressure is managed, and finished kombucha is promptly refrigerated
+
+  - id: hot-sauce-fermentation-plan
+    surface:
+      - ingredient_state
+      - transformation_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: planning
+    workflow_stage: planning
+    current_observation:
+      food: peppers for hot sauce
+      plan: jar fermentation on the counter
+    target_state:
+      safety: controlled active ferment with safe storage plan
+    safety_gate:
+      status: time_limited
+      reason: pepper fermentation needs tested proportions, brine coverage, temperature monitoring, and clear storage or processing plan
+    likely_mechanism: lactic acid fermentation depends on salt, acidity development, temperature, oxygen management, and microbial competition
+    intervention:
+      type: rework
+      action: use a tested recipe, keep peppers submerged, monitor time temperature aroma gas and mold, and refrigerate or process only by tested directions
+    verification_cue: peppers stay submerged, ferment smells cleanly sour, no spoilage appears, and storage does not imply untested shelf stability

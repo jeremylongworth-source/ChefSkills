@@ -1,0 +1,146 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-fermentation-smoke",
+  "report": "evaluation/reports/2026-09-02-fermentation-smoke.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "fermentation-05c-smoke",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.7188,
+    "chefskills_average": 4.7813,
+    "delta": 1.0625
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-022-low-salt-sauerkraut",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 2,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills treats sauerkraut salt as a safety and texture control, rejects halving required salt without a tested recipe, and offers safer alternatives."
+    },
+    {
+      "fixture_id": "EVAL-023-soft-fermented-pickles",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills makes a discard decision, rejects rinsing as a safety fix, and explains brine, temperature, submersion, produce, and spoilage mechanisms."
+    },
+    {
+      "fixture_id": "EVAL-024-kombucha-bottle-pressure",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills treats bulging kombucha caps as pressure hazards, separates current handling from next-batch controls, and explains sugar, time, temperature, and gas."
+    },
+    {
+      "fixture_id": "EVAL-025-hot-sauce-fermentation-plan",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills requires tested proportions, brine coverage, vessel controls, monitoring, and a storage distinction between active fermentation and shelf stability."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

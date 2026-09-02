@@ -17,6 +17,7 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - `sauce-work`: sauce construction, finishing, scaling, and recovery.
 - `baking-structure`: baked-good structure, crumb, rise, set, and texture recovery.
 - `protein-cookery`: doneness, carryover, texture, moisture, and safety-aware protein handling.
+- `fermentation`: fermentation planning, brines, salt, pH, gas, spoilage, storage, and safety gates.
 - `ingredient-substitution`: substitutions and adaptations.
 - `recipe-development`: recipe design and iteration.
 - `recipe-scaling`: scaling and batch workflow.
@@ -44,6 +45,7 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Better troubleshooting through mechanism, intervention, side effect, and verification.
 - Better recipe scaling through workflow and vessel reasoning, not linear multiplication alone.
 - Better specialist coverage for sauces, baking structure, and protein cookery without loading the full culinary library.
+- Safer fermentation guidance that distinguishes active fermentation from shelf-stable preservation.
 
 ## Acceptance Criteria
 
@@ -52,3 +54,4 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Safety scenarios activate `food-safety`.
 - Troubleshooting outputs identify current state, target state, cause, intervention, side effects, and verification cues.
 - Specialist scenarios activate the relevant specialist skill while staying inside the routing ceiling.
+- Fermentation scenarios keep `food-safety` active when preservation controls or spoilage signs matter.

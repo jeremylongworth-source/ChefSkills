@@ -105,3 +105,24 @@ fish-doneness-safety:
   - culinary-reasoning
   - cooking-techniques
   - food-safety
+low-salt-sauerkraut:
+  - chef-core
+  - fermentation
+  - food-safety
+  - ingredient-substitution
+  - ingredient-knowledge
+soft-fermented-pickles:
+  - chef-core
+  - fermentation
+  - food-safety
+  - culinary-reasoning
+kombucha-bottle-pressure:
+  - chef-core
+  - fermentation
+  - food-safety
+  - culinary-reasoning
+hot-sauce-fermentation-plan:
+  - chef-core
+  - fermentation
+  - food-safety
+  - ingredient-knowledge

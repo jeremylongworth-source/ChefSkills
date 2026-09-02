@@ -30,6 +30,7 @@ routing_rules:
     sauce_construction_or_recovery: sauce-work
     baked_structure_or_texture: baking-structure
     protein_doneness_or_texture: protein-cookery
+    fermentation_or_preservation_process: fermentation
     substitution_or_diet_adaptation: ingredient-substitution
     portion_or_batch_change: recipe-scaling
     safety_or_preservation: food-safety
@@ -58,6 +59,8 @@ routing_rules:
       - crumb, rise, set, hydration, gluten, leavening, binder, pan, or bake-through behavior drives the answer
     add_protein_cookery_when:
       - meat, poultry, seafood, egg, or plant-protein texture, doneness, carryover, searing, braising, resting, or moisture control drives the answer
+    add_fermentation_when:
+      - fermented foods or beverages, brines, pH, salt concentration, gas pressure, spoilage, storage, or fermentation monitoring drives the answer
 
   precedence:
     named_dish_or_cuisine:

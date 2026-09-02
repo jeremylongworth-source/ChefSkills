@@ -24,9 +24,11 @@ The hard ceiling is five skills. When a request needs more than five skills, wri
 
 ## Specialist Skills
 
-`CHEFSKILLS-05C` adds specialist routes for sauce work, baking structure, and protein cookery. Use them when those domains drive the answer, then add only the supporting foundation skills that materially change the response.
+`CHEFSKILLS-05C` adds specialist routes for sauce work, baking structure, protein cookery, and fermentation. Use them when those domains drive the answer, then add only the supporting foundation skills that materially change the response.
 
 `protein-cookery` should be paired with `food-safety` when raw animal products, safe doneness, holding, reheating, storage uncertainty, or vulnerable diners are involved.
+
+`fermentation` should be paired with `food-safety` for home fermentation, canning, shelf-stable storage, reduced-salt adaptations, mold, slimy texture, off odors, gas pressure, or vulnerable diners.
 
 ## Task Classes
 

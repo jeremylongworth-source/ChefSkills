@@ -33,8 +33,11 @@ For larger work, write a brief first and stage the work.
 - `sauce-work`: sauce construction, finishing, scaling, holding, and recovery.
 - `baking-structure`: baked-good crumb, rise, set, hydration, leavening, and texture failure.
 - `protein-cookery`: protein doneness, texture, carryover, resting, moisture, and recovery.
+- `fermentation`: home fermentation, brines, pH, salt, acidity, gas pressure, spoilage, and storage boundaries.
 
 Keep `food-safety` active alongside `protein-cookery` when raw animal products, safe doneness, holding, reheating, or vulnerable diners matter.
+
+Keep `food-safety` active alongside `fermentation` for home fermentation, reduced-salt adaptations, mold, slimy texture, off odors, gas pressure, canning, shelf-stable storage, or vulnerable diners.
 
 ## Confidence
 

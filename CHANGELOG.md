@@ -16,3 +16,4 @@
 - Added a generated scorecard trend summary and `CHEFSKILLS-05C` readiness decision for limited specialist expansion.
 - Began `CHEFSKILLS-05C` with specialist skills for sauce work, baking structure, and protein cookery, plus routing scenarios, state examples, fixtures, and a specialist smoke scorecard.
 - Stabilized the first `CHEFSKILLS-05C` specialist wave with six more scenarios, action-first communication guidance, source-checked safety fixtures, and another specialist scorecard.
+- Expanded `CHEFSKILLS-05C` with a fermentation specialist, preservation-focused safety gates, four fermentation scenarios and fixtures, source-checked report evidence, and an updated aggregate scorecard summary.

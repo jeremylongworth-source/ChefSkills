@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 5
+minimum_reports: 6
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -77,4 +77,20 @@ reports:
       - EVAL-019-cookies-spread-too-much
       - EVAL-020-tough-beef-braise
       - EVAL-021-fish-doneness-safety
+    blockers: []
+
+  - id: 2026-09-02-fermentation-smoke
+    report: evaluation/reports/2026-09-02-fermentation-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-fermentation-smoke.json
+    run_dir: evaluation/runs/2026-09-02-fermentation-smoke
+    baseline_output: evaluation/runs/2026-09-02-fermentation-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-fermentation-smoke/skill-enabled.md
+    suite: fermentation-05c-smoke
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-022-low-salt-sauerkraut
+      - EVAL-023-soft-fermented-pickles
+      - EVAL-024-kombucha-bottle-pressure
+      - EVAL-025-hot-sauce-fermentation-plan
     blockers: []

@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 69
+minimum_cases: 73
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -234,6 +234,15 @@ cases:
       - chef-core
       - culinary-reasoning
       - ingredient-knowledge
+  - id: soft-fermented-pickles
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My fermented cucumber pickles are soft, slippery, and smell unpleasant. Can I rinse them and keep fermenting?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
   - id: evaluate-ai-sushi-recipe
     task_type: JUDGE
     safety_relevant: true
@@ -280,6 +289,7 @@ cases:
     prompt: "Assess my plan for fermenting hot sauce in a jar on the counter."
     route:
       - chef-core
+      - fermentation
       - food-safety
       - culinary-reasoning
   - id: compare-roux-slurry
@@ -363,6 +373,15 @@ cases:
       - chef-core
       - recipe-development
       - food-safety
+  - id: hot-sauce-fermentation-plan
+    task_type: PLAN
+    safety_relevant: true
+    prompt: "I want to ferment peppers for hot sauce in a jar on the counter. What controls should I set before I start?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge
   - id: explain-searing-vs-braising
     task_type: LEARN
     safety_relevant: false
@@ -480,6 +499,16 @@ cases:
       - ingredient-substitution
       - ingredient-knowledge
       - food-safety
+  - id: low-salt-sauerkraut
+    task_type: ADAPT
+    safety_relevant: true
+    prompt: "Can I cut the salt in my sauerkraut brine in half for a lower-sodium batch?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-substitution
+      - ingredient-knowledge
   - id: egg-free-meatballs
     task_type: ADAPT
     safety_relevant: false
@@ -555,6 +584,16 @@ cases:
     prompt: "How should I ferment peppers for hot sauce at home?"
     route:
       - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+  - id: kombucha-bottle-pressure
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "My kombucha bottles got very fizzy and one cap is bulging. How do I avoid explosions and make the next batch safer?"
+    route:
+      - chef-core
+      - fermentation
       - food-safety
       - culinary-reasoning
   - id: can-tomato-sauce

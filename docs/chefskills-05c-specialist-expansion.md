@@ -59,5 +59,6 @@ Evidence: command output.
 ## Follow-On Status
 
 - Followed by `docs/chefskills-05c-specialist-stabilization.md`, which adds two more fixtures per first-wave specialist.
-- Candidate next specialists: fermentation, pastry, equipment, service timing, costing, or cuisine-specific reasoning.
+- Followed by `docs/chefskills-05c-fermentation-expansion.md`, which adds fermentation as the next specialist domain.
+- Candidate next specialists after fermentation: pastry, equipment, service timing, costing, or cuisine-specific reasoning.
 - Continue watching communication scores because specialist answers can become too dense, even after action-first guidance.

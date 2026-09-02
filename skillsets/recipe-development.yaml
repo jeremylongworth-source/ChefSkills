@@ -10,6 +10,7 @@ skills:
   - sauce-work
   - baking-structure
   - protein-cookery
+  - fermentation
   - recipe-scaling
   - food-safety
 agents_file: agents/AGENTS.chef.md

@@ -57,3 +57,22 @@ examples:
       - culinary-reasoning
       - cooking-techniques
       - food-safety
+
+  low_salt_sauerkraut:
+    prompt: Can I cut the salt in sauerkraut brine for a lower-sodium batch?
+    task_type: ADAPT
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-substitution
+      - ingredient-knowledge
+
+  kombucha_bottle_pressure:
+    prompt: My kombucha bottles are very fizzy and one cap is bulging.
+    task_type: PRESERVE
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning

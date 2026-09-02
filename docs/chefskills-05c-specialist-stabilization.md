@@ -55,6 +55,8 @@ Evidence: command output.
 
 ## Follow-On Status
 
-The first 05C specialist wave now has enough fixture coverage to support one additional specialist domain.
+The first 05C specialist wave has enough fixture coverage to support one additional specialist domain.
 
-Recommended next candidate: `fermentation`, because it exercises safety gates, time-temperature reasoning, pH/salt assumptions, and preservation workflow more strongly than the current suite.
+Followed by `docs/chefskills-05c-fermentation-expansion.md`, which adds `fermentation` with source-checked preservation controls and four smoke fixtures.
+
+Recommended next candidates after fermentation: pastry or equipment, because they test precision and workflow without adding as much preservation risk.

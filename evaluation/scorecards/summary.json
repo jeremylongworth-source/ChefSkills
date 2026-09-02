@@ -2,19 +2,19 @@
   "summary_version": "0.1",
   "date": "2026-09-02",
   "source": "evaluation/reports/index.yaml",
-  "report_count": 5,
-  "fixture_count": 18,
+  "report_count": 6,
+  "fixture_count": 22,
   "blocker_count": 0,
   "decision_counts": {
-    "keep": 5
+    "keep": 6
   },
   "confidence_counts": {
-    "medium": 5
+    "medium": 6
   },
   "overall": {
-    "baseline_average": 3.7847,
-    "chefskills_average": 4.8056,
-    "delta": 1.0208
+    "baseline_average": 3.7727,
+    "chefskills_average": 4.8011,
+    "delta": 1.0284
   },
   "by_report": [
     {
@@ -71,88 +71,99 @@
       "chefskills_average": 4.8542,
       "delta": 1.0833,
       "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-fermentation-smoke",
+      "suite": "fermentation-05c-smoke",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 4,
+      "baseline_average": 3.7188,
+      "chefskills_average": 4.7813,
+      "delta": 1.0625,
+      "blockers": []
     }
   ],
   "by_criterion": {
     "technical_accuracy": {
-      "baseline_average": 4.1111,
+      "baseline_average": 4.0909,
       "chefskills_average": 5.0,
-      "delta": 0.8889
+      "delta": 0.9091
     },
     "culinary_reasoning": {
-      "baseline_average": 3.1667,
+      "baseline_average": 3.1364,
       "chefskills_average": 5.0,
-      "delta": 1.8333
+      "delta": 1.8636
     },
     "ingredient_understanding": {
-      "baseline_average": 3.4444,
-      "chefskills_average": 4.7778,
-      "delta": 1.3333
+      "baseline_average": 3.4545,
+      "chefskills_average": 4.8182,
+      "delta": 1.3636
     },
     "workflow_quality": {
-      "baseline_average": 3.8333,
-      "chefskills_average": 4.8889,
-      "delta": 1.0556
+      "baseline_average": 3.8636,
+      "chefskills_average": 4.9091,
+      "delta": 1.0455
     },
     "sensory_reasoning": {
-      "baseline_average": 2.8333,
-      "chefskills_average": 4.8333,
-      "delta": 2.0
+      "baseline_average": 2.8182,
+      "chefskills_average": 4.7273,
+      "delta": 1.9091
     },
     "safety": {
-      "baseline_average": 4.8889,
-      "chefskills_average": 4.9444,
-      "delta": 0.0556
+      "baseline_average": 4.8182,
+      "chefskills_average": 4.9545,
+      "delta": 0.1364
     },
     "constraint_handling": {
-      "baseline_average": 3.7778,
-      "chefskills_average": 4.8889,
-      "delta": 1.1111
+      "baseline_average": 3.8182,
+      "chefskills_average": 4.9091,
+      "delta": 1.0909
     },
     "communication": {
-      "baseline_average": 4.2222,
-      "chefskills_average": 4.1111,
-      "delta": -0.1111
+      "baseline_average": 4.1818,
+      "chefskills_average": 4.0909,
+      "delta": -0.0909
     }
   },
   "largest_criterion_gains": [
     {
       "criterion": "sensory_reasoning",
-      "baseline_average": 2.8333,
-      "chefskills_average": 4.8333,
-      "delta": 2.0
+      "baseline_average": 2.8182,
+      "chefskills_average": 4.7273,
+      "delta": 1.9091
     },
     {
       "criterion": "culinary_reasoning",
-      "baseline_average": 3.1667,
+      "baseline_average": 3.1364,
       "chefskills_average": 5.0,
-      "delta": 1.8333
+      "delta": 1.8636
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.4444,
-      "chefskills_average": 4.7778,
-      "delta": 1.3333
+      "baseline_average": 3.4545,
+      "chefskills_average": 4.8182,
+      "delta": 1.3636
     }
   ],
   "weakest_chefskills_criteria": [
     {
       "criterion": "communication",
-      "baseline_average": 4.2222,
-      "chefskills_average": 4.1111,
-      "delta": -0.1111
-    },
-    {
-      "criterion": "ingredient_understanding",
-      "baseline_average": 3.4444,
-      "chefskills_average": 4.7778,
-      "delta": 1.3333
+      "baseline_average": 4.1818,
+      "chefskills_average": 4.0909,
+      "delta": -0.0909
     },
     {
       "criterion": "sensory_reasoning",
-      "baseline_average": 2.8333,
-      "chefskills_average": 4.8333,
-      "delta": 2.0
+      "baseline_average": 2.8182,
+      "chefskills_average": 4.7273,
+      "delta": 1.9091
+    },
+    {
+      "criterion": "ingredient_understanding",
+      "baseline_average": 3.4545,
+      "chefskills_average": 4.8182,
+      "delta": 1.3636
     }
   ],
   "by_fixture": [
@@ -315,6 +326,42 @@
       "decision": "keep",
       "baseline_average": 3.875,
       "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-022-low-salt-sauerkraut",
+      "report_id": "2026-09-02-fermentation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-023-soft-fermented-pickles",
+      "report_id": "2026-09-02-fermentation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-024-kombucha-bottle-pressure",
+      "report_id": "2026-09-02-fermentation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-025-hot-sauce-fermentation-plan",
+      "report_id": "2026-09-02-fermentation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
       "delta": 1.0,
       "blockers": []
     }

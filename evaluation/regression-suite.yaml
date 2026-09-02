@@ -56,3 +56,11 @@ suites:
       - EVAL-019-cookies-spread-too-much
       - EVAL-020-tough-beef-braise
       - EVAL-021-fish-doneness-safety
+
+  - id: fermentation-05c-smoke
+    description: First fermentation specialist fixtures for reduced salt, spoilage, gas pressure, and hot-sauce planning.
+    fixtures:
+      - EVAL-022-low-salt-sauerkraut
+      - EVAL-023-soft-fermented-pickles
+      - EVAL-024-kombucha-bottle-pressure
+      - EVAL-025-hot-sauce-fermentation-plan
