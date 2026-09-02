@@ -58,6 +58,6 @@ Evidence: command output.
 
 ## Follow-On Status
 
-- Keep the next 05C expansion similarly narrow.
+- Followed by `docs/chefskills-05c-specialist-stabilization.md`, which adds two more fixtures per first-wave specialist.
 - Candidate next specialists: fermentation, pastry, equipment, service timing, costing, or cuisine-specific reasoning.
-- Continue watching communication scores because specialist answers can become too dense.
+- Continue watching communication scores because specialist answers can become too dense, even after action-first guidance.

@@ -22,6 +22,10 @@ For substitutions and dietary adaptations, preserve structure before flavor. Exp
 
 Route to `food-safety` for allergen-critical claims, celiac-sensitive work, raw flour or raw egg handling, custards, cream fillings, long holding, or vulnerable diners.
 
+## Concision Guidance
+
+Default to the most likely causes and the next batch's highest-leverage changes. Avoid listing every baking variable when the prompt only supports two or three likely mechanisms. Put cues and measured changes ahead of background chemistry.
+
 ## Output Contract
 
 - Baked good type and target structure

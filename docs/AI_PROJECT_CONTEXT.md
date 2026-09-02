@@ -36,4 +36,6 @@ The `CHEFSKILLS-05C Readiness` artifact summarizes scorecard trends across 3 rep
 
 The `CHEFSKILLS-05C Specialist Expansion` milestone now begins that limited expansion with `sauce-work`, `baking-structure`, and `protein-cookery`, each backed by routing scenarios, state examples, fixtures, and a specialist smoke scorecard.
 
-The next major artifact should extend 05C only after the first specialist smoke coverage remains stable. Candidate follow-ons are fermentation, pastry, equipment, service timing, costing, or cuisine-specific reasoning.
+The `CHEFSKILLS-05C Specialist Stabilization` milestone adds two more fixtures per first-wave specialist and action-first communication guidance. The aggregate evidence now covers 5 reports and 18 fixtures with no blockers.
+
+The next major artifact can add one more specialist domain. Recommended next candidate: fermentation, because it stresses safety gates, preservation workflow, time-temperature reasoning, salt/pH assumptions, and source-check discipline.

@@ -2,19 +2,19 @@
   "summary_version": "0.1",
   "date": "2026-09-02",
   "source": "evaluation/reports/index.yaml",
-  "report_count": 4,
-  "fixture_count": 12,
+  "report_count": 5,
+  "fixture_count": 18,
   "blocker_count": 0,
   "decision_counts": {
-    "keep": 4
+    "keep": 5
   },
   "confidence_counts": {
-    "medium": 4
+    "medium": 5
   },
   "overall": {
-    "baseline_average": 3.7917,
-    "chefskills_average": 4.7813,
-    "delta": 0.9896
+    "baseline_average": 3.7847,
+    "chefskills_average": 4.8056,
+    "delta": 1.0208
   },
   "by_report": [
     {
@@ -60,28 +60,39 @@
       "chefskills_average": 4.875,
       "delta": 1.0,
       "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-specialist-stabilization",
+      "suite": "specialist-05c-stabilization",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 6,
+      "baseline_average": 3.7708,
+      "chefskills_average": 4.8542,
+      "delta": 1.0833,
+      "blockers": []
     }
   ],
   "by_criterion": {
     "technical_accuracy": {
-      "baseline_average": 4.1667,
+      "baseline_average": 4.1111,
       "chefskills_average": 5.0,
-      "delta": 0.8333
+      "delta": 0.8889
     },
     "culinary_reasoning": {
-      "baseline_average": 3.25,
+      "baseline_average": 3.1667,
       "chefskills_average": 5.0,
-      "delta": 1.75
+      "delta": 1.8333
     },
     "ingredient_understanding": {
-      "baseline_average": 3.4167,
-      "chefskills_average": 4.6667,
-      "delta": 1.25
+      "baseline_average": 3.4444,
+      "chefskills_average": 4.7778,
+      "delta": 1.3333
     },
     "workflow_quality": {
-      "baseline_average": 3.75,
-      "chefskills_average": 4.8333,
-      "delta": 1.0833
+      "baseline_average": 3.8333,
+      "chefskills_average": 4.8889,
+      "delta": 1.0556
     },
     "sensory_reasoning": {
       "baseline_average": 2.8333,
@@ -89,19 +100,19 @@
       "delta": 2.0
     },
     "safety": {
-      "baseline_average": 4.8333,
-      "chefskills_average": 4.9167,
-      "delta": 0.0833
+      "baseline_average": 4.8889,
+      "chefskills_average": 4.9444,
+      "delta": 0.0556
     },
     "constraint_handling": {
-      "baseline_average": 3.75,
-      "chefskills_average": 4.8333,
-      "delta": 1.0833
+      "baseline_average": 3.7778,
+      "chefskills_average": 4.8889,
+      "delta": 1.1111
     },
     "communication": {
-      "baseline_average": 4.3333,
-      "chefskills_average": 4.1667,
-      "delta": -0.1667
+      "baseline_average": 4.2222,
+      "chefskills_average": 4.1111,
+      "delta": -0.1111
     }
   },
   "largest_criterion_gains": [
@@ -113,35 +124,35 @@
     },
     {
       "criterion": "culinary_reasoning",
-      "baseline_average": 3.25,
+      "baseline_average": 3.1667,
       "chefskills_average": 5.0,
-      "delta": 1.75
+      "delta": 1.8333
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.4167,
-      "chefskills_average": 4.6667,
-      "delta": 1.25
+      "baseline_average": 3.4444,
+      "chefskills_average": 4.7778,
+      "delta": 1.3333
     }
   ],
   "weakest_chefskills_criteria": [
     {
       "criterion": "communication",
-      "baseline_average": 4.3333,
-      "chefskills_average": 4.1667,
-      "delta": -0.1667
+      "baseline_average": 4.2222,
+      "chefskills_average": 4.1111,
+      "delta": -0.1111
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.4167,
-      "chefskills_average": 4.6667,
-      "delta": 1.25
+      "baseline_average": 3.4444,
+      "chefskills_average": 4.7778,
+      "delta": 1.3333
     },
     {
-      "criterion": "constraint_handling",
-      "baseline_average": 3.75,
+      "criterion": "sensory_reasoning",
+      "baseline_average": 2.8333,
       "chefskills_average": 4.8333,
-      "delta": 1.0833
+      "delta": 2.0
     }
   ],
   "by_fixture": [
@@ -252,6 +263,60 @@
       "chefskills_average": 4.875,
       "delta": 0.875,
       "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-016-curdled-cream-pan-sauce",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.875,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-017-raw-egg-aioli-pregnant",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-018-collapsed-layer-cake",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-019-cookies-spread-too-much",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-020-tough-beef-braise",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-021-fish-doneness-safety",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
     }
   ],
   "largest_fixture_gains": [
@@ -265,21 +330,21 @@
       "blockers": []
     },
     {
+      "fixture_id": "EVAL-016-curdled-cream-pan-sauce",
+      "report_id": "2026-09-02-specialist-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.875,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
       "fixture_id": "EVAL-002-thin-gravy",
       "report_id": "2026-09-02-foundation-smoke",
       "decision": "keep",
       "baseline_average": 3.25,
       "chefskills_average": 4.5,
       "delta": 1.25,
-      "blockers": []
-    },
-    {
-      "fixture_id": "EVAL-013-split-pan-sauce",
-      "report_id": "2026-09-02-specialist-smoke",
-      "decision": "keep",
-      "baseline_average": 3.75,
-      "chefskills_average": 4.875,
-      "delta": 1.125,
       "blockers": []
     }
   ],

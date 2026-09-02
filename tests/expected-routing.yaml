@@ -74,3 +74,34 @@ dry-chicken-breast:
   - culinary-reasoning
   - cooking-techniques
   - food-safety
+curdled-cream-pan-sauce:
+  - chef-core
+  - sauce-work
+  - culinary-reasoning
+  - cooking-techniques
+raw-egg-aioli-pregnant:
+  - chef-core
+  - sauce-work
+  - food-safety
+  - ingredient-knowledge
+collapsed-layer-cake:
+  - chef-core
+  - baking-structure
+  - culinary-reasoning
+  - cooking-techniques
+cookies-spread-too-much:
+  - chef-core
+  - baking-structure
+  - ingredient-knowledge
+  - culinary-reasoning
+tough-beef-braise:
+  - chef-core
+  - protein-cookery
+  - culinary-reasoning
+  - cooking-techniques
+fish-doneness-safety:
+  - chef-core
+  - protein-cookery
+  - culinary-reasoning
+  - cooking-techniques
+  - food-safety

@@ -22,6 +22,10 @@ Use measured temperature where safety or doneness depends on it. For precise saf
 
 Route to `food-safety` whenever raw poultry, ground meat, raw or lightly cooked seafood, raw or lightly cooked eggs, leftovers, holding, reheating, vulnerable diners, or uncertain storage may matter.
 
+## Concision Guidance
+
+Lead with the safety decision when safety is active, then give the quality fix. Keep doneness, carryover, and moisture explanations short unless the user asks to learn the mechanism. For already-cooked protein, separate "can I safely eat it" from "how can I serve it better."
+
 ## Output Contract
 
 - Protein, cut or form, thickness, and starting state

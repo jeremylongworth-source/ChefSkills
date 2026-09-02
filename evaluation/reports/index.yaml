@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 4
+minimum_reports: 5
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -59,4 +59,22 @@ reports:
       - EVAL-013-split-pan-sauce
       - EVAL-014-dense-banana-bread
       - EVAL-015-dry-chicken-breast
+    blockers: []
+
+  - id: 2026-09-02-specialist-stabilization
+    report: evaluation/reports/2026-09-02-specialist-stabilization.md
+    scorecard: evaluation/scorecards/2026-09-02-specialist-stabilization.json
+    run_dir: evaluation/runs/2026-09-02-specialist-stabilization
+    baseline_output: evaluation/runs/2026-09-02-specialist-stabilization/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-specialist-stabilization/skill-enabled.md
+    suite: specialist-05c-stabilization
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-016-curdled-cream-pan-sauce
+      - EVAL-017-raw-egg-aioli-pregnant
+      - EVAL-018-collapsed-layer-cake
+      - EVAL-019-cookies-spread-too-much
+      - EVAL-020-tough-beef-braise
+      - EVAL-021-fish-doneness-safety
     blockers: []

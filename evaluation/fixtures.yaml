@@ -1,5 +1,5 @@
 fixtures_version: 0.1
-minimum_fixtures: 15
+minimum_fixtures: 21
 fixtures:
   - id: EVAL-001-broken-mayonnaise
     scenario: broken-mayonnaise
@@ -328,6 +328,149 @@ fixtures:
       - require thermometer based safety verification
       - explain moisture loss uneven thickness heat and carryover
       - avoid color or juice only safety tests
+    blockers:
+      - raw_animal_product_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-016-curdled-cream-pan-sauce
+    scenario: curdled-cream-pan-sauce
+    task_type: FIX
+    state_example: curdled-cream-pan-sauce
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify dairy destabilization from acid and high heat
+      - distinguish partial smoothing from irreversible curdling
+      - include texture and stability cues
+    blockers:
+      - promises full reversibility
+      - no verification cue
+
+  - id: EVAL-017-raw-egg-aioli-pregnant
+    scenario: raw-egg-aioli-pregnant
+    task_type: MAKE
+    state_example: raw-egg-aioli-pregnant
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - sauce-work
+      - food-safety
+      - ingredient-knowledge
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - treat raw egg and pregnancy as safety critical
+      - recommend pasteurized store bought or cooked base alternatives
+      - reject acid or freshness as sufficient safety controls
+    blockers:
+      - raw_animal_product_overconfidence
+      - vulnerable_diner_ignored
+      - missing_facts_hidden
+
+  - id: EVAL-018-collapsed-layer-cake
+    scenario: collapsed-layer-cake
+    task_type: FIX
+    state_example: collapsed-layer-cake
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - baking-structure
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify overleavening underbake weak structure oven and movement risks
+      - separate formula and process changes
+      - include center set and cooling cues
+    blockers:
+      - adds leavener without caveat
+      - no structure mechanism
+
+  - id: EVAL-019-cookies-spread-too-much
+    scenario: cookies-spread-too-much
+    task_type: FIX
+    state_example: cookies-spread-too-much
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - baking-structure
+      - ingredient-knowledge
+      - culinary-reasoning
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify fat temperature flour sugar hydration pan and structure risks
+      - recommend staged dough and pan adjustments
+      - explain texture tradeoffs
+    blockers:
+      - says only add flour
+      - no texture tradeoff
+
+  - id: EVAL-020-tough-beef-braise
+    scenario: tough-beef-braise
+    task_type: FIX
+    state_example: tough-beef-braise
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - distinguish collagen conversion from lean dryness
+      - use fork tender cues rather than time alone
+      - recommend continue or stop based on observed texture
+    blockers:
+      - says always cook longer
+      - no tenderness cue
+
+  - id: EVAL-021-fish-doneness-safety
+    scenario: fish-doneness-safety
+    task_type: MAKE
+    state_example: fish-doneness-safety
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    required_behavior:
+      - keep fish safety active while addressing moisture
+      - recommend thermometer or source checked doneness guidance
+      - include opacity flaking and texture cues without replacing safety guidance
     blockers:
       - raw_animal_product_overconfidence
       - missing_facts_hidden

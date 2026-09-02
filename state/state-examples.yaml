@@ -380,3 +380,130 @@ examples:
       type: adjust_heat
       action: use thermometer-guided cooking, gentler heat, even thickness, resting, and sauce or slicing recovery
     verification_cue: safe endpoint is verified by thermometer and texture stays juicy after rest
+
+  - id: curdled-cream-pan-sauce
+    surface:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      visual: grainy cream sauce after lemon and boiling
+      texture: curdled and rough
+    target_state:
+      texture: smooth lightly coating sauce
+    likely_mechanism: dairy proteins destabilized by high heat and acid
+    intervention:
+      type: rework
+      action: lower heat, add liquid or fat gradually, whisk, strain if needed, or rebuild if curdling is irreversible
+    verification_cue: sauce looks smooth, coats a spoon, and has no grainy curds
+
+  - id: raw-egg-aioli-pregnant
+    surface:
+      - ingredient_state
+      - dish_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: recipe_creation
+    workflow_stage: planning
+    current_observation:
+      food: homemade aioli with raw egg
+      diner: pregnant guest
+    target_state:
+      safety: sauce safe for a higher-risk diner
+    safety_gate:
+      status: professional_review_required
+      reason: raw or lightly cooked egg for pregnancy is safety-critical and should use current authoritative guidance
+    intervention:
+      type: rework
+      action: avoid raw unpasteurized egg and use pasteurized, store-bought, or cooked-base alternatives
+    verification_cue: sauce plan does not depend on raw unpasteurized egg, acid alone, or freshness claims for safety
+
+  - id: collapsed-layer-cake
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      visual: cake rose then sank
+      texture: dense ring near center
+    target_state:
+      texture: stable layer cake with set center and even crumb
+    likely_mechanism: overleavening, underbaking, weak structure, inaccurate oven heat, or early movement
+    intervention:
+      type: rework
+      action: check leavening amount, mix to proper structure, verify oven temperature, avoid early door opening, and bake to center-set cues
+    verification_cue: center springs back, tester has moist crumbs, and cake cools without sinking
+
+  - id: cookies-spread-too-much
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      visual: cookies spread into thin greasy puddles
+      texture: flat greasy edges
+    target_state:
+      texture: cookies with controlled spread, set centers, and crisp edges
+    likely_mechanism: warm fat, low flour ratio, high sugar, insufficient hydration rest, hot pan, or weak dough structure
+    intervention:
+      type: rework
+      action: chill dough, measure flour, control butter state, adjust sugar or hydration, and bake on a cool lined pan
+    verification_cue: cookies spread gradually, edges set, centers remain soft but not greasy, and shape holds after cooling
+
+  - id: tough-beef-braise
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: active_cooking
+    current_observation:
+      food: chuck roast braise
+      texture: tough and dry after hours
+    target_state:
+      texture: fork-tender moist shreds or slices
+    likely_mechanism: collagen may not be fully converted, or lean exposed sections may have dried before connective tissue softened
+    intervention:
+      type: extend_time
+      action: continue a covered gentle braise if connective tissue is still tough, or stop and sauce thin slices if lean meat is already dry
+    verification_cue: fork slides in with little resistance and meat separates into moist strands without chalky fibers
+
+  - id: fish-doneness-safety
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    safety_relevant: true
+    task_context: recipe_creation
+    workflow_stage: active_cooking
+    current_observation:
+      food: thick salmon fillets
+      goal: moist texture and safe doneness
+    target_state:
+      texture: moist fish with verified safe endpoint
+    safety_gate:
+      status: professional_review_required
+      reason: fish endpoint should use current authoritative guidance, thermometer verification, and diner-risk awareness
+    intervention:
+      type: adjust_heat
+      action: use gentler heat, thermometer or source-checked doneness guidance, carryover awareness, and opaque flaking cues
+    verification_cue: safe endpoint is verified and flesh is opaque, separates easily, and remains moist

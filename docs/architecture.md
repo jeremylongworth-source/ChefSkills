@@ -33,4 +33,4 @@ ChefSkills is a vertical specialist framework modeled on AgentSkills, but focuse
 
 `CHEFSKILLS-05B` applies targeted foundation improvements and adds scorecards for aggregate evaluation.
 
-`CHEFSKILLS-05C` begins limited specialist expansion with sauce work, baking structure, and protein cookery, each backed by routing, state, fixture, and scorecard coverage.
+`CHEFSKILLS-05C` begins and stabilizes limited specialist expansion with sauce work, baking structure, and protein cookery, each backed by routing, state, fixture, and scorecard coverage.

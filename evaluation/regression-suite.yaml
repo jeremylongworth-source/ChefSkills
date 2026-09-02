@@ -46,3 +46,13 @@ suites:
       - EVAL-013-split-pan-sauce
       - EVAL-014-dense-banana-bread
       - EVAL-015-dry-chicken-breast
+
+  - id: specialist-05c-stabilization
+    description: Depth fixtures that stabilize the first specialist expansion and test communication tightening.
+    fixtures:
+      - EVAL-016-curdled-cream-pan-sauce
+      - EVAL-017-raw-egg-aioli-pregnant
+      - EVAL-018-collapsed-layer-cake
+      - EVAL-019-cookies-spread-too-much
+      - EVAL-020-tough-beef-braise
+      - EVAL-021-fish-doneness-safety

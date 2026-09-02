@@ -9,3 +9,4 @@
 - Mechanisms include denaturation, collagen conversion, carryover, rest, salt diffusion, moisture loss, browning, or connective tissue breakdown when relevant.
 - Recovery advice for already-cooked protein avoids unsafe undercooking and focuses on slicing, sauce, moisture, repurposing, or service changes.
 - Raw poultry, ground meat, seafood, eggs, leftovers, holding, reheating, vulnerable diners, and unknown time-temperature history route to `food-safety`.
+- Answer leads with safety when relevant, then gives the shortest useful quality intervention.

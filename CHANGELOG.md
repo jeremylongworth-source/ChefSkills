@@ -15,3 +15,4 @@
 - Began `CHEFSKILLS-05B` by tightening state-recovery behavior across foundation skills and adding validated JSON scorecards for evaluation reports.
 - Added a generated scorecard trend summary and `CHEFSKILLS-05C` readiness decision for limited specialist expansion.
 - Began `CHEFSKILLS-05C` with specialist skills for sauce work, baking structure, and protein cookery, plus routing scenarios, state examples, fixtures, and a specialist smoke scorecard.
+- Stabilized the first `CHEFSKILLS-05C` specialist wave with six more scenarios, action-first communication guidance, source-checked safety fixtures, and another specialist scorecard.

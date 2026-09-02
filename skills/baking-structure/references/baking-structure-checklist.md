@@ -8,3 +8,4 @@
 - Cues cover batter or dough state, oven behavior, center set, spring-back, tester results, browning, cooling, and crumb texture.
 - Next-batch advice distinguishes likely primary change from lower-priority experiments.
 - Allergen-critical, celiac-sensitive, raw flour, raw egg, custard, cream filling, holding, and vulnerable-diner issues route to `food-safety`.
+- Answer prioritizes the few most likely causes and avoids an exhaustive baking lecture.

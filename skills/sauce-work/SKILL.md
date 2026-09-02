@@ -22,6 +22,10 @@ For pan sauces and reductions, distinguish fond extraction, deglazing liquid, re
 
 Route to `food-safety` when the sauce includes raw or lightly cooked egg, meat drippings, stock cooling, long holding, reheating, canning, fermentation, allergens, or vulnerable diners.
 
+## Concision Guidance
+
+Default to action first, then the mechanism that justifies the action. Keep the mechanism focused on the decision at hand rather than listing every possible sauce fault. For urgent recovery, give the stop action, rescue step, and verification cue before explaining side effects.
+
 ## Output Contract
 
 - Sauce family and target state

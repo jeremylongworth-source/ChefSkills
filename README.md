@@ -85,7 +85,7 @@ Or run all current checks:
 4. `CHEFSKILLS-04`: Evaluation engine for rubric scoring, fixtures, regression suites, and safety gates.
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
-7. `CHEFSKILLS-05C`: Specialist expansion, started with sauce work, baking structure, and protein cookery before broader pastry, fermentation, cuisine, equipment, service, and costing work.
+7. `CHEFSKILLS-05C`: Specialist expansion, started and stabilized with sauce work, baking structure, and protein cookery before broader pastry, fermentation, cuisine, equipment, service, and costing work.
 
 ## License
 

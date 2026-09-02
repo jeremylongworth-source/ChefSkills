@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 63
+minimum_cases: 69
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -67,6 +67,25 @@ cases:
       - chef-core
       - recipe-development
       - cooking-techniques
+  - id: raw-egg-aioli-pregnant
+    task_type: MAKE
+    safety_relevant: true
+    prompt: "I want to serve homemade aioli with raw egg to a pregnant friend. How should I make it safe?"
+    route:
+      - chef-core
+      - sauce-work
+      - food-safety
+      - ingredient-knowledge
+  - id: fish-doneness-safety
+    task_type: MAKE
+    safety_relevant: true
+    prompt: "How do I cook thick salmon fillets so they stay moist but are safely done?"
+    route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
   - id: broken-mayonnaise
     task_type: FIX
     safety_relevant: false
@@ -132,6 +151,16 @@ cases:
     prompt: "My beef stew meat is tough after two hours. Should I cook it longer?"
     route:
       - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+  - id: tough-beef-braise
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My chuck roast braise is still tough and dry after hours. Should I keep cooking or stop?"
+    route:
+      - chef-core
+      - protein-cookery
       - culinary-reasoning
       - cooking-techniques
   - id: curdled-cream-sauce
@@ -140,6 +169,16 @@ cases:
     prompt: "My cream sauce curdled after I added lemon. Can I smooth it out?"
     route:
       - chef-core
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+  - id: curdled-cream-pan-sauce
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My cream pan sauce turned grainy after I added lemon and boiled it. Can I smooth it out?"
+    route:
+      - chef-core
+      - sauce-work
       - culinary-reasoning
       - cooking-techniques
   - id: split-pan-sauce
@@ -169,6 +208,24 @@ cases:
       - baking-structure
       - culinary-reasoning
       - ingredient-knowledge
+  - id: collapsed-layer-cake
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My layer cake rose in the oven, then sank and left a dense ring near the center. What should I change?"
+    route:
+      - chef-core
+      - baking-structure
+      - culinary-reasoning
+      - cooking-techniques
+  - id: cookies-spread-too-much
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My chocolate chip cookies spread into thin greasy puddles. How do I adjust the dough?"
+    route:
+      - chef-core
+      - baking-structure
+      - ingredient-knowledge
+      - culinary-reasoning
   - id: burnt-garlic-sauce
     task_type: FIX
     safety_relevant: false
