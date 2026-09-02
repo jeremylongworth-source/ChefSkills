@@ -96,6 +96,92 @@ def top_entries(
     )[:limit]
 
 
+def build_readiness(
+    *,
+    cards: list[dict[str, Any]],
+    blocker_count: int,
+    decision_counts: Counter[str],
+    chefskills_average: Decimal,
+    min_chefskills_fixture: dict[str, Any],
+    min_delta_fixture: dict[str, Any],
+) -> dict[str, Any]:
+    ready_for_limited_05c = (
+        blocker_count == 0
+        and decision_counts == {"keep": len(cards)}
+        and chefskills_average >= Decimal("4.25")
+        and as_decimal(min_chefskills_fixture["chefskills_average"]) >= Decimal("4.0")
+    )
+
+    if not ready_for_limited_05c:
+        return {
+            "status": "hold_for_more_05b",
+            "rationale": "ChefSkills has not yet cleared the foundation evidence gate for specialist expansion.",
+            "next_milestone": "CHEFSKILLS-05B Follow-Up Evaluation",
+            "constraints": [
+                "Resolve blockers before adding new specialist skills.",
+                "Improve the lowest-scored fixtures before broadening coverage.",
+                "Safety-critical guidance still requires current authoritative source checks.",
+                "Do not treat low-confidence reports as release-grade proof.",
+            ],
+            "lowest_scored_fixture": min_chefskills_fixture["fixture_id"],
+            "lowest_delta_fixture": min_delta_fixture["fixture_id"],
+        }
+
+    suite_ids = {card["suite"] for card in cards}
+
+    if "fermentation-05c-smoke" in suite_ids:
+        status = "ready_for_fermentation_stabilization"
+        rationale = (
+            "ChefSkills cleared the fermentation smoke pass with no blockers and a skill-enabled "
+            "average above the release threshold. Expansion should still be limited because all "
+            "report confidence values are medium and fermentation has only one smoke report."
+        )
+        next_milestone = "CHEFSKILLS-05C Fermentation Stabilization"
+        constraints = [
+            "Add lower-risk fermentation flavor and troubleshooting fixtures before broadening preservation claims.",
+            "Every new or stabilized specialist skill needs fixtures, routing cases, and scorecard coverage.",
+            "Safety-critical specialist domains still require current authoritative source checks.",
+            "Do not treat current medium-confidence reports as release-grade proof.",
+        ]
+    elif "specialist-05c-stabilization" in suite_ids:
+        status = "ready_for_next_05c_specialist"
+        rationale = (
+            "ChefSkills cleared the first specialist stabilization pass with no blockers and a "
+            "skill-enabled average above the release threshold. Expansion should still be limited "
+            "because all report confidence values are medium and the fixture set is small."
+        )
+        next_milestone = "CHEFSKILLS-05C Next Specialist Expansion"
+        constraints = [
+            "Limit the next 05C expansion to one additional specialist domain.",
+            "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
+            "Safety-critical specialist domains still require current authoritative source checks.",
+            "Do not treat current medium-confidence reports as release-grade proof.",
+        ]
+    else:
+        status = "ready_for_limited_05c"
+        rationale = (
+            "ChefSkills cleared the current foundation evidence gate with no blockers, all keep decisions, "
+            "and a skill-enabled average above the release threshold. Expansion should still be limited "
+            "because all report confidence values are medium and the fixture set is small."
+        )
+        next_milestone = "CHEFSKILLS-05C Specialist Expansion"
+        constraints = [
+            "Limit initial 05C work to a small number of specialist skills.",
+            "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
+            "Safety-critical specialist domains still require current authoritative source checks.",
+            "Do not treat current medium-confidence reports as release-grade proof.",
+        ]
+
+    return {
+        "status": status,
+        "rationale": rationale,
+        "next_milestone": next_milestone,
+        "constraints": constraints,
+        "lowest_scored_fixture": min_chefskills_fixture["fixture_id"],
+        "lowest_delta_fixture": min_delta_fixture["fixture_id"],
+    }
+
+
 def build_summary(repo_root: Path) -> dict[str, Any]:
     index_path = repo_root / "evaluation" / "reports" / "index.yaml"
     reports = parse_report_index(index_path)
@@ -178,22 +264,6 @@ def build_summary(repo_root: Path) -> dict[str, Any]:
     min_chefskills_fixture = min(by_fixture, key=lambda row: row["chefskills_average"])
     min_delta_fixture = min(by_fixture, key=lambda row: row["delta"])
 
-    ready_for_limited_05c = (
-        blocker_count == 0
-        and decision_counts == {"keep": len(cards)}
-        and chefskills_average >= Decimal("4.25")
-        and as_decimal(min_chefskills_fixture["chefskills_average"]) >= Decimal("4.0")
-    )
-
-    readiness_status = "ready_for_limited_05c" if ready_for_limited_05c else "hold_for_more_05b"
-    readiness_rationale = (
-        "ChefSkills cleared the current foundation evidence gate with no blockers, all keep decisions, "
-        "and a skill-enabled average above the release threshold. Expansion should still be limited "
-        "because all report confidence values are medium and the fixture set is small."
-        if ready_for_limited_05c
-        else "ChefSkills has not yet cleared the foundation evidence gate for specialist expansion."
-    )
-
     return {
         "summary_version": SUMMARY_VERSION,
         "date": max(card["date"] for card in cards),
@@ -217,21 +287,14 @@ def build_summary(repo_root: Path) -> dict[str, Any]:
         "by_fixture": by_fixture,
         "largest_fixture_gains": top_entries(by_fixture, key="delta", reverse=True),
         "lowest_fixture_gains": top_entries(by_fixture, key="delta", reverse=False),
-        "readiness": {
-            "status": readiness_status,
-            "rationale": readiness_rationale,
-            "next_milestone": "CHEFSKILLS-05C Specialist Expansion"
-            if ready_for_limited_05c
-            else "CHEFSKILLS-05B Follow-Up Evaluation",
-            "constraints": [
-                "Limit initial 05C work to a small number of specialist skills.",
-                "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
-                "Safety-critical specialist domains still require current authoritative source checks.",
-                "Do not treat current medium-confidence reports as release-grade proof.",
-            ],
-            "lowest_scored_fixture": min_chefskills_fixture["fixture_id"],
-            "lowest_delta_fixture": min_delta_fixture["fixture_id"],
-        },
+        "readiness": build_readiness(
+            cards=cards,
+            blocker_count=blocker_count,
+            decision_counts=decision_counts,
+            chefskills_average=chefskills_average,
+            min_chefskills_fixture=min_chefskills_fixture,
+            min_delta_fixture=min_delta_fixture,
+        ),
     }
 
 

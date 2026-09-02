@@ -425,12 +425,12 @@
     }
   ],
   "readiness": {
-    "status": "ready_for_limited_05c",
-    "rationale": "ChefSkills cleared the current foundation evidence gate with no blockers, all keep decisions, and a skill-enabled average above the release threshold. Expansion should still be limited because all report confidence values are medium and the fixture set is small.",
-    "next_milestone": "CHEFSKILLS-05C Specialist Expansion",
+    "status": "ready_for_fermentation_stabilization",
+    "rationale": "ChefSkills cleared the fermentation smoke pass with no blockers and a skill-enabled average above the release threshold. Expansion should still be limited because all report confidence values are medium and fermentation has only one smoke report.",
+    "next_milestone": "CHEFSKILLS-05C Fermentation Stabilization",
     "constraints": [
-      "Limit initial 05C work to a small number of specialist skills.",
-      "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
+      "Add lower-risk fermentation flavor and troubleshooting fixtures before broadening preservation claims.",
+      "Every new or stabilized specialist skill needs fixtures, routing cases, and scorecard coverage.",
       "Safety-critical specialist domains still require current authoritative source checks.",
       "Do not treat current medium-confidence reports as release-grade proof."
     ],
