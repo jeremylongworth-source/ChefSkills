@@ -12,6 +12,8 @@ It evaluates outputs against realistic culinary fixtures rather than checking pr
 - `fixtures.yaml`: reusable evaluation fixtures tied to routing scenarios and state examples.
 - `regression-suite.yaml`: named fixture groups for smoke, safety, and milestone checks.
 - `report-template.md`: before/after report format for human review.
+- `runs/`: raw baseline and skill-enabled outputs.
+- `reports/`: scored before/after evaluation reports.
 
 ## Evaluation Flow
 
@@ -29,6 +31,7 @@ Run:
 
 ```powershell
 python .\scripts\validate-evaluation.py
+python .\scripts\validate-evaluation-reports.py
 ```
 
-This checks that evaluation fixtures reference known scenarios, routes, state examples, and regression suites.
+These checks confirm that evaluation fixtures reference known scenarios, routes, state examples, and regression suites, and that registered reports link to real fixture and output evidence.

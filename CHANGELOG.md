@@ -9,3 +9,4 @@
 - Began `CHEFSKILLS-02` by expanding the culinary router into a machine-checked specification, classification schema, and 60-case routing catalog.
 - Added `CHEFSKILLS-03` by expanding the culinary state model into schemas, example cases, safety gates, recovery modeling, and validation.
 - Added `CHEFSKILLS-04` by creating an evaluation engine with rubric scoring, safety blockers, fixtures, regression suites, report template, and validation.
+- Began `CHEFSKILLS-05A` with a foundation smoke before/after report, raw evaluation outputs, and report validation.

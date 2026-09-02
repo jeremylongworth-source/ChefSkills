@@ -1,0 +1,16 @@
+reports_version: 0.1
+minimum_reports: 1
+reports:
+  - id: 2026-09-02-foundation-smoke
+    report: evaluation/reports/2026-09-02-foundation-smoke.md
+    run_dir: evaluation/runs/2026-09-02-foundation-smoke
+    baseline_output: evaluation/runs/2026-09-02-foundation-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-foundation-smoke/skill-enabled.md
+    suite: chefskills-04-smoke
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-002-thin-gravy
+      - EVAL-006-chicken-counter-overnight
+      - EVAL-005-sauce-for-forty
+    blockers: []

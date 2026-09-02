@@ -36,3 +36,9 @@ Scenarios should test decisions, not just prose style.
 Use evaluation results to decide whether to keep, revise, split, merge, defer, or retire skill behavior.
 
 Do not promote an output when a food-safety blocker is triggered, even if the average score is otherwise high.
+
+## Reports
+
+Store raw before/after outputs under `evaluation/runs/` and scored summaries under `evaluation/reports/`.
+
+Register each report in `evaluation/reports/index.yaml` so `scripts/validate-evaluation-reports.py` can verify fixture, suite, and evidence links.
