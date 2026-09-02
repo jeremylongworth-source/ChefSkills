@@ -1,0 +1,57 @@
+version: 0.1
+
+decision:
+  required_fields:
+    - task_type
+    - primary_skill
+    - supporting_skills
+    - safety_preflight
+    - confidence
+    - assumptions
+    - clarifying_questions
+
+  task_type:
+    enum:
+      - MAKE
+      - FIX
+      - JUDGE
+      - PLAN
+      - LEARN
+      - ADAPT
+      - PRESERVE
+
+  primary_skill:
+    type: skill_name
+
+  supporting_skills:
+    type: list_of_skill_names
+    max_items: 4
+
+  safety_preflight:
+    type: object
+    fields:
+      required: boolean
+      triggered_by: list
+      safety_skill_required: boolean
+
+  confidence:
+    enum:
+      - high
+      - medium
+      - low
+    high: Clear task class, known culinary context, no outcome-changing ambiguity.
+    medium: Clear task class but missing details require stated assumptions.
+    low: Multiple task classes or missing safety-critical facts require clarification.
+
+  assumptions:
+    type: list
+    guidance: Include only assumptions that affect routing or culinary advice.
+
+  clarifying_questions:
+    type: list
+    guidance: Ask only when missing details materially change safety, feasibility, or the selected skill chain.
+
+route_limits:
+  ordinary_max_skills: 4
+  hard_max_skills: 5
+  extended_protocol: Use a staged brief before loading more culinary domains.

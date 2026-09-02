@@ -5,6 +5,10 @@ routing_rules:
     ordinary_skill_ceiling: 4
     extended_skill_ceiling: 5
     prefer_minimum_useful_chain: true
+    route_order:
+      - chef-core
+      - primary_skill
+      - supporting_skills
 
   safety_preflight:
     activate_food_safety_when:
@@ -15,6 +19,8 @@ routing_rules:
       - allergen_or_medical_diet
       - vulnerable_diner
       - spoilage_mold_off_odor_or_unknown_time_temperature
+    route_position: supporting_skill
+    override_rule: Safety can override the culinary preference, but should not become the primary skill unless the task is primarily about safety, storage, preservation, or discard.
 
   primary_selection:
     recipe_creation: recipe-development
@@ -25,6 +31,33 @@ routing_rules:
     portion_or_batch_change: recipe-scaling
     safety_or_preservation: food-safety
 
+  secondary_selection:
+    add_ingredient_knowledge_when:
+      - ingredient function affects result
+      - freshness, storage, form, or preparation state matters
+      - flavor balance depends on ingredient role
+    add_cooking_techniques_when:
+      - heat transfer or doneness cues matter
+      - method selection affects texture or safety
+      - equipment changes the process
+    add_ingredient_substitution_when:
+      - ingredient is missing, unwanted, or constrained
+      - dietary adaptation changes function
+      - omission affects structure, flavor, or chemistry
+    add_recipe_scaling_when:
+      - yield, batch size, service volume, or vessel size changes
+      - timing, holding, or production workflow changes
+    add_culinary_reasoning_when:
+      - diagnosis, tradeoff, failure analysis, or mechanism explanation is needed
+
+  precedence:
+    named_dish_or_cuisine:
+      rule: Named dish and cuisine context inform assumptions, but do not override safety or the user's explicit constraints.
+    explicit_user_goal:
+      rule: User-stated goal takes precedence over inferred dish tradition.
+    current_state:
+      rule: Observed current state takes precedence over generic recipe procedure in troubleshooting.
+
   negative_routing:
     do_not_activate_recipe_development_for:
       - simple factual ingredient question
@@ -33,6 +66,10 @@ routing_rules:
       - ordinary serving suggestion without quantity change
     do_not_activate_food_safety_for:
       - purely aesthetic plating question with no handling risk
+    do_not_activate_full_chef_skillset_for:
+      - a single ingredient definition
+      - a narrow unit conversion
+      - a pure formatting edit to an existing recipe with no culinary judgment
 
   ambiguity:
     ask_clarifying_question_when:
@@ -41,3 +78,32 @@ routing_rules:
       - requested substitution has multiple culinary functions
       - equipment constraints determine feasibility
     otherwise_state_assumptions: true
+
+  confidence:
+    high:
+      requirements:
+        - task class is clear
+        - primary skill is clear
+        - no safety-critical facts are missing
+    medium:
+      requirements:
+        - task class is clear
+        - answer can proceed with stated assumptions
+        - missing facts affect quality more than safety
+    low:
+      requirements:
+        - multiple task classes are plausible
+        - safety-critical facts are missing
+        - selected route would change based on one missing answer
+      action: Ask a concise clarifying question before giving detailed culinary instructions.
+
+  extended_brigade_protocol:
+    use_when:
+      - route would exceed five skills
+      - request includes menu, costing, prep, service, safety, substitutions, and troubleshooting together
+      - multi-day or regulated production workflow is requested
+    first_response:
+      - summarize goal
+      - identify workstreams
+      - name safety and review gates
+      - stage the work instead of loading every domain at once

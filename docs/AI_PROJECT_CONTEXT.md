@@ -22,7 +22,7 @@ The first foundation contains eight skills:
 - `recipe-scaling`
 - `food-safety`
 
-The next architectural artifact should be `CHEFSKILLS-02 Culinary Router`, expanding `router/` into a more complete decision layer with task confidence, ambiguity handling, negative routing, and about 60 routing scenarios.
+The active architectural artifact is `CHEFSKILLS-02 Culinary Router`, expanding `router/` into a more complete decision layer with task confidence, ambiguity handling, negative routing, and a 60-case routing catalog.
 
 The next modeling artifact should be `CHEFSKILLS-03 Culinary State Model`, expanding `state/` into a reusable representation of ingredients, transformations, dish state, equipment state, workflow stage, observed cues, recovery actions, and safety status.
 

@@ -60,6 +60,7 @@ Run the local validators from the repository root:
 python .\scripts\validate-skill-files.py
 python .\scripts\validate-skillsets.py
 python .\scripts\validate-scenarios.py
+python .\scripts\validate-router.py
 ```
 
 Or run all current checks:
@@ -71,7 +72,7 @@ Or run all current checks:
 ## Development Roadmap
 
 1. `CHEFSKILLS-01`: Foundation skills, skillsets, docs, and scenario checks.
-2. `CHEFSKILLS-02`: Culinary router specification with task classes, routing ceilings, and ambiguity handling.
+2. `CHEFSKILLS-02`: Culinary router specification with task classes, routing ceilings, ambiguity handling, confidence, and a broad routing catalog.
 3. `CHEFSKILLS-03`: Culinary state model for ingredients, transformations, workflow, and observed vs. target states.
 4. `CHEFSKILLS-04`: Evaluation engine for reasoning, troubleshooting, substitutions, scaling, and safety gates.
 5. `CHEFSKILLS-05`: Specialist expansion into sauces, proteins, baking, pastry, fermentation, cuisines, equipment, service, and costing.

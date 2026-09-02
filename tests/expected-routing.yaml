@@ -29,3 +29,32 @@ weeknight-vegetarian-menu:
   - chef-core
   - recipe-development
   - ingredient-knowledge
+evaluate-ai-sushi-recipe:
+  - chef-core
+  - culinary-reasoning
+  - food-safety
+thanksgiving-oven-plan:
+  - chef-core
+  - cooking-techniques
+  - recipe-scaling
+  - food-safety
+explain-searing-vs-braising:
+  - chef-core
+  - culinary-reasoning
+  - cooking-techniques
+gluten-free-cake-adaptation:
+  - chef-core
+  - ingredient-substitution
+  - recipe-development
+  - cooking-techniques
+garlic-oil-storage:
+  - chef-core
+  - food-safety
+prep-lunches-for-week:
+  - chef-core
+  - recipe-development
+  - food-safety
+compare-roux-slurry:
+  - chef-core
+  - culinary-reasoning
+  - cooking-techniques

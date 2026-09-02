@@ -6,6 +6,8 @@ The router answers three questions:
 2. Which primary skill owns the decision?
 3. Which supporting skills are necessary?
 
+`CHEFSKILLS-02` promotes the router from prose guidance into a validated data layer. See `router/README.md`, `router/classification-schema.yaml`, and `router/routing-catalog.yaml`.
+
 ## Task Classes
 
 - `MAKE`: create a dish, recipe, prep plan, or menu.
@@ -23,6 +25,12 @@ Use one primary skill and up to three supporting skills for ordinary requests.
 Use up to five skills only when the request genuinely spans recipe design, scale, safety, workflow, and troubleshooting.
 
 For larger work, write a brief first and stage the work.
+
+## Confidence
+
+- High confidence: task class and primary skill are clear, with no safety-critical gaps.
+- Medium confidence: the task class is clear, but the answer needs stated assumptions.
+- Low confidence: missing facts would change safety, feasibility, or the selected route; ask a concise clarifying question.
 
 ## Safety Preflight
 

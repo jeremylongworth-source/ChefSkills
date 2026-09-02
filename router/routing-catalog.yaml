@@ -1,0 +1,490 @@
+catalog_version: 0.1
+minimum_cases: 60
+cases:
+  - id: weeknight-vegetarian-menu
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Build a simple vegetarian dinner menu for four using lentils, carrots, yogurt, rice, lemons, and herbs."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+  - id: quick-pantry-pasta
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Make a fast pasta dinner from canned tomatoes, garlic, onion, dried pasta, chili flakes, and parmesan."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+  - id: birthday-layer-cake
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Create a vanilla birthday layer cake recipe with buttercream and clear doneness cues."
+    route:
+      - chef-core
+      - recipe-development
+      - cooking-techniques
+  - id: vegan-lentil-burgers
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Create vegan lentil burgers that hold together without egg."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+      - ingredient-substitution
+  - id: chicken-rice-one-pot
+    task_type: MAKE
+    safety_relevant: true
+    prompt: "Create a one-pot chicken and rice dinner with raw chicken thighs."
+    route:
+      - chef-core
+      - recipe-development
+      - cooking-techniques
+      - food-safety
+  - id: summer-salad-dressing
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Make a bright salad dressing for tomatoes, cucumbers, herbs, olive oil, and lemon."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+  - id: make-sourdough-pancakes
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Create sourdough discard pancakes that are tender, lightly tangy, and not gummy."
+    route:
+      - chef-core
+      - recipe-development
+      - cooking-techniques
+  - id: plated-dessert-for-six
+    task_type: MAKE
+    safety_relevant: false
+    prompt: "Design a simple plated dessert for six using pears, yogurt, honey, walnuts, and puff pastry."
+    route:
+      - chef-core
+      - recipe-development
+      - cooking-techniques
+  - id: broken-mayonnaise
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My mayonnaise broke and looks oily and separated. How do I fix it?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: thin-gravy
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My gravy is too thin. Should I just add flour?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: oversalted-soup
+    task_type: FIX
+    safety_relevant: false
+    prompt: "I over-salted a pot of soup. Can a potato fix it?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: tomato-sauce-flat
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My tomato sauce tastes flat even after simmering. What should I adjust?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: dry-roast-chicken
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My roast chicken is dry but I also want to make sure it was cooked safely."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
+  - id: gummy-rice
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My rice came out gummy and clumped. What went wrong and can I rescue it?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: tough-stew-meat
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My beef stew meat is tough after two hours. Should I cook it longer?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: curdled-cream-sauce
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My cream sauce curdled after I added lemon. Can I smooth it out?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: bread-dough-not-rising
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My bread dough barely rose after two hours. How do I diagnose it?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+      - cooking-techniques
+  - id: burnt-garlic-sauce
+    task_type: FIX
+    safety_relevant: false
+    prompt: "I burned the garlic at the start of my sauce. Can I hide the bitterness?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: evaluate-ai-sushi-recipe
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "Review an AI-generated home sushi recipe that uses raw salmon from the grocery store."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - food-safety
+  - id: review-cake-recipe
+    task_type: JUDGE
+    safety_relevant: false
+    prompt: "Review this cake recipe for likely texture problems before I bake it."
+    route:
+      - chef-core
+      - recipe-development
+      - culinary-reasoning
+  - id: judge-pesto-substitution
+    task_type: JUDGE
+    safety_relevant: false
+    prompt: "Will sunflower seeds work instead of pine nuts in pesto, and what changes?"
+    route:
+      - chef-core
+      - ingredient-knowledge
+      - ingredient-substitution
+  - id: evaluate-roast-timing
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "Evaluate whether this roast turkey timing plan is safe and likely to produce good texture."
+    route:
+      - chef-core
+      - cooking-techniques
+      - food-safety
+  - id: menu-balance-review
+    task_type: JUDGE
+    safety_relevant: false
+    prompt: "Review my dinner-party menu for balance, repetition, and missing texture contrast."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+  - id: assess-fermentation-plan
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "Assess my plan for fermenting hot sauce in a jar on the counter."
+    route:
+      - chef-core
+      - food-safety
+      - culinary-reasoning
+  - id: compare-roux-slurry
+    task_type: JUDGE
+    safety_relevant: false
+    prompt: "Should I thicken this sauce with roux or a cornstarch slurry?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: critique-meal-prep-plan
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "Review my plan to cook lunches for five days and store them in containers."
+    route:
+      - chef-core
+      - recipe-development
+      - food-safety
+  - id: holiday-dinner-timeline
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "Build a timeline for a holiday dinner with roast vegetables, mashed potatoes, salad, and dessert."
+    route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling
+  - id: thanksgiving-oven-plan
+    task_type: PLAN
+    safety_relevant: true
+    prompt: "Plan Thanksgiving oven timing for turkey, stuffing, green beans, rolls, and pie."
+    route:
+      - chef-core
+      - cooking-techniques
+      - recipe-scaling
+      - food-safety
+  - id: mise-en-place-stir-fry
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "Help me prep and sequence a stir-fry so nothing overcooks."
+    route:
+      - chef-core
+      - cooking-techniques
+      - ingredient-knowledge
+  - id: shop-for-taco-night
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "Turn this taco-night menu into a shopping and prep plan."
+    route:
+      - chef-core
+      - recipe-development
+      - ingredient-knowledge
+  - id: prep-lunches-for-week
+    task_type: PLAN
+    safety_relevant: true
+    prompt: "Plan five days of chicken and rice lunches with safe storage and reheating."
+    route:
+      - chef-core
+      - recipe-development
+      - food-safety
+  - id: dinner-party-sequence
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "Sequence prep for a three-course dinner party in a small kitchen."
+    route:
+      - chef-core
+      - recipe-development
+      - cooking-techniques
+  - id: bakery-production-plan
+    task_type: PLAN
+    safety_relevant: false
+    prompt: "Plan production for 48 muffins and 24 scones in one morning."
+    route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling
+  - id: camping-meal-plan
+    task_type: PLAN
+    safety_relevant: true
+    prompt: "Plan two days of camping meals with cooler storage and minimal equipment."
+    route:
+      - chef-core
+      - recipe-development
+      - food-safety
+  - id: explain-searing-vs-braising
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Explain when to sear, simmer, roast, or braise meat and what each method changes."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: why-rest-meat
+    task_type: LEARN
+    safety_relevant: true
+    prompt: "Explain why meat rests after cooking and how that interacts with safe doneness."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
+  - id: how-acid-affects-beans
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Why do some cooks add acid late when cooking beans?"
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: emulsion-basics
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Explain emulsions using mayonnaise, vinaigrette, and pan sauce examples."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+  - id: starch-gelatinization
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Explain starch gelatinization and why flour, cornstarch, and roux behave differently."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: salt-timing-vegetables
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Explain how salting vegetables early changes moisture, browning, and texture."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+  - id: difference-baking-powder-soda
+    task_type: LEARN
+    safety_relevant: false
+    prompt: "Explain the difference between baking powder and baking soda in quick breads."
+    route:
+      - chef-core
+      - ingredient-knowledge
+      - culinary-reasoning
+  - id: explain-carryover-cooking
+    task_type: LEARN
+    safety_relevant: true
+    prompt: "Explain carryover cooking and why it matters for chicken, steak, and roasts."
+    route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
+  - id: buttermilk-substitution
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "I do not have buttermilk for pancakes. Can I just use regular milk?"
+    route:
+      - chef-core
+      - ingredient-knowledge
+      - ingredient-substitution
+  - id: sauce-for-forty
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "I have a pan sauce recipe for 4 people and need it for 40. Can I multiply everything by 10?"
+    route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling
+  - id: gluten-free-cake-adaptation
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Adapt a simple chocolate cake recipe to be gluten-free without making it crumbly."
+    route:
+      - chef-core
+      - ingredient-substitution
+      - recipe-development
+      - cooking-techniques
+  - id: dairy-free-alfredo
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Make a dairy-free Alfredo-style sauce that still feels creamy."
+    route:
+      - chef-core
+      - ingredient-substitution
+      - ingredient-knowledge
+      - recipe-development
+  - id: no-oven-lasagna
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Adapt lasagna for a kitchen with no oven."
+    route:
+      - chef-core
+      - cooking-techniques
+      - recipe-development
+  - id: low-sodium-soup
+    task_type: ADAPT
+    safety_relevant: true
+    prompt: "Adapt a soup recipe for someone who needs lower sodium."
+    route:
+      - chef-core
+      - ingredient-substitution
+      - ingredient-knowledge
+      - food-safety
+  - id: egg-free-meatballs
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Make meatballs without egg while keeping them tender and bound."
+    route:
+      - chef-core
+      - ingredient-substitution
+      - recipe-development
+      - ingredient-knowledge
+  - id: convert-cups-to-grams
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Convert a cookie recipe from cups to grams and note where precision matters."
+    route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling
+  - id: halve-cheesecake
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Halve a cheesecake recipe for a smaller pan without ruining the texture."
+    route:
+      - chef-core
+      - recipe-scaling
+      - cooking-techniques
+  - id: substitute-coconut-milk-curry
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Substitute something for coconut milk in curry while keeping body and richness."
+    route:
+      - chef-core
+      - ingredient-substitution
+      - ingredient-knowledge
+  - id: chicken-counter-overnight
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "I left cooked chicken on the counter overnight. Can I reheat it and eat it?"
+    route:
+      - chef-core
+      - food-safety
+  - id: garlic-oil-storage
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "Can I store fresh garlic cloves covered in oil on the counter?"
+    route:
+      - chef-core
+      - food-safety
+  - id: cool-stock-overnight
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "I made a large pot of chicken stock. How should I cool and store it overnight?"
+    route:
+      - chef-core
+      - food-safety
+  - id: freeze-herbs
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "What is the best way to freeze herbs without losing all their flavor?"
+    route:
+      - chef-core
+      - ingredient-knowledge
+      - food-safety
+  - id: reheat-rice
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "How do I safely store and reheat cooked rice for fried rice tomorrow?"
+    route:
+      - chef-core
+      - food-safety
+  - id: ferment-hot-sauce
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "How should I ferment peppers for hot sauce at home?"
+    route:
+      - chef-core
+      - food-safety
+      - culinary-reasoning
+  - id: can-tomato-sauce
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "Can I water-bath can my homemade tomato sauce?"
+    route:
+      - chef-core
+      - food-safety
+      - ingredient-knowledge
+  - id: thaw-fish
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "What is the safest way to thaw frozen fish for dinner tonight?"
+    route:
+      - chef-core
+      - food-safety
+      - cooking-techniques
