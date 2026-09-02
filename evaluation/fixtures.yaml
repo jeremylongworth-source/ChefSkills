@@ -1,0 +1,260 @@
+fixtures_version: 0.1
+minimum_fixtures: 12
+fixtures:
+  - id: EVAL-001-broken-mayonnaise
+    scenario: broken-mayonnaise
+    task_type: FIX
+    state_example: broken-mayonnaise
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify emulsion failure
+      - provide staged recovery
+      - include stability cues
+    blockers:
+      - no mechanism
+      - no verification cue
+
+  - id: EVAL-002-thin-gravy
+    scenario: thin-gravy
+    task_type: FIX
+    state_example: thin-gravy
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - distinguish reduction and starch thickening
+      - avoid raw flour lumps
+      - provide spoon-coating cue
+    blockers:
+      - says only add flour
+      - no side effects
+
+  - id: EVAL-003-oversalted-soup
+    scenario: oversalted-soup
+    task_type: FIX
+    state_example: oversalted-soup
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+    expected_state_surfaces:
+      - dish_state
+      - ingredient_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - reject potato myth as main fix
+      - explain dilution and concentration
+      - stage adjustments
+    blockers:
+      - repeats potato myth
+      - no staged tasting
+
+  - id: EVAL-004-buttermilk-substitution
+    scenario: buttermilk-substitution
+    task_type: ADAPT
+    state_example: buttermilk-substitution
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - ingredient-knowledge
+      - ingredient-substitution
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+    required_behavior:
+      - identify acidity and leavening role
+      - explain plain milk tradeoff
+      - give ratio or adjustment
+    blockers:
+      - treats milk as exact equivalent
+      - ignores acidity
+
+  - id: EVAL-005-sauce-for-forty
+    scenario: sauce-for-forty
+    task_type: ADAPT
+    state_example: sauce-for-forty
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - recipe-development
+      - recipe-scaling
+    expected_state_surfaces:
+      - dish_state
+      - equipment_state
+      - workflow_state
+      - recovery_state
+    required_behavior:
+      - start with scale factor
+      - adjust for vessel and surface area
+      - stage seasoning and reduction
+    blockers:
+      - blindly multiplies every value
+      - ignores workflow
+
+  - id: EVAL-006-chicken-counter-overnight
+    scenario: chicken-counter-overnight
+    task_type: PRESERVE
+    state_example: chicken-counter-overnight
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - recommend discard
+      - explain reheating limitation
+      - avoid smell or taste test
+    blockers:
+      - unsafe_salvage
+      - missing_facts_hidden
+
+  - id: EVAL-007-tomato-sauce-flat
+    scenario: tomato-sauce-flat
+    task_type: FIX
+    state_example: tomato-sauce-flat
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - ingredient-knowledge
+    expected_state_surfaces:
+      - dish_state
+      - ingredient_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - separate salt acid sweetness umami fat and concentration
+      - recommend staged tasting
+      - explain perception changes
+    blockers:
+      - sugar as only answer
+      - multiple large changes at once
+
+  - id: EVAL-008-evaluate-ai-sushi-recipe
+    scenario: evaluate-ai-sushi-recipe
+    task_type: JUDGE
+    state_example: evaluate-ai-sushi-recipe
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - safety_state
+    required_behavior:
+      - treat raw fish safety as central
+      - distinguish quality from hazard
+      - recommend safe sourcing or alternatives
+    blockers:
+      - raw_animal_product_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-009-thanksgiving-oven-plan
+    scenario: thanksgiving-oven-plan
+    task_type: PLAN
+    state_example: thanksgiving-oven-plan
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - cooking-techniques
+      - recipe-scaling
+      - food-safety
+    expected_state_surfaces:
+      - equipment_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - handle oven conflicts
+      - identify turkey and stuffing safety constraints
+      - include resting holding and service timing
+    blockers:
+      - unsafe roasting or holding plan
+      - impossible oven schedule
+
+  - id: EVAL-010-gluten-free-cake-adaptation
+    scenario: gluten-free-cake-adaptation
+    task_type: ADAPT
+    state_example: gluten-free-cake
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - ingredient-substitution
+      - recipe-development
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - recovery_state
+    required_behavior:
+      - identify flour structure role
+      - adjust binding and hydration
+      - explain texture risks
+    blockers:
+      - one-for-one swap with no caveat
+      - ignores crumb structure
+
+  - id: EVAL-011-garlic-oil-storage
+    scenario: garlic-oil-storage
+    task_type: PRESERVE
+    state_example: garlic-oil-storage
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - identify room-temperature garlic-in-oil risk
+      - give conservative storage guidance
+      - avoid sensory safety tests
+    blockers:
+      - preservation_overconfidence
+      - unsafe_salvage
+
+  - id: EVAL-012-compare-roux-slurry
+    scenario: compare-roux-slurry
+    task_type: JUDGE
+    state_example: thin-gravy
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - compare thickening mechanisms
+      - state texture opacity and reheating tradeoffs
+      - include failure points
+    blockers:
+      - treats thickeners as interchangeable
+      - no mechanism

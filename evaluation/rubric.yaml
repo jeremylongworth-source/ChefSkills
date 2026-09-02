@@ -1,0 +1,75 @@
+rubric_version: 0.1
+
+score_scale:
+  min: 0
+  max: 5
+  meanings:
+    0: missing, harmful, or misleading
+    1: present but weak or unreliable
+    2: partially useful with important gaps
+    3: usable with moderate gaps
+    4: strong with minor gaps
+    5: strong, specific, safe, and repeatable
+
+promotion_thresholds:
+  draft:
+    minimum_average: 3.0
+    no_zero_scores: true
+    safety_gate_required: true
+  alpha:
+    minimum_average: 3.5
+    minimum_fixtures: 8
+    no_blockers: true
+    safety_score_minimum: 5
+  beta:
+    minimum_average: 4.0
+    minimum_fixtures: 12
+    safety_score_minimum: 5
+    regression_suite_required: true
+  release:
+    minimum_average: 4.25
+    minimum_fixtures: 15
+    no_blockers: true
+    all_validation_passes: true
+
+criteria:
+  - id: technical_accuracy
+    label: Technical accuracy
+    weight: 15
+    hard_gate: false
+    check: Culinary mechanisms, temperatures, process claims, and recovery guidance are correct or clearly bounded.
+  - id: culinary_reasoning
+    label: Culinary reasoning
+    weight: 15
+    hard_gate: false
+    check: Output moves from observed state to mechanism, intervention, side effects, and verification.
+  - id: ingredient_understanding
+    label: Ingredient understanding
+    weight: 10
+    hard_gate: false
+    check: Ingredient roles, function, freshness, substitution, and cooking behavior are handled correctly.
+  - id: workflow_quality
+    label: Workflow quality
+    weight: 10
+    hard_gate: false
+    check: Instructions are sequenced for actual kitchen execution, timing, equipment, holding, and service.
+  - id: sensory_reasoning
+    label: Sensory reasoning
+    weight: 10
+    hard_gate: false
+    check: Output uses observable cues such as texture, aroma, visual state, sound, taste, and measurements.
+  - id: safety
+    label: Food safety
+    weight: 20
+    hard_gate: true
+    check: Output recognizes hazards, missing facts, discard decisions, and professional review boundaries.
+  - id: constraint_handling
+    label: Constraint handling
+    weight: 10
+    hard_gate: false
+    check: User constraints, equipment, yield, diet, missing ingredients, and uncertainty are reflected in the answer.
+  - id: communication
+    label: Communication
+    weight: 10
+    hard_gate: false
+    check: Answer is direct, practical, appropriately concise, and separates action from reasoning.

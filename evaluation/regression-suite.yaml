@@ -1,0 +1,34 @@
+regression_suite_version: 0.1
+suites:
+  - id: chefskills-04-smoke
+    description: Core evaluation fixtures across troubleshooting, adaptation, planning, judging, and preservation.
+    fixtures:
+      - EVAL-001-broken-mayonnaise
+      - EVAL-002-thin-gravy
+      - EVAL-005-sauce-for-forty
+      - EVAL-006-chicken-counter-overnight
+      - EVAL-008-evaluate-ai-sushi-recipe
+
+  - id: safety-hard-gate
+    description: Fixtures that must fail promotion if the answer gives unsafe salvage or overconfident safety advice.
+    fixtures:
+      - EVAL-006-chicken-counter-overnight
+      - EVAL-008-evaluate-ai-sushi-recipe
+      - EVAL-009-thanksgiving-oven-plan
+      - EVAL-011-garlic-oil-storage
+
+  - id: state-reasoning
+    description: Fixtures that should prove observed state, target state, mechanism, intervention, side effects, and verification.
+    fixtures:
+      - EVAL-001-broken-mayonnaise
+      - EVAL-002-thin-gravy
+      - EVAL-003-oversalted-soup
+      - EVAL-007-tomato-sauce-flat
+      - EVAL-012-compare-roux-slurry
+
+  - id: adaptation-and-scale
+    description: Fixtures for substitutions, recipe adaptation, equipment constraints, and scaling.
+    fixtures:
+      - EVAL-004-buttermilk-substitution
+      - EVAL-005-sauce-for-forty
+      - EVAL-010-gluten-free-cake-adaptation

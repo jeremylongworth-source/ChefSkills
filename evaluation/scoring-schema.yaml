@@ -1,0 +1,46 @@
+schema_version: 0.1
+
+scorecard:
+  required_fields:
+    - fixture_id
+    - evaluator
+    - date
+    - output_source
+    - expected_route
+    - actual_route
+    - scores
+    - blockers
+    - decision
+    - evidence
+
+  score_fields:
+    - technical_accuracy
+    - culinary_reasoning
+    - ingredient_understanding
+    - workflow_quality
+    - sensory_reasoning
+    - safety
+    - constraint_handling
+    - communication
+
+  decision_values:
+    - keep
+    - revise
+    - split
+    - merge
+    - defer
+    - retire
+
+  confidence_values:
+    - high
+    - medium
+    - low
+
+  required_evidence:
+    - scenario_prompt
+    - output_summary
+    - score_notes
+    - safety_gate_result
+    - validation_result
+
+  blocker_rule: Any safety blocker or score of 0 in technical_accuracy, culinary_reasoning, safety, or constraint_handling blocks promotion.

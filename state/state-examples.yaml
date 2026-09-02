@@ -234,3 +234,83 @@ examples:
       type: discard
       action: do not store fresh garlic in oil at room temperature
     verification_cue: safe storage method replaces counter storage
+
+  - id: buttermilk-substitution
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+    safety_relevant: false
+    task_context: substitution
+    workflow_stage: planning
+    current_observation:
+      missing_ingredient: buttermilk
+      available_ingredient: regular milk
+    target_state:
+      dish: tender pancakes with proper rise and mild tang
+    likely_mechanism: acidity affects leavening, tenderness, and flavor
+    intervention:
+      type: acidify
+      action: adjust milk with acid or rebalance leavening
+    verification_cue: batter consistency and pancake lift remain appropriate
+
+  - id: tomato-sauce-flat
+    surface:
+      - dish_state
+      - ingredient_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      taste: flat after simmering
+    target_state:
+      flavor: balanced salt acid sweetness umami fat and concentration
+    likely_mechanism: flavor perception is under-balanced rather than simply undercooked
+    intervention:
+      type: season
+      action: adjust salt, acid, umami, aromatics, or fat in small stages
+    verification_cue: sauce tastes brighter and fuller without becoming salty or sweet
+
+  - id: evaluate-ai-sushi-recipe
+    surface:
+      - ingredient_state
+      - dish_state
+      - safety_state
+    safety_relevant: true
+    task_context: safety_review
+    workflow_stage: planning
+    current_observation:
+      food: raw grocery-store salmon for home sushi
+      process: unknown sourcing and handling
+    target_state:
+      safety: raw fish served only with adequate sourcing and handling controls
+    safety_gate:
+      status: professional_review_required
+      reason: raw fish safety depends on sourcing, parasite controls, storage, and handling
+    intervention:
+      type: rework
+      action: use safer alternatives or verified raw-service fish sourcing
+    verification_cue: safety decision is based on verified process, not freshness claims
+
+  - id: thanksgiving-oven-plan
+    surface:
+      - equipment_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: planning
+    workflow_stage: planning
+    current_observation:
+      equipment: one oven with multiple dishes
+      foods: turkey, stuffing, green beans, rolls, and pie
+    target_state:
+      service: safe turkey and coherent oven timing
+    safety_gate:
+      status: time_limited
+      reason: turkey, stuffing, holding, and reheating require safety-aware timing
+    intervention:
+      type: rework
+      action: sequence oven use, resting, holding, and reheating around safety constraints
+    verification_cue: hot foods reach safe service state without impossible oven overlaps

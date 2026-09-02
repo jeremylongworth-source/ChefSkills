@@ -2,6 +2,8 @@
 
 ChefSkills evaluates culinary competence through scenarios, expected routing, and behavior checks.
 
+`CHEFSKILLS-04` expands evaluation into a validated engine. See `evaluation/README.md`, `evaluation/rubric.yaml`, `evaluation/fixtures.yaml`, and `evaluation/safety-gates.yaml`.
+
 ## Rubric
 
 Score outputs from 0 to 5 on:
@@ -28,3 +30,9 @@ Each scenario should include:
 - failure modes
 
 Scenarios should test decisions, not just prose style.
+
+## Promotion Decisions
+
+Use evaluation results to decide whether to keep, revise, split, merge, defer, or retire skill behavior.
+
+Do not promote an output when a food-safety blocker is triggered, even if the average score is otherwise high.
