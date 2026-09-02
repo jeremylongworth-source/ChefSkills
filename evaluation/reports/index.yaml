@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 1
+minimum_reports: 2
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -13,4 +13,18 @@ reports:
       - EVAL-002-thin-gravy
       - EVAL-006-chicken-counter-overnight
       - EVAL-005-sauce-for-forty
+    blockers: []
+
+  - id: 2026-09-02-safety-substitution-smoke
+    report: evaluation/reports/2026-09-02-safety-substitution-smoke.md
+    run_dir: evaluation/runs/2026-09-02-safety-substitution-smoke
+    baseline_output: evaluation/runs/2026-09-02-safety-substitution-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-safety-substitution-smoke/skill-enabled.md
+    suite: safety-substitution-smoke
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-008-evaluate-ai-sushi-recipe
+      - EVAL-010-gluten-free-cake-adaptation
+      - EVAL-011-garlic-oil-storage
     blockers: []

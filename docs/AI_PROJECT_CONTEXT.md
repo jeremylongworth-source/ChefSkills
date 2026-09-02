@@ -28,6 +28,6 @@ The `CHEFSKILLS-03 Culinary State Model` now expands `state/` into a reusable re
 
 The `CHEFSKILLS-04 Evaluation Engine` now turns routing and state-model expectations into stronger scoring, fixtures, safety gates, and regression checks.
 
-The `CHEFSKILLS-05A Foundation Evaluation` has started with a smoke before/after report comparing baseline and ChefSkills-enabled outputs for troubleshooting, safety, and scaling fixtures.
+The `CHEFSKILLS-05A Foundation Evaluation` now has two smoke before/after reports comparing baseline and ChefSkills-enabled outputs for troubleshooting, safety, scaling, raw-fish review, structural substitution, and preservation storage fixtures.
 
 The next major artifact should be `CHEFSKILLS-05B Foundation Improvements`, but skill edits should be based on repeated concrete gaps from evaluation reports rather than broad preference.

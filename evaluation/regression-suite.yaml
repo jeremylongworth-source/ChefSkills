@@ -17,6 +17,13 @@ suites:
       - EVAL-009-thanksgiving-oven-plan
       - EVAL-011-garlic-oil-storage
 
+  - id: safety-substitution-smoke
+    description: Harder smoke fixtures for raw animal product safety, preservation safety, and structural substitution.
+    fixtures:
+      - EVAL-008-evaluate-ai-sushi-recipe
+      - EVAL-010-gluten-free-cake-adaptation
+      - EVAL-011-garlic-oil-storage
+
   - id: state-reasoning
     description: Fixtures that should prove observed state, target state, mechanism, intervention, side effects, and verification.
     fixtures:
