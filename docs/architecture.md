@@ -32,3 +32,5 @@ ChefSkills is a vertical specialist framework modeled on AgentSkills, but focuse
 `CHEFSKILLS-05A` records before/after evidence for the foundation.
 
 `CHEFSKILLS-05B` applies targeted foundation improvements and adds scorecards for aggregate evaluation.
+
+`CHEFSKILLS-05C` begins only after scorecard trends show the foundation is stable enough for limited specialist expansion.

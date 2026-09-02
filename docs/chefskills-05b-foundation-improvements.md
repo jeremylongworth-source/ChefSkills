@@ -40,8 +40,8 @@ Run:
 .\scripts\validate-all.ps1
 ```
 
-## Next Work
+## Follow-On Status
 
-- Use the new scorecards to summarize report trends across fixtures.
-- Add focused fixtures for any weak score dimensions before expanding specialist skills.
-- Start `CHEFSKILLS-05C` only after scorecard trends show the foundation behavior is stable enough to support specialist expansion.
+- Scorecard trends are summarized in `evaluation/scorecards/summary.json`.
+- The readiness decision is documented in `docs/chefskills-05c-readiness.md`.
+- `CHEFSKILLS-05C` should start with a small specialist scope and require routing cases, fixtures, and scorecards for each new specialist skill.

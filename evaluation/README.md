@@ -26,6 +26,7 @@ It evaluates outputs against realistic culinary fixtures rather than checking pr
 6. Decide whether to keep, revise, split, merge, defer, or retire the skill behavior.
 7. Record the result using `report-template.md`.
 8. Add a JSON scorecard under `evaluation/scorecards/` and register it in `evaluation/reports/index.yaml`.
+9. Regenerate `evaluation/scorecards/summary.json` when report scorecards change.
 
 ## Validation
 
@@ -35,6 +36,7 @@ Run:
 python .\scripts\validate-evaluation.py
 python .\scripts\validate-evaluation-reports.py
 python .\scripts\validate-scorecards.py
+python .\scripts\summarize-scorecards.py --check .\evaluation\scorecards\summary.json
 ```
 
 These checks confirm that evaluation fixtures reference known scenarios, routes, state examples, and regression suites, that registered reports link to real fixture and output evidence, and that scorecards match the report index and rubric criteria.

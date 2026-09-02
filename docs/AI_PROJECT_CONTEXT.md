@@ -32,4 +32,6 @@ The `CHEFSKILLS-05A Foundation Evaluation` now has three smoke before/after repo
 
 The `CHEFSKILLS-05B Foundation Improvements` milestone tightens state-recovery expectations in the foundation skills, adds source-check expectations for precise high-risk safety guidance, and introduces validated JSON scorecards for report aggregation.
 
-The next major artifact should summarize scorecard trends, then proceed toward `CHEFSKILLS-05C Specialist Expansion` only after the foundation behavior is stable enough to support specialized culinary domains.
+The `CHEFSKILLS-05C Readiness` artifact summarizes scorecard trends across 3 reports and 9 fixtures. The decision is ready for limited specialist expansion with medium confidence, starting with sauce work, baking structure, and protein cookery.
+
+The next major artifact should begin `CHEFSKILLS-05C Specialist Expansion` with a small set of specialist skills, each backed by routing cases, fixtures, and scorecards.

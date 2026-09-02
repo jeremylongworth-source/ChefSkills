@@ -8,5 +8,6 @@ python .\scripts\validate-state.py
 python .\scripts\validate-evaluation.py
 python .\scripts\validate-evaluation-reports.py
 python .\scripts\validate-scorecards.py
+python .\scripts\summarize-scorecards.py --check .\evaluation\scorecards\summary.json
 
 Write-Host "All ChefSkills validation checks passed."

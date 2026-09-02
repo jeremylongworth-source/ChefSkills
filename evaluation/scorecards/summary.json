@@ -1,0 +1,290 @@
+{
+  "summary_version": "0.1",
+  "date": "2026-09-02",
+  "source": "evaluation/reports/index.yaml",
+  "report_count": 3,
+  "fixture_count": 9,
+  "blocker_count": 0,
+  "decision_counts": {
+    "keep": 3
+  },
+  "confidence_counts": {
+    "medium": 3
+  },
+  "overall": {
+    "baseline_average": 3.7639,
+    "chefskills_average": 4.75,
+    "delta": 0.9861
+  },
+  "by_report": [
+    {
+      "report_id": "2026-09-02-foundation-smoke",
+      "suite": "chefskills-04-smoke",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 3,
+      "baseline_average": 3.5833,
+      "chefskills_average": 4.7083,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "suite": "safety-substitution-smoke",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 3,
+      "baseline_average": 4.0417,
+      "chefskills_average": 4.75,
+      "delta": 0.7083,
+      "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-state-recovery-smoke",
+      "suite": "state-reasoning",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 3,
+      "baseline_average": 3.6667,
+      "chefskills_average": 4.7917,
+      "delta": 1.125,
+      "blockers": []
+    }
+  ],
+  "by_criterion": {
+    "technical_accuracy": {
+      "baseline_average": 4.2222,
+      "chefskills_average": 5.0,
+      "delta": 0.7778
+    },
+    "culinary_reasoning": {
+      "baseline_average": 3.3333,
+      "chefskills_average": 5.0,
+      "delta": 1.6667
+    },
+    "ingredient_understanding": {
+      "baseline_average": 3.3333,
+      "chefskills_average": 4.5556,
+      "delta": 1.2222
+    },
+    "workflow_quality": {
+      "baseline_average": 3.6667,
+      "chefskills_average": 4.7778,
+      "delta": 1.1111
+    },
+    "sensory_reasoning": {
+      "baseline_average": 2.7778,
+      "chefskills_average": 4.7778,
+      "delta": 2.0
+    },
+    "safety": {
+      "baseline_average": 4.7778,
+      "chefskills_average": 4.8889,
+      "delta": 0.1111
+    },
+    "constraint_handling": {
+      "baseline_average": 3.6667,
+      "chefskills_average": 4.7778,
+      "delta": 1.1111
+    },
+    "communication": {
+      "baseline_average": 4.3333,
+      "chefskills_average": 4.2222,
+      "delta": -0.1111
+    }
+  },
+  "largest_criterion_gains": [
+    {
+      "criterion": "sensory_reasoning",
+      "baseline_average": 2.7778,
+      "chefskills_average": 4.7778,
+      "delta": 2.0
+    },
+    {
+      "criterion": "culinary_reasoning",
+      "baseline_average": 3.3333,
+      "chefskills_average": 5.0,
+      "delta": 1.6667
+    },
+    {
+      "criterion": "ingredient_understanding",
+      "baseline_average": 3.3333,
+      "chefskills_average": 4.5556,
+      "delta": 1.2222
+    }
+  ],
+  "weakest_chefskills_criteria": [
+    {
+      "criterion": "communication",
+      "baseline_average": 4.3333,
+      "chefskills_average": 4.2222,
+      "delta": -0.1111
+    },
+    {
+      "criterion": "ingredient_understanding",
+      "baseline_average": 3.3333,
+      "chefskills_average": 4.5556,
+      "delta": 1.2222
+    },
+    {
+      "criterion": "constraint_handling",
+      "baseline_average": 3.6667,
+      "chefskills_average": 4.7778,
+      "delta": 1.1111
+    }
+  ],
+  "by_fixture": [
+    {
+      "fixture_id": "EVAL-002-thin-gravy",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.25,
+      "chefskills_average": 4.5,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-006-chicken-counter-overnight",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 4.0,
+      "chefskills_average": 4.75,
+      "delta": 0.75,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-005-sauce-for-forty",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-008-evaluate-ai-sushi-recipe",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-010-gluten-free-cake-adaptation",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 4.0,
+      "chefskills_average": 4.625,
+      "delta": 0.625,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-011-garlic-oil-storage",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 4.5,
+      "chefskills_average": 4.875,
+      "delta": 0.375,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-001-broken-mayonnaise",
+      "report_id": "2026-09-02-state-recovery-smoke",
+      "decision": "keep",
+      "baseline_average": 3.5,
+      "chefskills_average": 4.625,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-003-oversalted-soup",
+      "report_id": "2026-09-02-state-recovery-smoke",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-007-tomato-sauce-flat",
+      "report_id": "2026-09-02-state-recovery-smoke",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "blockers": []
+    }
+  ],
+  "largest_fixture_gains": [
+    {
+      "fixture_id": "EVAL-005-sauce-for-forty",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-002-thin-gravy",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 3.25,
+      "chefskills_average": 4.5,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-008-evaluate-ai-sushi-recipe",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "blockers": []
+    }
+  ],
+  "lowest_fixture_gains": [
+    {
+      "fixture_id": "EVAL-011-garlic-oil-storage",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 4.5,
+      "chefskills_average": 4.875,
+      "delta": 0.375,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-010-gluten-free-cake-adaptation",
+      "report_id": "2026-09-02-safety-substitution-smoke",
+      "decision": "keep",
+      "baseline_average": 4.0,
+      "chefskills_average": 4.625,
+      "delta": 0.625,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-006-chicken-counter-overnight",
+      "report_id": "2026-09-02-foundation-smoke",
+      "decision": "keep",
+      "baseline_average": 4.0,
+      "chefskills_average": 4.75,
+      "delta": 0.75,
+      "blockers": []
+    }
+  ],
+  "readiness": {
+    "status": "ready_for_limited_05c",
+    "rationale": "ChefSkills cleared the current foundation evidence gate with no blockers, all keep decisions, and a skill-enabled average above the release threshold. Expansion should still be limited because all report confidence values are medium and the fixture set is small.",
+    "next_milestone": "CHEFSKILLS-05C Specialist Expansion",
+    "constraints": [
+      "Limit initial 05C work to a small number of specialist skills.",
+      "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
+      "Safety-critical specialist domains still require current authoritative source checks.",
+      "Do not treat current medium-confidence reports as release-grade proof."
+    ],
+    "lowest_scored_fixture": "EVAL-002-thin-gravy",
+    "lowest_delta_fixture": "EVAL-011-garlic-oil-storage"
+  }
+}

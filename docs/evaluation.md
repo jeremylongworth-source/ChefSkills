@@ -44,3 +44,9 @@ Store raw before/after outputs under `evaluation/runs/` and scored summaries und
 Register each report in `evaluation/reports/index.yaml` so `scripts/validate-evaluation-reports.py` can verify fixture, suite, scorecard, and evidence links.
 
 Store machine-readable report summaries under `evaluation/scorecards/`. `scripts/validate-scorecards.py` verifies that scorecards match the report index, use known rubric criteria, reference known fixtures, and calculate averages and deltas correctly.
+
+Regenerate `evaluation/scorecards/summary.json` after scorecards change:
+
+```powershell
+python .\scripts\summarize-scorecards.py --output .\evaluation\scorecards\summary.json
+```

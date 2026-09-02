@@ -74,3 +74,20 @@ report_scorecard:
     - delta
     - scores
     - evidence_summary
+
+scorecard_summary:
+  format: json
+  path: evaluation/scorecards/summary.json
+  required_fields:
+    - summary_version
+    - report_count
+    - fixture_count
+    - blocker_count
+    - decision_counts
+    - confidence_counts
+    - overall
+    - by_report
+    - by_criterion
+    - by_fixture
+    - readiness
+  generated_by: scripts/summarize-scorecards.py

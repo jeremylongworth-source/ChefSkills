@@ -13,3 +13,4 @@
 - Expanded `CHEFSKILLS-05A` with a safety/substitution smoke report covering raw-fish review, gluten-free cake adaptation, and garlic-in-oil storage.
 - Completed the initial `CHEFSKILLS-05A` evidence pass with a state-recovery smoke report covering broken mayonnaise, oversalted soup, and flat tomato sauce.
 - Began `CHEFSKILLS-05B` by tightening state-recovery behavior across foundation skills and adding validated JSON scorecards for evaluation reports.
+- Added a generated scorecard trend summary and `CHEFSKILLS-05C` readiness decision for limited specialist expansion.
