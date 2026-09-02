@@ -2,18 +2,18 @@
 
 ## Purpose
 
-This artifact summarizes the validated scorecards from `CHEFSKILLS-05A` and `CHEFSKILLS-05B` to decide whether ChefSkills is ready to begin limited specialist expansion.
+This artifact records the pre-expansion readiness checkpoint from `CHEFSKILLS-05A` and `CHEFSKILLS-05B` that decided whether ChefSkills was ready to begin limited specialist expansion.
 
 ## Evidence
 
 - `evaluation/scorecards/2026-09-02-foundation-smoke.json`
 - `evaluation/scorecards/2026-09-02-safety-substitution-smoke.json`
 - `evaluation/scorecards/2026-09-02-state-recovery-smoke.json`
-- `evaluation/scorecards/summary.json`
+- `evaluation/scorecards/summary.json` as generated at the 05B readiness checkpoint
 - `scripts/summarize-scorecards.py`
 - `.\scripts\validate-all.ps1`
 
-## Scorecard Trends
+## Pre-Expansion Scorecard Trends
 
 | Metric | Baseline | ChefSkills | Delta |
 |---|---:|---:|---:|
@@ -29,7 +29,7 @@ This artifact summarizes the validated scorecards from `CHEFSKILLS-05A` and `CHE
 
 ## Decision
 
-Decision: ready for limited `CHEFSKILLS-05C` specialist expansion.
+Decision at checkpoint: ready for limited `CHEFSKILLS-05C` specialist expansion.
 
 Reason: ChefSkills has 3 registered reports, 9 evaluated fixtures, all `keep` decisions, no blockers, and a skill-enabled average above the release threshold in the current rubric. The largest gains are in the exact areas the foundation is supposed to improve: sensory cues, culinary reasoning, ingredient reasoning, workflow, and constraint handling.
 

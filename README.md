@@ -25,7 +25,7 @@ ChefSkills separates culinary expertise into four layers:
 
 Food safety is a hard gate. It is not averaged against good cooking advice.
 
-## Initial Skills
+## Current Skills
 
 | Skill | Purpose |
 |---|---|
@@ -33,6 +33,9 @@ Food safety is a hard gate. It is not averaged against good cooking advice.
 | `culinary-reasoning` | Mechanism-based culinary diagnosis and intervention |
 | `ingredient-knowledge` | Ingredient roles, properties, and behavior |
 | `cooking-techniques` | Technique selection, cues, and failure points |
+| `sauce-work` | Sauce construction, finishing, scaling, and recovery |
+| `baking-structure` | Baked-good structure, crumb, rise, set, and texture recovery |
+| `protein-cookery` | Doneness, carryover, moisture, and safety-aware protein handling |
 | `ingredient-substitution` | Functional substitution reasoning |
 | `recipe-development` | Recipe design, formatting, and iteration |
 | `recipe-scaling` | Scaling quantities, vessels, heat transfer, and workflow |
@@ -82,7 +85,7 @@ Or run all current checks:
 4. `CHEFSKILLS-04`: Evaluation engine for rubric scoring, fixtures, regression suites, and safety gates.
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
-7. `CHEFSKILLS-05C`: Specialist expansion into sauces, proteins, baking, pastry, fermentation, cuisines, equipment, service, and costing.
+7. `CHEFSKILLS-05C`: Specialist expansion, started with sauce work, baking structure, and protein cookery before broader pastry, fermentation, cuisine, equipment, service, and costing work.
 
 ## License
 

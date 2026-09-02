@@ -16,6 +16,9 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - `cooking-techniques`: process selection and cues.
 - `ingredient-substitution`: swaps and adaptations.
 - `recipe-development`: recipe structure, iteration, and testing.
+- `sauce-work`: sauce design, texture, finishing, and recovery.
+- `baking-structure`: baked-good structure, hydration, leavening, and crumb troubleshooting.
+- `protein-cookery`: protein doneness, method choice, carryover, and safety-aware quality tradeoffs.
 - `recipe-scaling`: portions, batch size, and workflow.
 - `food-safety`: safety review for risky ingredients or processes.
 
@@ -38,6 +41,7 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - Recipes include quantities, prep state, sequence, heat, timing, cues, failure points, and serving assumptions.
 - Scaling changes workflow and vessel assumptions where needed.
 - Substitutions preserve functional role or explain tradeoffs.
+- Specialist work on sauces, baked structure, and proteins includes mechanism and verification cues.
 
 ## Acceptance Criteria
 
@@ -45,3 +49,4 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - Generated recipes include sensory cues and critical failure points.
 - Scaling and substitutions are not treated as pure arithmetic.
 - Safety review is triggered when relevant.
+- Sauce, baking, and protein cases route to the relevant specialist skill.

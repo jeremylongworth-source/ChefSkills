@@ -58,3 +58,19 @@ compare-roux-slurry:
   - chef-core
   - culinary-reasoning
   - cooking-techniques
+split-pan-sauce:
+  - chef-core
+  - sauce-work
+  - culinary-reasoning
+  - cooking-techniques
+dense-banana-bread:
+  - chef-core
+  - baking-structure
+  - culinary-reasoning
+  - ingredient-knowledge
+dry-chicken-breast:
+  - chef-core
+  - protein-cookery
+  - culinary-reasoning
+  - cooking-techniques
+  - food-safety

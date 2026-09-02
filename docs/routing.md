@@ -26,6 +26,16 @@ Use up to five skills only when the request genuinely spans recipe design, scale
 
 For larger work, write a brief first and stage the work.
 
+## Specialist Primaries
+
+`CHEFSKILLS-05C` adds specialist primary skills for narrow domains:
+
+- `sauce-work`: sauce construction, finishing, scaling, holding, and recovery.
+- `baking-structure`: baked-good crumb, rise, set, hydration, leavening, and texture failure.
+- `protein-cookery`: protein doneness, texture, carryover, resting, moisture, and recovery.
+
+Keep `food-safety` active alongside `protein-cookery` when raw animal products, safe doneness, holding, reheating, or vulnerable diners matter.
+
 ## Confidence
 
 - High confidence: task class and primary skill are clear, with no safety-critical gaps.

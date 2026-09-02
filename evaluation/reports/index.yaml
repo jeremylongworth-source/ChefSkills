@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 3
+minimum_reports: 4
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -44,4 +44,19 @@ reports:
       - EVAL-001-broken-mayonnaise
       - EVAL-003-oversalted-soup
       - EVAL-007-tomato-sauce-flat
+    blockers: []
+
+  - id: 2026-09-02-specialist-smoke
+    report: evaluation/reports/2026-09-02-specialist-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-specialist-smoke.json
+    run_dir: evaluation/runs/2026-09-02-specialist-smoke
+    baseline_output: evaluation/runs/2026-09-02-specialist-smoke/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-02-specialist-smoke/skill-enabled.md
+    suite: specialist-05c-smoke
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-013-split-pan-sauce
+      - EVAL-014-dense-banana-bread
+      - EVAL-015-dry-chicken-breast
     blockers: []

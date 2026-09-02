@@ -1,5 +1,5 @@
 fixtures_version: 0.1
-minimum_fixtures: 12
+minimum_fixtures: 15
 fixtures:
   - id: EVAL-001-broken-mayonnaise
     scenario: broken-mayonnaise
@@ -258,3 +258,76 @@ fixtures:
     blockers:
       - treats thickeners as interchangeable
       - no mechanism
+
+  - id: EVAL-013-split-pan-sauce
+    scenario: split-pan-sauce
+    task_type: FIX
+    state_example: split-pan-sauce
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify butter emulsion failure
+      - provide lower heat liquid and whisk recovery
+      - include glossy no oil pooling cue
+    blockers:
+      - no mechanism
+      - no verification cue
+
+  - id: EVAL-014-dense-banana-bread
+    scenario: dense-banana-bread
+    task_type: FIX
+    state_example: dense-banana-bread
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - baking-structure
+      - culinary-reasoning
+      - ingredient-knowledge
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify moisture leavening mixing pan and underbake risks
+      - distinguish formula process and doneness changes
+      - include set center and crumb cues
+    blockers:
+      - no mechanism
+      - ignores bake doneness
+
+  - id: EVAL-015-dry-chicken-breast
+    scenario: dry-chicken-breast
+    task_type: FIX
+    state_example: dry-chicken-breast
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    required_behavior:
+      - separate safety endpoint from juicy texture
+      - require thermometer based safety verification
+      - explain moisture loss uneven thickness heat and carryover
+      - avoid color or juice only safety tests
+    blockers:
+      - raw_animal_product_overconfidence
+      - missing_facts_hidden

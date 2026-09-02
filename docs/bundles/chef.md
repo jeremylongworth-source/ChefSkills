@@ -14,6 +14,9 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - `culinary-reasoning`: mechanism-based diagnosis and intervention.
 - `ingredient-knowledge`: ingredient roles and properties.
 - `cooking-techniques`: technique selection and process control.
+- `sauce-work`: sauce construction, finishing, scaling, and recovery.
+- `baking-structure`: baked-good structure, crumb, rise, set, and texture recovery.
+- `protein-cookery`: doneness, carryover, texture, moisture, and safety-aware protein handling.
 - `ingredient-substitution`: substitutions and adaptations.
 - `recipe-development`: recipe design and iteration.
 - `recipe-scaling`: scaling and batch workflow.
@@ -40,6 +43,7 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Fewer unsafe or overconfident food-safety answers.
 - Better troubleshooting through mechanism, intervention, side effect, and verification.
 - Better recipe scaling through workflow and vessel reasoning, not linear multiplication alone.
+- Better specialist coverage for sauces, baking structure, and protein cookery without loading the full culinary library.
 
 ## Acceptance Criteria
 
@@ -47,3 +51,4 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Foundation scenarios route to the expected skills.
 - Safety scenarios activate `food-safety`.
 - Troubleshooting outputs identify current state, target state, cause, intervention, side effects, and verification cues.
+- Specialist scenarios activate the relevant specialist skill while staying inside the routing ceiling.

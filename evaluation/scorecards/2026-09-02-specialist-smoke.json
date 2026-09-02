@@ -1,0 +1,115 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-specialist-smoke",
+  "report": "evaluation/reports/2026-09-02-specialist-smoke.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "specialist-05c-smoke",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.875,
+    "chefskills_average": 4.875,
+    "delta": 1.0
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-013-split-pan-sauce",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills identifies broken butter-emulsion mechanics, stages water-phase recovery, and uses gloss, spoon coating, and no oil pooling as stop cues."
+    },
+    {
+      "fixture_id": "EVAL-014-dense-banana-bread",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills separates moisture, pan load, leavening, gluten development, and bake-through before recommending measured next-batch changes."
+    },
+    {
+      "fixture_id": "EVAL-015-dry-chicken-breast",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 4.0,
+      "chefskills_average": 4.875,
+      "delta": 0.875,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 5
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills keeps poultry safety gated, separates thermometer-verified endpoint from quality, and avoids color or juice-only safety tests."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

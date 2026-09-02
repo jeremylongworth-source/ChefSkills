@@ -314,3 +314,69 @@ examples:
       type: rework
       action: sequence oven use, resting, holding, and reheating around safety constraints
     verification_cue: hot foods reach safe service state without impossible oven overlaps
+
+  - id: split-pan-sauce
+    surface:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      visual: greasy with butterfat pooling
+      texture: broken after butter was whisked in
+    target_state:
+      texture: glossy stable pan sauce
+    likely_mechanism: butter emulsion failure from excess heat, fat load, or low water phase
+    intervention:
+      type: emulsify
+      action: lower heat, add liquid in drops, whisk to rebuild the water phase, and finish fat gradually
+    verification_cue: sauce coats a spoon, looks glossy, and has no free oil at the edge
+
+  - id: dense-banana-bread
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      texture: dense and gummy center
+      visual: compact crumb
+    target_state:
+      texture: tender quick bread with set center and open crumb
+    likely_mechanism: excess moisture, underbaking, weak leavening, pan load, or overmixing
+    intervention:
+      type: rework
+      action: adjust banana or liquid load, verify leavening, mix less, manage pan fill, and bake to center-set cues
+    verification_cue: center springs back, tester has moist crumbs rather than wet batter, and cooled crumb is not gummy
+
+  - id: dry-chicken-breast
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      food: chicken breast
+      texture: dry and fibrous
+      safety_need: safe doneness required
+    target_state:
+      texture: juicy cooked chicken with verified safe endpoint
+    safety_gate:
+      status: professional_review_required
+      reason: safe endpoint depends on current authoritative temperature guidance and thermometer verification
+    likely_mechanism: moisture loss from excess heat, uneven thickness, and carryover after lean protein denaturation
+    intervention:
+      type: adjust_heat
+      action: use thermometer-guided cooking, gentler heat, even thickness, resting, and sauce or slicing recovery
+    verification_cue: safe endpoint is verified by thermometer and texture stays juicy after rest

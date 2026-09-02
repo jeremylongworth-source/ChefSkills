@@ -27,6 +27,9 @@ routing_rules:
     troubleshooting: culinary-reasoning
     ingredient_function: ingredient-knowledge
     technique_selection: cooking-techniques
+    sauce_construction_or_recovery: sauce-work
+    baked_structure_or_texture: baking-structure
+    protein_doneness_or_texture: protein-cookery
     substitution_or_diet_adaptation: ingredient-substitution
     portion_or_batch_change: recipe-scaling
     safety_or_preservation: food-safety
@@ -49,6 +52,12 @@ routing_rules:
       - timing, holding, or production workflow changes
     add_culinary_reasoning_when:
       - diagnosis, tradeoff, failure analysis, or mechanism explanation is needed
+    add_sauce_work_when:
+      - sauce emulsion, reduction, thickening, finishing, scaling, holding, or recovery drives the answer
+    add_baking_structure_when:
+      - crumb, rise, set, hydration, gluten, leavening, binder, pan, or bake-through behavior drives the answer
+    add_protein_cookery_when:
+      - meat, poultry, seafood, egg, or plant-protein texture, doneness, carryover, searing, braising, resting, or moisture control drives the answer
 
   precedence:
     named_dish_or_cuisine:

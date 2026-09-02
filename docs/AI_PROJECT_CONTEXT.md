@@ -34,4 +34,6 @@ The `CHEFSKILLS-05B Foundation Improvements` milestone tightens state-recovery e
 
 The `CHEFSKILLS-05C Readiness` artifact summarizes scorecard trends across 3 reports and 9 fixtures. The decision is ready for limited specialist expansion with medium confidence, starting with sauce work, baking structure, and protein cookery.
 
-The next major artifact should begin `CHEFSKILLS-05C Specialist Expansion` with a small set of specialist skills, each backed by routing cases, fixtures, and scorecards.
+The `CHEFSKILLS-05C Specialist Expansion` milestone now begins that limited expansion with `sauce-work`, `baking-structure`, and `protein-cookery`, each backed by routing scenarios, state examples, fixtures, and a specialist smoke scorecard.
+
+The next major artifact should extend 05C only after the first specialist smoke coverage remains stable. Candidate follow-ons are fermentation, pastry, equipment, service timing, costing, or cuisine-specific reasoning.

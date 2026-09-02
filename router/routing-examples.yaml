@@ -29,3 +29,31 @@ examples:
       - chef-core
       - recipe-development
       - recipe-scaling
+
+  split_pan_sauce:
+    prompt: My pan sauce turned greasy after I whisked in butter. Can I fix it?
+    task_type: FIX
+    route:
+      - chef-core
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+
+  dense_banana_bread:
+    prompt: My banana bread is dense and gummy in the middle. What should I change next batch?
+    task_type: FIX
+    route:
+      - chef-core
+      - baking-structure
+      - culinary-reasoning
+      - ingredient-knowledge
+
+  dry_chicken_breast:
+    prompt: My chicken breasts are dry, but I need to know they are safely cooked.
+    task_type: FIX
+    route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety

@@ -39,3 +39,10 @@ suites:
       - EVAL-004-buttermilk-substitution
       - EVAL-005-sauce-for-forty
       - EVAL-010-gluten-free-cake-adaptation
+
+  - id: specialist-05c-smoke
+    description: First specialist expansion fixtures for sauce work, baking structure, and protein cookery.
+    fixtures:
+      - EVAL-013-split-pan-sauce
+      - EVAL-014-dense-banana-bread
+      - EVAL-015-dry-chicken-breast

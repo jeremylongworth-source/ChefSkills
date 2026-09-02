@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 60
+minimum_cases: 63
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -108,6 +108,16 @@ cases:
       - culinary-reasoning
       - cooking-techniques
       - food-safety
+  - id: dry-chicken-breast
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My chicken breasts are dry, but I also need to know they are safely cooked. How should I adjust?"
+    route:
+      - chef-core
+      - protein-cookery
+      - culinary-reasoning
+      - cooking-techniques
+      - food-safety
   - id: gummy-rice
     task_type: FIX
     safety_relevant: false
@@ -132,6 +142,15 @@ cases:
       - chef-core
       - culinary-reasoning
       - cooking-techniques
+  - id: split-pan-sauce
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My pan sauce looked glossy, then turned greasy after I whisked in butter. Can I fix it?"
+    route:
+      - chef-core
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
   - id: bread-dough-not-rising
     task_type: FIX
     safety_relevant: false
@@ -141,6 +160,15 @@ cases:
       - culinary-reasoning
       - ingredient-knowledge
       - cooking-techniques
+  - id: dense-banana-bread
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My banana bread is dense and gummy in the middle. What should I change next batch?"
+    route:
+      - chef-core
+      - baking-structure
+      - culinary-reasoning
+      - ingredient-knowledge
   - id: burnt-garlic-sauce
     task_type: FIX
     safety_relevant: false

@@ -22,6 +22,12 @@ Ordinary requests should use one primary skill and up to three supporting skills
 
 The hard ceiling is five skills. When a request needs more than five skills, write a staged brief first and handle it as an extended culinary project.
 
+## Specialist Skills
+
+`CHEFSKILLS-05C` adds specialist routes for sauce work, baking structure, and protein cookery. Use them when those domains drive the answer, then add only the supporting foundation skills that materially change the response.
+
+`protein-cookery` should be paired with `food-safety` when raw animal products, safe doneness, holding, reheating, storage uncertainty, or vulnerable diners are involved.
+
 ## Task Classes
 
 - `MAKE`: create a dish, recipe, prep plan, menu, or workflow.

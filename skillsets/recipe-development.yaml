@@ -7,6 +7,9 @@ skills:
   - cooking-techniques
   - ingredient-substitution
   - recipe-development
+  - sauce-work
+  - baking-structure
+  - protein-cookery
   - recipe-scaling
   - food-safety
 agents_file: agents/AGENTS.chef.md
