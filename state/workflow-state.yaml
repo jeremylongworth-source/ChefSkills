@@ -1,0 +1,38 @@
+workflow_state:
+  stage:
+    current: unknown
+    previous: []
+    next: []
+    blocked_by: []
+
+  timeline:
+    start_time: null
+    elapsed_time: null
+    time_until_service: null
+    active_time_remaining: null
+    passive_time_remaining: null
+
+  dependencies:
+    ingredients_ready: []
+    equipment_ready: []
+    transformations_pending: []
+    safety_steps_pending: []
+
+  holding:
+    needed: false
+    method: null
+    duration: null
+    quality_risks: []
+    safety_risks: []
+
+  service:
+    yield: null
+    diners: null
+    service_style: null
+    plating_or_transport: null
+
+  cleanup_or_storage:
+    leftovers_expected: false
+    cooling_needed: false
+    storage_needed: false
+    reheating_needed: false

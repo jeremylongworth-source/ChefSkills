@@ -1,0 +1,152 @@
+version: 0.1
+
+required_state_files:
+  - culinary-state.yaml
+  - ingredient-state.yaml
+  - dish-state.yaml
+  - transformation-state.yaml
+  - equipment-state.yaml
+  - workflow-state.yaml
+  - observation-state.yaml
+  - recovery-state.yaml
+  - safety-state.yaml
+  - state-examples.yaml
+
+required_top_level_sections:
+  culinary_state:
+    - goal
+    - context
+    - current_state
+    - target_state
+    - gap_analysis
+    - intervention_plan
+    - safety_gate
+    - verification
+  ingredient_state:
+    - identity
+    - culinary_role
+    - preparation_state
+    - physical_state
+    - storage_state
+    - constraints
+  dish_state:
+    - identity
+    - target_profile
+    - observed_profile
+    - quality_dimensions
+    - defects
+    - service_state
+  transformation_state:
+    - transformation
+    - inputs
+    - drivers
+    - observed_cues
+    - failure_modes
+    - verification
+  equipment_state:
+    - equipment
+    - capacity
+    - heat_behavior
+    - constraints
+    - workflow_implications
+  workflow_state:
+    - stage
+    - timeline
+    - dependencies
+    - holding
+    - service
+    - cleanup_or_storage
+  observation_state:
+    - sensory
+    - measured
+    - confidence
+    - missing_observations
+  recovery_state:
+    - problem
+    - mechanisms
+    - interventions
+    - side_effects
+    - verification
+    - irreversible_conditions
+  safety_state:
+    - status
+    - hazards
+    - missing_facts
+    - required_actions
+    - review_level
+
+controlled_vocabularies:
+  task_context:
+    - recipe_creation
+    - troubleshooting
+    - substitution
+    - scaling
+    - planning
+    - preservation
+    - safety_review
+    - learning
+  workflow_stage:
+    - shopping
+    - prep
+    - active_cooking
+    - holding
+    - service
+    - cooling
+    - storage
+    - reheating
+    - recovery
+    - discard
+  safety_status:
+    - not_evaluated
+    - safe
+    - time_limited
+    - uncertain
+    - unsafe
+    - discard
+    - professional_review_required
+  confidence:
+    - high
+    - medium
+    - low
+  transformation_type:
+    - browning
+    - gelatinization
+    - denaturation
+    - emulsification
+    - reduction
+    - hydration
+    - fermentation
+    - leavening
+    - crystallization
+    - evaporation
+    - tenderization
+    - extraction
+  intervention_type:
+    - reduce
+    - dilute
+    - thicken
+    - emulsify
+    - season
+    - acidify
+    - sweeten
+    - add_fat
+    - adjust_heat
+    - extend_time
+    - rest
+    - strain
+    - chill
+    - rework
+    - discard
+
+example_requirements:
+  minimum_examples: 12
+  required_surfaces:
+    - ingredient_state
+    - dish_state
+    - transformation_state
+    - equipment_state
+    - workflow_state
+    - observation_state
+    - recovery_state
+    - safety_state
+  safety_relevant_examples_must_include_safety_gate: true

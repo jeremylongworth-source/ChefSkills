@@ -1,0 +1,31 @@
+equipment_state:
+  equipment:
+    name: null
+    type: null
+    condition: unknown
+    available: true
+
+  capacity:
+    volume: null
+    surface_area: null
+    batch_limit: null
+    fits_target_yield: unknown
+
+  heat_behavior:
+    heat_source: null
+    heat_distribution: unknown
+    responsiveness: unknown
+    evaporation_rate: unknown
+    browning_capacity: unknown
+
+  constraints:
+    missing_equipment: []
+    substitutions: []
+    safety_limitations: []
+    cleaning_or_cross_contamination: []
+
+  workflow_implications:
+    batching_required: false
+    timing_changes: []
+    quality_risks: []
+    safety_risks: []

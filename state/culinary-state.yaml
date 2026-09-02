@@ -1,8 +1,17 @@
 culinary_state:
   goal:
     dish: null
+    task_context: null
     service_context: null
+    target_yield: null
     diner_constraints: []
+
+  context:
+    available_ingredients: []
+    available_equipment: []
+    time_constraints: []
+    skill_level: unknown
+    assumptions: []
 
   current_state:
     ingredients: []
@@ -12,20 +21,30 @@ culinary_state:
     safety_status: unknown
 
   target_state:
+    dish_profile: null
     texture: []
     flavor: []
     doneness: []
     appearance: []
     service: []
 
-  reasoning:
+  gap_analysis:
+    state_gap: []
     likely_mechanisms: []
-    candidate_interventions: []
-    side_effects: []
-    verification_cues: []
+    confidence: unknown
+    missing_observations: []
 
-  decision:
-    recommended_action: null
+  intervention_plan:
+    candidate_interventions: []
+    recommended_sequence: []
+    side_effects: []
+
+  safety_gate:
     safety_gate: not_evaluated
-    assumptions: []
+    hazards: []
+    required_actions: []
+
+  verification:
+    verification_cues: []
+    stop_conditions: []
     open_questions: []

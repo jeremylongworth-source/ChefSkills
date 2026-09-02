@@ -2,6 +2,8 @@
 
 ChefSkills treats cooking as movement from observed state to target state.
 
+`CHEFSKILLS-03` expands the model into a validated state layer. See `state/README.md`, `state/state-schema.yaml`, and `state/state-examples.yaml`.
+
 ## State Categories
 
 - Ingredient state: raw, trimmed, cut, soaked, salted, marinated, cooked, cooled, stored.
@@ -21,5 +23,6 @@ ChefSkills treats cooking as movement from observed state to target state.
 5. Choose the lowest-risk intervention.
 6. Predict side effects.
 7. Give verification cues.
+8. Apply the safety gate before final advice.
 
 This pattern matters most for troubleshooting and adaptation.

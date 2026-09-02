@@ -1,6 +1,7 @@
 transformation_state:
   transformation:
     type: null
+    target: null
     examples:
       - browning
       - gelatinization
@@ -9,12 +10,22 @@ transformation_state:
       - reduction
       - hydration
       - fermentation
+      - leavening
+      - evaporation
+      - tenderization
 
   inputs:
     ingredients: []
     equipment: []
+
+  drivers:
     heat_level: null
     time: null
+    moisture: null
+    acidity: null
+    salt: null
+    agitation: null
+    surface_area: null
 
   observed_cues:
     visual: []
@@ -28,6 +39,7 @@ transformation_state:
     symptoms: []
     recovery_options: []
     irreversible_conditions: []
+    safety_escalation: []
 
   verification:
     target_cues: []

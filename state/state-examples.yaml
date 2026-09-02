@@ -1,0 +1,236 @@
+examples_version: 0.1
+examples:
+  - id: broken-mayonnaise
+    surface:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      visual: oily and separated
+      texture: loose
+    target_state:
+      texture: stable emulsion
+    likely_mechanism: emulsion failure
+    intervention:
+      type: emulsify
+      action: restart emulsion into a fresh water-phase base
+    verification_cue: glossy, thick, stable sauce with no free oil
+
+  - id: thin-gravy
+    surface:
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      texture: too thin
+      visual: runs off spoon
+    target_state:
+      texture: lightly coats spoon
+    likely_mechanism: insufficient reduction or starch gelatinization
+    intervention:
+      type: thicken
+      action: reduce or add a cooked starch slurry in stages
+    verification_cue: nappes the back of a spoon
+
+  - id: oversalted-soup
+    surface:
+      - dish_state
+      - ingredient_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      taste: too salty
+    target_state:
+      flavor: balanced salt concentration
+    likely_mechanism: seasoning concentration too high
+    intervention:
+      type: dilute
+      action: add unsalted liquid or bulk ingredients in stages
+    verification_cue: salt perception drops without flattening flavor
+
+  - id: chicken-counter-overnight
+    surface:
+      - ingredient_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: storage
+    current_observation:
+      food: cooked chicken
+      time: overnight at room temperature
+    target_state:
+      safety: safe to eat
+    safety_gate:
+      status: discard
+      reason: time and temperature abuse cannot be fixed by reheating
+    intervention:
+      type: discard
+      action: do not eat
+    verification_cue: not applicable; safety decision overrides recovery
+
+  - id: sauce-for-forty
+    surface:
+      - dish_state
+      - equipment_state
+      - workflow_state
+      - recovery_state
+    safety_relevant: false
+    task_context: scaling
+    workflow_stage: planning
+    current_observation:
+      yield: 4 portions
+    target_state:
+      yield: 40 portions
+    likely_mechanism: volume and surface area change reduction behavior
+    intervention:
+      type: rework
+      action: scale ingredients, batch reduction, and season gradually
+    verification_cue: sauce reaches target consistency and seasoning after batching
+
+  - id: gluten-free-cake
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: substitution
+    workflow_stage: planning
+    current_observation:
+      constraint: no wheat flour
+    target_state:
+      texture: tender cake with stable crumb
+    likely_mechanism: gluten structure and hydration change
+    intervention:
+      type: rework
+      action: choose flour blend, binder, and hydration adjustment
+    verification_cue: batter viscosity and baked crumb are stable
+
+  - id: low-sodium-soup
+    surface:
+      - ingredient_state
+      - dish_state
+      - safety_state
+    safety_relevant: true
+    task_context: substitution
+    workflow_stage: planning
+    current_observation:
+      constraint: lower sodium needed
+    target_state:
+      flavor: balanced with less salt
+    safety_gate:
+      status: professional_review_required
+      reason: medical diet constraints may require clinician guidance
+    intervention:
+      type: season
+      action: use acid, herbs, aromatics, and umami while labeling assumptions
+    verification_cue: flavor remains balanced without relying on high sodium
+
+  - id: large-pot-stock-cooling
+    surface:
+      - equipment_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: cooling
+    current_observation:
+      food: large pot of chicken stock
+      state: hot
+    target_state:
+      safety: cooled and stored safely
+    safety_gate:
+      status: time_limited
+      reason: large volumes cool slowly and need active cooling
+    intervention:
+      type: chill
+      action: divide into shallow containers or use an ice bath before refrigeration
+    verification_cue: stock reaches safe chilled storage state promptly
+
+  - id: gummy-rice
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      texture: gummy and clumped
+    target_state:
+      texture: distinct grains
+    likely_mechanism: excess surface starch or too much water/agitation
+    intervention:
+      type: rework
+      action: spread, steam off moisture, or repurpose if texture cannot recover
+    verification_cue: grains separate more easily or dish is redirected
+
+  - id: searing-vs-braising
+    surface:
+      - transformation_state
+      - equipment_state
+      - observation_state
+    safety_relevant: false
+    task_context: learning
+    workflow_stage: planning
+    current_observation:
+      question: which meat cooking method fits the result
+    target_state:
+      decision: choose technique based on cut and desired texture
+    likely_mechanism: dry heat browning versus moist heat tenderization
+    intervention:
+      type: adjust_heat
+      action: select sear, roast, simmer, or braise by cut and target texture
+    verification_cue: selected method matches browning, moisture, and tenderness goal
+
+  - id: no-oven-lasagna
+    surface:
+      - equipment_state
+      - workflow_state
+      - dish_state
+    safety_relevant: false
+    task_context: substitution
+    workflow_stage: planning
+    current_observation:
+      missing_equipment: oven
+    target_state:
+      dish: lasagna-style result without baking
+    likely_mechanism: equipment changes heat direction and browning
+    intervention:
+      type: rework
+      action: use stovetop assembly, covered heating, and optional broiler substitute if available
+    verification_cue: pasta is tender, filling hot, sauce absorbed, and top finish adjusted
+
+  - id: garlic-oil-storage
+    surface:
+      - ingredient_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: storage
+    current_observation:
+      food: fresh garlic in oil
+      storage: room temperature
+    target_state:
+      safety: safe infused oil storage
+    safety_gate:
+      status: unsafe
+      reason: low-oxygen oil storage with fresh garlic is safety-critical
+    intervention:
+      type: discard
+      action: do not store fresh garlic in oil at room temperature
+    verification_cue: safe storage method replaces counter storage

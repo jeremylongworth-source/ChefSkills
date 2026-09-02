@@ -61,6 +61,7 @@ python .\scripts\validate-skill-files.py
 python .\scripts\validate-skillsets.py
 python .\scripts\validate-scenarios.py
 python .\scripts\validate-router.py
+python .\scripts\validate-state.py
 ```
 
 Or run all current checks:
@@ -73,7 +74,7 @@ Or run all current checks:
 
 1. `CHEFSKILLS-01`: Foundation skills, skillsets, docs, and scenario checks.
 2. `CHEFSKILLS-02`: Culinary router specification with task classes, routing ceilings, ambiguity handling, confidence, and a broad routing catalog.
-3. `CHEFSKILLS-03`: Culinary state model for ingredients, transformations, workflow, and observed vs. target states.
+3. `CHEFSKILLS-03`: Culinary state model for ingredients, dish state, transformations, workflow, observed cues, recovery actions, and safety status.
 4. `CHEFSKILLS-04`: Evaluation engine for reasoning, troubleshooting, substitutions, scaling, and safety gates.
 5. `CHEFSKILLS-05`: Specialist expansion into sauces, proteins, baking, pastry, fermentation, cuisines, equipment, service, and costing.
 

@@ -1,0 +1,35 @@
+recovery_state:
+  problem:
+    observed_symptoms: []
+    target_state: []
+    severity: unknown
+    reversible: unknown
+
+  mechanisms:
+    likely_causes: []
+    ruled_out_causes: []
+    confidence: unknown
+
+  interventions:
+    recommended:
+      type: null
+      action: null
+      sequence: []
+    alternatives: []
+    avoid: []
+
+  side_effects:
+    expected: []
+    risks: []
+    mitigation: []
+
+  verification:
+    cues: []
+    measurements: []
+    taste_or_texture_checks: []
+    stop_conditions: []
+
+  irreversible_conditions:
+    discard_or_restart_when: []
+    quality_loss_to_accept: []
+    safety_override: []

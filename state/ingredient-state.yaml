@@ -3,6 +3,8 @@ ingredient_state:
     name: null
     form: null
     amount: null
+    source_or_brand: null
+    age_or_freshness: unknown
 
   culinary_role:
     flavor: []
@@ -15,6 +17,7 @@ ingredient_state:
     sweetness: []
     salt: []
     aroma: []
+    color: []
 
   preparation_state:
     raw: false
@@ -26,7 +29,23 @@ ingredient_state:
     cooled: null
     stored: null
 
+  physical_state:
+    temperature: unknown
+    moisture: unknown
+    texture: unknown
+    particle_size: unknown
+    concentration: unknown
+    emulsion: not_applicable
+
+  storage_state:
+    location: unknown
+    time: unknown
+    temperature_control: unknown
+    packaging: unknown
+    cross_contamination_risk: unknown
+
   constraints:
     allergen: null
     dietary: []
     safety_notes: []
+    substitutions: []

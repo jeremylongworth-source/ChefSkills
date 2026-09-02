@@ -1,0 +1,52 @@
+dish_state:
+  identity:
+    name: null
+    cuisine_or_style: null
+    course: null
+    yield: null
+
+  target_profile:
+    texture: []
+    flavor_balance:
+      salt: target
+      acid: target
+      sweetness: target
+      bitterness: target
+      umami: target
+      fat: target
+    appearance: []
+    aroma: []
+    temperature: null
+
+  observed_profile:
+    texture: []
+    flavor_balance:
+      salt: unknown
+      acid: unknown
+      sweetness: unknown
+      bitterness: unknown
+      umami: unknown
+      fat: unknown
+    appearance: []
+    aroma: []
+    temperature: unknown
+
+  quality_dimensions:
+    doneness: unknown
+    moisture: unknown
+    concentration: unknown
+    browning: unknown
+    structure: unknown
+    seasoning: unknown
+
+  defects:
+    symptoms: []
+    likely_causes: []
+    severity: unknown
+    reversible: unknown
+
+  service_state:
+    workflow_stage: unknown
+    holding_method: null
+    time_until_service: null
+    storage_or_reheating_needed: false

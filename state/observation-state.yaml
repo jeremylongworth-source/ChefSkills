@@ -1,0 +1,25 @@
+observation_state:
+  sensory:
+    visual: []
+    aroma: []
+    texture: []
+    sound: []
+    taste: []
+
+  measured:
+    temperature: null
+    weight: null
+    volume: null
+    time: null
+    pH: null
+    salinity: null
+
+  confidence:
+    level: unknown
+    reasons: []
+    conflicting_cues: []
+
+  missing_observations:
+    safety_critical: []
+    quality_critical: []
+    optional: []

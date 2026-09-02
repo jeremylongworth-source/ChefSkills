@@ -1,0 +1,32 @@
+safety_state:
+  status:
+    value: not_evaluated
+    confidence: unknown
+    decision: null
+
+  hazards:
+    pathogen_growth: []
+    toxin_risk: []
+    allergen: []
+    cross_contamination: []
+    undercooking: []
+    unsafe_preservation: []
+    spoilage: []
+
+  missing_facts:
+    time: []
+    temperature: []
+    food_identity: []
+    process: []
+    diner_risk: []
+
+  required_actions:
+    immediate: []
+    before_serving: []
+    storage: []
+    discard: []
+
+  review_level:
+    household_guidance: true
+    professional_or_regulatory_review_required: false
+    medical_or_dietitian_review_required: false
