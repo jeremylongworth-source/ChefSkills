@@ -1,4 +1,4 @@
 interface:
   display_name: "Ingredient Knowledge"
-  short_description: "Reason about ingredient roles, behavior, storage, and function."
-  default_prompt: "Use this skill when ingredient properties, freshness, function, flavor role, or cooking behavior materially affect the answer."
+  short_description: "Reason about ingredient roles, behavior, storage, function, and state effects."
+  default_prompt: "Use this skill when ingredient properties, freshness, function, flavor role, state effect, or cooking behavior materially affect the answer."

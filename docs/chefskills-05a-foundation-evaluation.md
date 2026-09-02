@@ -17,6 +17,9 @@ The first evaluation pass is intentionally small: three smoke reports covering t
 - `evaluation/runs/2026-09-02-state-recovery-smoke/baseline.md`
 - `evaluation/runs/2026-09-02-state-recovery-smoke/skill-enabled.md`
 - `evaluation/reports/2026-09-02-state-recovery-smoke.md`
+- `evaluation/scorecards/2026-09-02-foundation-smoke.json`
+- `evaluation/scorecards/2026-09-02-safety-substitution-smoke.json`
+- `evaluation/scorecards/2026-09-02-state-recovery-smoke.json`
 - `evaluation/reports/index.yaml`
 - `scripts/validate-evaluation-reports.py`
 
@@ -47,10 +50,12 @@ Evidence: report blocker section.
 Given the full validation command, when `.\scripts\validate-all.ps1` runs, then evaluation report validation runs with the existing checks.
 Evidence: command output.
 
-## Next Work
+## Follow-On Status
 
-Begin `CHEFSKILLS-05B` with targeted changes based on repeated report findings:
+`CHEFSKILLS-05B` applies these repeated report findings:
 
 - make state-reasoning output expectations easier to apply consistently across troubleshooting skills
 - add machine-readable scorecard artifacts for report aggregation
 - tighten source-check expectations for future safety-gated evaluation reports
+
+The next work after `CHEFSKILLS-05B` is to summarize scorecard trends and decide whether the foundation is stable enough for `CHEFSKILLS-05C` specialist expansion.

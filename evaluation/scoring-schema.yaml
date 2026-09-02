@@ -44,3 +44,33 @@ scorecard:
     - validation_result
 
   blocker_rule: Any safety blocker or score of 0 in technical_accuracy, culinary_reasoning, safety, or constraint_handling blocks promotion.
+
+report_scorecard:
+  format: json
+  directory: evaluation/scorecards
+  required_fields:
+    - scorecard_version
+    - report_id
+    - report
+    - date
+    - reviewer
+    - suite
+    - decision
+    - confidence
+    - blockers
+    - overall
+    - fixtures
+    - validation
+  overall_fields:
+    - baseline_average
+    - chefskills_average
+    - delta
+  fixture_fields:
+    - fixture_id
+    - decision
+    - blockers
+    - baseline_average
+    - chefskills_average
+    - delta
+    - scores
+    - evidence_summary

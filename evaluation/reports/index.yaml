@@ -3,6 +3,7 @@ minimum_reports: 3
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-foundation-smoke.json
     run_dir: evaluation/runs/2026-09-02-foundation-smoke
     baseline_output: evaluation/runs/2026-09-02-foundation-smoke/baseline.md
     skill_enabled_output: evaluation/runs/2026-09-02-foundation-smoke/skill-enabled.md
@@ -17,6 +18,7 @@ reports:
 
   - id: 2026-09-02-safety-substitution-smoke
     report: evaluation/reports/2026-09-02-safety-substitution-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-safety-substitution-smoke.json
     run_dir: evaluation/runs/2026-09-02-safety-substitution-smoke
     baseline_output: evaluation/runs/2026-09-02-safety-substitution-smoke/baseline.md
     skill_enabled_output: evaluation/runs/2026-09-02-safety-substitution-smoke/skill-enabled.md
@@ -31,6 +33,7 @@ reports:
 
   - id: 2026-09-02-state-recovery-smoke
     report: evaluation/reports/2026-09-02-state-recovery-smoke.md
+    scorecard: evaluation/scorecards/2026-09-02-state-recovery-smoke.json
     run_dir: evaluation/runs/2026-09-02-state-recovery-smoke
     baseline_output: evaluation/runs/2026-09-02-state-recovery-smoke/baseline.md
     skill_enabled_output: evaluation/runs/2026-09-02-state-recovery-smoke/skill-enabled.md

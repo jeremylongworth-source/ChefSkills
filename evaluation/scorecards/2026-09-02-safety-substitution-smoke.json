@@ -1,0 +1,115 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-safety-substitution-smoke",
+  "report": "evaluation/reports/2026-09-02-safety-substitution-smoke.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "safety-substitution-smoke",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 4.0417,
+    "chefskills_average": 4.75,
+    "delta": 0.7083
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-008-evaluate-ai-sushi-recipe",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 2,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills treats raw fish safety as central, distinguishes quality cues from hazards, and names sourcing, freezing limits, alternatives, and vulnerable diners."
+    },
+    {
+      "fixture_id": "EVAL-010-gluten-free-cake-adaptation",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 4.0,
+      "chefskills_average": 4.625,
+      "delta": 0.625,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 4,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 5
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 4,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills adds function-level structure, hydration, binder, celiac cross-contact, and crumbly-versus-gummy adjustment reasoning."
+    },
+    {
+      "fixture_id": "EVAL-011-garlic-oil-storage",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 4.5,
+      "chefskills_average": 4.875,
+      "delta": 0.375,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 4,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 5
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "Both reject counter storage; ChefSkills adds low-acid, moisture, low-oxygen, sensory-test limits, CDC timing, and shelf-stable boundaries."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

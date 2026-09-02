@@ -8,7 +8,7 @@ ChefSkills is a vertical specialist framework modeled on AgentSkills, but focuse
 2. Skillsets group skills for common work modes.
 3. Router rules classify requests and select the minimum useful skills.
 4. State models describe ingredients, transformations, workflow, and observable cues.
-5. Scenarios validate routing and behavior.
+5. Evaluation reports and scorecards validate routing and behavior.
 
 ## Design Principles
 
@@ -28,3 +28,7 @@ ChefSkills is a vertical specialist framework modeled on AgentSkills, but focuse
 `CHEFSKILLS-03` expands the state model so agents can reason from current state to target state.
 
 `CHEFSKILLS-04` adds stronger evaluation around routing, reasoning, and safety.
+
+`CHEFSKILLS-05A` records before/after evidence for the foundation.
+
+`CHEFSKILLS-05B` applies targeted foundation improvements and adds scorecards for aggregate evaluation.

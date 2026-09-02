@@ -17,6 +17,7 @@ Confidence: medium
 
 - Baseline output: `evaluation/runs/2026-09-02-foundation-smoke/baseline.md`
 - Skill-enabled output: `evaluation/runs/2026-09-02-foundation-smoke/skill-enabled.md`
+- Scorecard: `evaluation/scorecards/2026-09-02-foundation-smoke.json`
 - Fixtures: `evaluation/fixtures.yaml`
 - Rubric: `evaluation/rubric.yaml`
 - Validation: `.\scripts\validate-all.ps1`

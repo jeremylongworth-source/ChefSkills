@@ -13,7 +13,8 @@ license: MIT
 3. Separate safety requirements from quality preferences.
 4. Give conservative guidance when facts are missing or safety is uncertain.
 5. Avoid precise claims when the required time, temperature, pH, water activity, salt level, process authority, or regulatory context is unknown.
-6. Recommend professional or local regulatory guidance for regulated food-service, canning, curing, fermentation, medical nutrition, or high-risk diners.
+6. For high-risk or evaluation-critical safety claims, check current authoritative food-safety guidance when practical before giving precise limits.
+7. Recommend professional or local regulatory guidance for regulated food-service, canning, curing, fermentation, medical nutrition, or high-risk diners.
 
 ## Hard Gate
 
@@ -26,6 +27,7 @@ Do not optimize for saving food when the safe answer is to discard it. Reheating
 - Missing facts if uncertainty matters
 - Safe handling or discard instruction
 - Distinction between safety and quality
+- Source-check note when precise high-risk guidance depends on current rules
 - Professional review note when appropriate
 
 ## References

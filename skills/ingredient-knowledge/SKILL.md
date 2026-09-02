@@ -18,6 +18,8 @@ license: MIT
 
 Ingredient categories are not automatically interchangeable. Evaluate function before recommending use, omission, or substitution.
 
+When an ingredient affects troubleshooting or recovery, connect its function to the state gap. For example, explain whether the ingredient changes salt concentration, acidity, moisture, fat, starch, protein, aroma, structure, or perceived balance before recommending an adjustment.
+
 ## Output Contract
 
 - Ingredient role
@@ -25,6 +27,7 @@ Ingredient categories are not automatically interchangeable. Evaluate function b
 - Cooking or storage behavior
 - Fit for the user's dish or goal
 - Risks, tradeoffs, or constraints
+- State effect and verification cue when used in troubleshooting
 - Related substitution or technique implications
 
 ## References

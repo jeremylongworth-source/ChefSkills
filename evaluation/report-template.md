@@ -6,6 +6,7 @@ Fixture:
 Scenario:
 Skill route:
 Output source:
+Scorecard:
 
 ## Decision
 

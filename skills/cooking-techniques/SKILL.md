@@ -18,6 +18,8 @@ license: MIT
 
 Prefer cues such as color, aroma, bubbling, texture, resistance, internal temperature where appropriate, and sauce behavior. Do not make time the only doneness indicator.
 
+For technique troubleshooting, tie the method to the state gap. Name what the technique changes, such as heat transfer, moisture loss, browning, starch gelatinization, protein setting, emulsion stability, or texture, then give a stop condition.
+
 ## Output Contract
 
 - Recommended technique
@@ -26,6 +28,7 @@ Prefer cues such as color, aroma, bubbling, texture, resistance, internal temper
 - Step sequence
 - Heat, timing, and cues
 - Failure points and corrections
+- Recovery cue and stop condition when the dish is already drifting or failed
 
 ## References
 

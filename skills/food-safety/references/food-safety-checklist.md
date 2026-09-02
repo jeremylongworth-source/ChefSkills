@@ -5,4 +5,5 @@
 - Vulnerable diners are considered.
 - Preservation methods are treated conservatively.
 - Safety and quality are separated.
+- Current authoritative guidance is checked before precise high-risk limits when practical.
 - Unsafe or uncertain food is not rescued for convenience.

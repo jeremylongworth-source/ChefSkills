@@ -1,0 +1,115 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-foundation-smoke",
+  "report": "evaluation/reports/2026-09-02-foundation-smoke.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "chefskills-04-smoke",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.5833,
+    "chefskills_average": 4.7083,
+    "delta": 1.125
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-002-thin-gravy",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.25,
+      "chefskills_average": 4.5,
+      "delta": 1.25,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 2,
+          "workflow_quality": 3,
+          "sensory_reasoning": 2,
+          "safety": 5,
+          "constraint_handling": 3,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills distinguishes reduction from starch thickening, adds staged slurry workflow, side effects, and spoon-coating cues."
+    },
+    {
+      "fixture_id": "EVAL-006-chicken-counter-overnight",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 4.0,
+      "chefskills_average": 4.75,
+      "delta": 0.75,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 4,
+          "ingredient_understanding": 3,
+          "workflow_quality": 3,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 5
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 5
+        }
+      },
+      "evidence_summary": "Both pass the discard hard gate; ChefSkills adds explicit sensory-test rejection, cleanup, and future safe-storage workflow."
+    },
+    {
+      "fixture_id": "EVAL-005-sauce-for-forty",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.5,
+      "chefskills_average": 4.875,
+      "delta": 1.375,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 3,
+          "sensory_reasoning": 2,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 4,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 5
+        }
+      },
+      "evidence_summary": "ChefSkills adds scale factor, vessel geometry, batching, nonlinear seasoning, holding, and service-state cues."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

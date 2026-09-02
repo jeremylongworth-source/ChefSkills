@@ -17,6 +17,7 @@ Confidence: medium
 
 - Baseline output: `evaluation/runs/2026-09-02-state-recovery-smoke/baseline.md`
 - ChefSkills-enabled output: `evaluation/runs/2026-09-02-state-recovery-smoke/skill-enabled.md`
+- Scorecard: `evaluation/scorecards/2026-09-02-state-recovery-smoke.json`
 - Fixtures: `evaluation/fixtures.yaml`
 - State examples: `state/state-examples.yaml`
 - Rubric: `evaluation/rubric.yaml`

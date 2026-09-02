@@ -64,6 +64,7 @@ python .\scripts\validate-router.py
 python .\scripts\validate-state.py
 python .\scripts\validate-evaluation.py
 python .\scripts\validate-evaluation-reports.py
+python .\scripts\validate-scorecards.py
 ```
 
 Or run all current checks:

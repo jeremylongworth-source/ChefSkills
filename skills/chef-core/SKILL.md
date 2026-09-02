@@ -22,6 +22,16 @@ Reason about food as a system involving ingredients, heat, time, moisture, fat, 
 
 Do not treat a recipe as static text when the user's problem depends on observed state. For troubleshooting, move from observation to mechanism to intervention.
 
+## State Recovery Pattern
+
+For troubleshooting, failed dishes, drifting texture, or flavor recovery, make the state transition visible:
+
+```text
+current observable state -> target state -> likely mechanism -> staged intervention -> side effects -> verification cue
+```
+
+Keep the user-facing answer compact, but do not omit side effects or a cue for when to stop. If food safety overrides recovery, state the safety decision before giving any culinary fix.
+
 ## Safety Gate
 
 Food safety takes priority over culinary preference, waste reduction, convenience, or flavor. If safety is uncertain, say what information is missing and choose the conservative path.
@@ -31,6 +41,7 @@ Food safety takes priority over culinary preference, waste reduction, convenienc
 - Goal and assumptions
 - Safety notes or safety gate result
 - Ingredients, equipment, or state context when relevant
+- Current state, target state, and state gap for troubleshooting or recovery
 - Recommended action or plan
 - Critical cues and stop conditions
 - Risks, side effects, and recovery options when relevant

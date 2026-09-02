@@ -30,4 +30,6 @@ The `CHEFSKILLS-04 Evaluation Engine` now turns routing and state-model expectat
 
 The `CHEFSKILLS-05A Foundation Evaluation` now has three smoke before/after reports comparing baseline and ChefSkills-enabled outputs for troubleshooting, safety, scaling, raw-fish review, structural substitution, preservation storage, and state-reasoned failure recovery fixtures.
 
-The next major artifact should be `CHEFSKILLS-05B Foundation Improvements`. The repeated concrete gap is consistent state framing across troubleshooting outputs, with secondary needs for machine-readable scorecards and source-checked safety evaluation.
+The `CHEFSKILLS-05B Foundation Improvements` milestone tightens state-recovery expectations in the foundation skills, adds source-check expectations for precise high-risk safety guidance, and introduces validated JSON scorecards for report aggregation.
+
+The next major artifact should summarize scorecard trends, then proceed toward `CHEFSKILLS-05C Specialist Expansion` only after the foundation behavior is stable enough to support specialized culinary domains.

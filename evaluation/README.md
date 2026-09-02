@@ -14,6 +14,7 @@ It evaluates outputs against realistic culinary fixtures rather than checking pr
 - `report-template.md`: before/after report format for human review.
 - `runs/`: raw baseline and skill-enabled outputs.
 - `reports/`: scored before/after evaluation reports.
+- `scorecards/`: machine-readable JSON summaries of registered reports.
 
 ## Evaluation Flow
 
@@ -24,6 +25,7 @@ It evaluates outputs against realistic culinary fixtures rather than checking pr
 5. Apply `safety-gates.yaml` before averaging scores.
 6. Decide whether to keep, revise, split, merge, defer, or retire the skill behavior.
 7. Record the result using `report-template.md`.
+8. Add a JSON scorecard under `evaluation/scorecards/` and register it in `evaluation/reports/index.yaml`.
 
 ## Validation
 
@@ -32,6 +34,7 @@ Run:
 ```powershell
 python .\scripts\validate-evaluation.py
 python .\scripts\validate-evaluation-reports.py
+python .\scripts\validate-scorecards.py
 ```
 
-These checks confirm that evaluation fixtures reference known scenarios, routes, state examples, and regression suites, and that registered reports link to real fixture and output evidence.
+These checks confirm that evaluation fixtures reference known scenarios, routes, state examples, and regression suites, that registered reports link to real fixture and output evidence, and that scorecards match the report index and rubric criteria.

@@ -9,6 +9,7 @@ from pathlib import Path
 REQUIRED_REPORT_FIELDS = {
     "id",
     "report",
+    "scorecard",
     "run_dir",
     "baseline_output",
     "skill_enabled_output",
@@ -155,7 +156,7 @@ def validate(repo_root: Path) -> list[str]:
         if suite and suite not in known_suites:
             errors.append(f"{report_id}: unknown regression suite '{suite}'")
 
-        for key in ("report", "run_dir", "baseline_output", "skill_enabled_output"):
+        for key in ("report", "scorecard", "run_dir", "baseline_output", "skill_enabled_output"):
             value = str(report.get(key, ""))
             if value and not (repo_root / value).exists():
                 errors.append(f"{report_id}: missing {key} path '{value}'")

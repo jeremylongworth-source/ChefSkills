@@ -17,6 +17,7 @@ Confidence: medium
 
 - Baseline output: `evaluation/runs/2026-09-02-safety-substitution-smoke/baseline.md`
 - ChefSkills-enabled output: `evaluation/runs/2026-09-02-safety-substitution-smoke/skill-enabled.md`
+- Scorecard: `evaluation/scorecards/2026-09-02-safety-substitution-smoke.json`
 - Fixtures: `evaluation/fixtures.yaml`
 - Rubric: `evaluation/rubric.yaml`
 - Safety gates: `evaluation/safety-gates.yaml`
