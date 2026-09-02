@@ -603,3 +603,131 @@ examples:
       type: rework
       action: use a tested recipe, keep peppers submerged, monitor time temperature aroma gas and mold, and refrigerate or process only by tested directions
     verification_cue: peppers stay submerged, ferment smells cleanly sour, no spoilage appears, and storage does not imply untested shelf stability
+
+  - id: kimchi-too-salty
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      food: kimchi
+      pH: 4.4 after two days
+      taste: much too salty
+    target_state:
+      flavor: usable kimchi without weakening preservation assumptions
+    safety_gate:
+      status: time_limited
+      reason: acidification helps safety but does not make the batch shelf stable or justify untested dilution and warm holding
+    likely_mechanism: salt concentration remains in the vegetables and brine; extra fermentation time increases sourness rather than removing salt
+    intervention:
+      type: rebalance
+      action: refrigerate, serve with unsalted foods, repurpose in cooked dishes, or rinse small portions at service while correcting salting and rinsing in the next tested batch
+    verification_cue: kimchi remains refrigerated, smells cleanly sour, shows no mold, and tastes balanced in the final use
+
+  - id: cloudy-carrot-brine
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: safety_review
+    workflow_stage: active_fermentation
+    current_observation:
+      food: carrot sticks
+      brine: cloudy and bubbling
+      aroma: cleanly sour
+      submersion: under brine
+    target_state:
+      decision: distinguish normal active fermentation from spoilage
+    safety_gate:
+      status: time_limited
+      reason: cloudy bubbling can be normal, but pH, submersion, temperature, and spoilage cues still determine whether to continue or discard
+    likely_mechanism: lactic acid bacteria create acid, bubbles, and turbidity while the brine acidifies
+    intervention:
+      type: monitor
+      action: keep carrots submerged, check pH and temperature, refrigerate when ready, and discard if mold, slime, off odors, or failed acidification appear
+    verification_cue: brine smells cleanly sour, produce remains submerged, pH reaches the target range for the tested recipe, and no spoilage signs appear
+
+  - id: sluggish-sourdough-starter
+    surface:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      culture: sourdough starter
+      activity: bubbles but barely doubles after feeding
+      aroma: tangy and not moldy
+    target_state:
+      fermentation: active starter strong enough to leaven bread
+    safety_gate:
+      status: time_limited
+      reason: weak activity is not the same as contamination, but mold, unusual discoloration, or other contamination signs require discard
+    likely_mechanism: yeast and bacteria are present but feeding ratio, flour strength, temperature, hydration, or timing may not support enough gas production and gluten lift
+    intervention:
+      type: feed
+      action: feed consistently, keep warm enough for activity, mark rise level, use suitable flour, wait for doubling and collapse cues, and bake only when the starter is predictably active
+    verification_cue: starter doubles predictably after feeding, smells cleanly tangy, shows no contamination, and leavens a test dough reliably
+
+  - id: cold-sauerkraut-stall
+    surface:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: active_fermentation
+    current_observation:
+      food: sauerkraut
+      temperature: 58 F basement
+      activity: barely bubbling after one week
+      submersion: under brine
+    target_state:
+      fermentation: safely acidified sauerkraut with clean flavor and texture
+    safety_gate:
+      status: time_limited
+      reason: cool fermentation may be slow, so readiness should depend on tested-recipe timing, pH, brine coverage, and spoilage checks rather than one-week elapsed time
+    likely_mechanism: low temperature slows lactic acid bacterial activity and carbon dioxide production
+    intervention:
+      type: adjust_temperature
+      action: move to a warmer controlled fermentation range if no spoilage signs appear, keep submerged, monitor pH and aroma, and refrigerate or process only after tested readiness criteria are met
+    verification_cue: bubbling or acidity resumes, pH reaches the tested recipe target, cabbage stays submerged, and no mold, slime, or off odor develops
+
+  - id: fermented-hot-sauce-storage
+    surface:
+      - ingredient_state
+      - transformation_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: preservation
+    workflow_stage: storage
+    current_observation:
+      food: blended lacto-fermented pepper mash
+      flavor: tastes good
+      proposed_change: add vinegar and store in pantry
+    target_state:
+      safety: stored hot sauce with verified refrigeration or shelf-stable process
+    safety_gate:
+      status: professional_review_required
+      reason: taste and casual vinegar addition do not prove shelf stability; pantry storage needs tested proportions, verified acidity, and tested processing directions
+    likely_mechanism: blending, added ingredients, oxygen exposure, salt, acidity, and heat processing change fermentation and storage risk
+    intervention:
+      type: store
+      action: refrigerate the sauce unless using a tested hot-sauce canning recipe or source-checked shelf-stable process with verified pH and processing controls
+    verification_cue: storage method is refrigerated or follows a tested shelf-stable process, and the decision is not based on taste alone

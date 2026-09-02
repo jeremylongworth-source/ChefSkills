@@ -76,3 +76,31 @@ examples:
       - fermentation
       - food-safety
       - culinary-reasoning
+
+  cloudy_carrot_brine:
+    prompt: My fermented carrot brine is cloudy and bubbling but smells cleanly sour.
+    task_type: JUDGE
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+
+  sluggish_sourdough_starter:
+    prompt: My sourdough starter bubbles but barely doubles after feeding.
+    task_type: FIX
+    route:
+      - chef-core
+      - fermentation
+      - baking-structure
+      - culinary-reasoning
+      - food-safety
+
+  fermented_hot_sauce_storage:
+    prompt: Can I bottle my fermented pepper mash and keep it in the pantry if I add vinegar?
+    task_type: PRESERVE
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge

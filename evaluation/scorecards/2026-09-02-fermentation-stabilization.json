@@ -1,0 +1,177 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-02-fermentation-stabilization",
+  "report": "evaluation/reports/2026-09-02-fermentation-stabilization.md",
+  "date": "2026-09-02",
+  "reviewer": "Codex",
+  "suite": "fermentation-05c-stabilization",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.8,
+    "chefskills_average": 4.875,
+    "delta": 1.075
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-026-kimchi-too-salty",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 3
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills keeps salty kimchi refrigerated, rejects warm holding or dilution as safety-neutral fixes, and separates current-batch use from next-batch controls."
+    },
+    {
+      "fixture_id": "EVAL-027-cloudy-carrot-brine",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 5.0,
+      "delta": 1.25,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 4,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 5
+        }
+      },
+      "evidence_summary": "ChefSkills distinguishes normal cloudy active fermentation from spoilage, then gates the decision on submersion, pH, temperature, aroma, slime, and mold."
+    },
+    {
+      "fixture_id": "EVAL-028-sluggish-sourdough-starter",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 5
+        }
+      },
+      "evidence_summary": "ChefSkills separates weak starter activity from contamination and links feeding, temperature, flour, hydration, rise tracking, and bread leavening reliability."
+    },
+    {
+      "fixture_id": "EVAL-029-cold-sauerkraut-stall",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 5
+        }
+      },
+      "evidence_summary": "ChefSkills treats the cold sauerkraut as a slow ferment, keeps brine and pH monitoring active, and avoids time-only readiness claims."
+    },
+    {
+      "fixture_id": "EVAL-030-fermented-hot-sauce-storage",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills separates refrigerated fermented sauce from shelf-stable bottling and requires tested processing or verified acidity for pantry storage."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}

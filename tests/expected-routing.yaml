@@ -126,3 +126,30 @@ hot-sauce-fermentation-plan:
   - fermentation
   - food-safety
   - ingredient-knowledge
+kimchi-too-salty:
+  - chef-core
+  - fermentation
+  - food-safety
+  - ingredient-knowledge
+  - culinary-reasoning
+cloudy-carrot-brine:
+  - chef-core
+  - fermentation
+  - food-safety
+  - culinary-reasoning
+sluggish-sourdough-starter:
+  - chef-core
+  - fermentation
+  - baking-structure
+  - culinary-reasoning
+  - food-safety
+cold-sauerkraut-stall:
+  - chef-core
+  - fermentation
+  - food-safety
+  - culinary-reasoning
+fermented-hot-sauce-storage:
+  - chef-core
+  - fermentation
+  - food-safety
+  - ingredient-knowledge

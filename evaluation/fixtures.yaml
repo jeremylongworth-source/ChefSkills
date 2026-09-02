@@ -1,5 +1,5 @@
 fixtures_version: 0.1
-minimum_fixtures: 25
+minimum_fixtures: 30
 fixtures:
   - id: EVAL-001-broken-mayonnaise
     scenario: broken-mayonnaise
@@ -566,6 +566,129 @@ fixtures:
       - identify salt brine coverage container temperature time and storage controls
       - require tested proportions or source check
       - distinguish active fermentation from shelf stable bottling
+    blockers:
+      - preservation_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-026-kimchi-too-salty
+    scenario: kimchi-too-salty
+    task_type: FIX
+    state_example: kimchi-too-salty
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge
+      - culinary-reasoning
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    required_behavior:
+      - treat pH as safety evidence not shelf stability
+      - reject warm holding or dilution as salt fixes without safety boundaries
+      - offer refrigerated serving repurposing or next batch controls
+    blockers:
+      - preservation_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-027-cloudy-carrot-brine
+    scenario: cloudy-carrot-brine
+    task_type: JUDGE
+    state_example: cloudy-carrot-brine
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - distinguish normal cloudy bubbling brine from spoilage cues
+      - check submersion pH temperature time and aroma
+      - recommend monitor refrigerate or discard based on observed state
+    blockers:
+      - preservation_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-028-sluggish-sourdough-starter
+    scenario: sluggish-sourdough-starter
+    task_type: FIX
+    state_example: sluggish-sourdough-starter
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - fermentation
+      - baking-structure
+      - culinary-reasoning
+      - food-safety
+    expected_state_surfaces:
+      - ingredient_state
+      - dish_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+      - safety_state
+    required_behavior:
+      - separate weak starter activity from contamination
+      - identify discard criteria for mold discoloration or contamination
+      - connect feeding temperature flour timing and rise cues to bread leavening
+    blockers:
+      - preservation_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-029-cold-sauerkraut-stall
+    scenario: cold-sauerkraut-stall
+    task_type: FIX
+    state_example: cold-sauerkraut-stall
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - observation_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - identify low temperature as a likely slow fermentation cause
+      - keep brine pH temperature and spoilage monitoring active
+      - avoid declaring readiness by elapsed time alone
+    blockers:
+      - preservation_overconfidence
+      - missing_facts_hidden
+
+  - id: EVAL-030-fermented-hot-sauce-storage
+    scenario: fermented-hot-sauce-storage
+    task_type: PRESERVE
+    state_example: fermented-hot-sauce-storage
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge
+    expected_state_surfaces:
+      - ingredient_state
+      - transformation_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - distinguish refrigerated fermented sauce from shelf stable bottling
+      - reject taste or casual vinegar addition as pantry safety proof
+      - require tested process verified acidity or source checked canning directions
     blockers:
       - preservation_overconfidence
       - missing_facts_hidden

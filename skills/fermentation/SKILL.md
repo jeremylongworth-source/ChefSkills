@@ -13,6 +13,7 @@ license: MIT
 3. Separate active fermentation from shelf-stable preservation. Do not imply room-temperature storage or canning is safe without a tested process.
 4. Identify the state gap: brine coverage, salt concentration, acidification, gas pressure, mold or scum, texture, aroma, pH, or time-temperature history.
 5. Recommend conservative controls, monitoring, and discard decisions when safety facts are missing or spoilage signs appear.
+6. Lead with the decision or next action, then give only the mechanism details that change that decision.
 
 ## Fermentation Guidance
 
@@ -20,7 +21,11 @@ Use current authoritative preservation guidance for exact salt, acidity, pH, tem
 
 For vegetable ferments, treat salt and brine as safety and texture controls, not only seasoning. Do not recommend reducing required salt in sauerkraut or fermented-pickle recipes unless a tested recipe specifically allows it.
 
+For active ferments with normal cues, do not collapse every cloudy, bubbling, or sour-smelling batch into a discard decision. First separate expected lactic fermentation signs from mold, slime, unpleasant odors, failed acidification, poor submersion, excessive heat, or unknown process history.
+
 For kombucha and other gas-producing ferments, include container pressure and refrigeration controls. Sealed bottles can become a physical hazard when carbonation is not monitored.
+
+For sourdough starters, separate culture strength from contamination. Weak rise, slow bubbling, or hooch usually call for feeding, temperature, timing, hydration, or flour adjustments; mold, unusual discoloration, or clear contamination calls for discard.
 
 Route to `food-safety` for all home fermentation, canning, shelf-stable storage, reduced-salt adaptations, visible mold, soft or slimy texture, off odors, swollen lids, gas pressure, vulnerable diners, raw animal products, or uncertain time-temperature history.
 

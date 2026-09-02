@@ -64,3 +64,12 @@ suites:
       - EVAL-023-soft-fermented-pickles
       - EVAL-024-kombucha-bottle-pressure
       - EVAL-025-hot-sauce-fermentation-plan
+
+  - id: fermentation-05c-stabilization
+    description: Fermentation depth fixtures for quality recovery, normal activity triage, starter strength, cold stalls, and storage boundaries.
+    fixtures:
+      - EVAL-026-kimchi-too-salty
+      - EVAL-027-cloudy-carrot-brine
+      - EVAL-028-sluggish-sourdough-starter
+      - EVAL-029-cold-sauerkraut-stall
+      - EVAL-030-fermented-hot-sauce-storage

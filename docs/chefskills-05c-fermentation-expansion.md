@@ -61,6 +61,6 @@ Evidence: command output.
 
 ## Follow-On Status
 
-The next milestone should either stabilize `fermentation` with lower-risk flavor/process fixtures or add one more specialist with a similarly small smoke suite.
+Followed by `docs/chefskills-05c-fermentation-stabilization.md`, which adds lower-risk flavor, process, starter, temperature, and storage-boundary fixtures.
 
-Recommended next candidates: pastry or equipment. Fermentation already expanded the safety-heavy side of 05C, so the next domain should test precision and workflow without adding as much preservation risk.
+Recommended next candidate after fermentation stabilization: equipment. Fermentation already expanded the safety-heavy side of 05C, so the next domain should test heat-transfer and workflow breadth without adding as much preservation risk.

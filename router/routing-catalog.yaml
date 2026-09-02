@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 73
+minimum_cases: 78
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -199,6 +199,16 @@ cases:
       - culinary-reasoning
       - ingredient-knowledge
       - cooking-techniques
+  - id: sluggish-sourdough-starter
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My sourdough starter has bubbles but barely doubles after feeding. It smells tangy, not moldy. Is it unsafe, and how do I get it strong enough for bread?"
+    route:
+      - chef-core
+      - fermentation
+      - baking-structure
+      - culinary-reasoning
+      - food-safety
   - id: dense-banana-bread
     task_type: FIX
     safety_relevant: false
@@ -238,6 +248,25 @@ cases:
     task_type: FIX
     safety_relevant: true
     prompt: "My fermented cucumber pickles are soft, slippery, and smell unpleasant. Can I rinse them and keep fermenting?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+  - id: kimchi-too-salty
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My kimchi reached pH 4.4 after two days, but it tastes much too salty. Can I dilute it or leave it out longer to fix the salt?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge
+      - culinary-reasoning
+  - id: cold-sauerkraut-stall
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My sauerkraut has been in a 58 F basement for a week and has barely bubbled, but it smells cabbagey and is still under brine. Is it stalled?"
     route:
       - chef-core
       - fermentation
@@ -287,6 +316,15 @@ cases:
     task_type: JUDGE
     safety_relevant: true
     prompt: "Assess my plan for fermenting hot sauce in a jar on the counter."
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - culinary-reasoning
+  - id: cloudy-carrot-brine
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "My fermented carrot-stick brine is cloudy and bubbling after four days, smells cleanly sour, and everything is still under brine. Is that normal or should I throw it out?"
     route:
       - chef-core
       - fermentation
@@ -596,6 +634,15 @@ cases:
       - fermentation
       - food-safety
       - culinary-reasoning
+  - id: fermented-hot-sauce-storage
+    task_type: PRESERVE
+    safety_relevant: true
+    prompt: "My lacto-fermented pepper mash tastes good after blending. If I add vinegar, can I bottle it and keep it in the pantry?"
+    route:
+      - chef-core
+      - fermentation
+      - food-safety
+      - ingredient-knowledge
   - id: can-tomato-sauce
     task_type: PRESERVE
     safety_relevant: true

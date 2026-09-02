@@ -57,6 +57,6 @@ Evidence: command output.
 
 The first 05C specialist wave has enough fixture coverage to support one additional specialist domain.
 
-Followed by `docs/chefskills-05c-fermentation-expansion.md`, which adds `fermentation` with source-checked preservation controls and four smoke fixtures.
+Followed by `docs/chefskills-05c-fermentation-expansion.md` and `docs/chefskills-05c-fermentation-stabilization.md`, which add and stabilize `fermentation` with source-checked preservation controls.
 
-Recommended next candidates after fermentation: pastry or equipment, because they test precision and workflow without adding as much preservation risk.
+Recommended next candidate after fermentation: equipment, because it tests heat-transfer and workflow breadth without adding as much preservation risk.

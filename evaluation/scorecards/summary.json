@@ -2,19 +2,19 @@
   "summary_version": "0.1",
   "date": "2026-09-02",
   "source": "evaluation/reports/index.yaml",
-  "report_count": 6,
-  "fixture_count": 22,
+  "report_count": 7,
+  "fixture_count": 27,
   "blocker_count": 0,
   "decision_counts": {
-    "keep": 6
+    "keep": 7
   },
   "confidence_counts": {
-    "medium": 6
+    "medium": 7
   },
   "overall": {
-    "baseline_average": 3.7727,
-    "chefskills_average": 4.8011,
-    "delta": 1.0284
+    "baseline_average": 3.7778,
+    "chefskills_average": 4.8148,
+    "delta": 1.037
   },
   "by_report": [
     {
@@ -82,88 +82,99 @@
       "chefskills_average": 4.7813,
       "delta": 1.0625,
       "blockers": []
+    },
+    {
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "suite": "fermentation-05c-stabilization",
+      "decision": "keep",
+      "confidence": "medium",
+      "fixture_count": 5,
+      "baseline_average": 3.8,
+      "chefskills_average": 4.875,
+      "delta": 1.075,
+      "blockers": []
     }
   ],
   "by_criterion": {
     "technical_accuracy": {
-      "baseline_average": 4.0909,
+      "baseline_average": 4.0741,
       "chefskills_average": 5.0,
-      "delta": 0.9091
+      "delta": 0.9259
     },
     "culinary_reasoning": {
-      "baseline_average": 3.1364,
+      "baseline_average": 3.1111,
       "chefskills_average": 5.0,
-      "delta": 1.8636
+      "delta": 1.8889
     },
     "ingredient_understanding": {
-      "baseline_average": 3.4545,
-      "chefskills_average": 4.8182,
-      "delta": 1.3636
+      "baseline_average": 3.5185,
+      "chefskills_average": 4.8519,
+      "delta": 1.3333
     },
     "workflow_quality": {
-      "baseline_average": 3.8636,
-      "chefskills_average": 4.9091,
-      "delta": 1.0455
+      "baseline_average": 3.8889,
+      "chefskills_average": 4.9259,
+      "delta": 1.037
     },
     "sensory_reasoning": {
-      "baseline_average": 2.8182,
-      "chefskills_average": 4.7273,
-      "delta": 1.9091
+      "baseline_average": 2.9259,
+      "chefskills_average": 4.6667,
+      "delta": 1.7407
     },
     "safety": {
-      "baseline_average": 4.8182,
-      "chefskills_average": 4.9545,
-      "delta": 0.1364
+      "baseline_average": 4.7407,
+      "chefskills_average": 4.963,
+      "delta": 0.2222
     },
     "constraint_handling": {
-      "baseline_average": 3.8182,
-      "chefskills_average": 4.9091,
-      "delta": 1.0909
+      "baseline_average": 3.8519,
+      "chefskills_average": 4.9259,
+      "delta": 1.0741
     },
     "communication": {
-      "baseline_average": 4.1818,
-      "chefskills_average": 4.0909,
-      "delta": -0.0909
+      "baseline_average": 4.1111,
+      "chefskills_average": 4.1852,
+      "delta": 0.0741
     }
   },
   "largest_criterion_gains": [
     {
-      "criterion": "sensory_reasoning",
-      "baseline_average": 2.8182,
-      "chefskills_average": 4.7273,
-      "delta": 1.9091
+      "criterion": "culinary_reasoning",
+      "baseline_average": 3.1111,
+      "chefskills_average": 5.0,
+      "delta": 1.8889
     },
     {
-      "criterion": "culinary_reasoning",
-      "baseline_average": 3.1364,
-      "chefskills_average": 5.0,
-      "delta": 1.8636
+      "criterion": "sensory_reasoning",
+      "baseline_average": 2.9259,
+      "chefskills_average": 4.6667,
+      "delta": 1.7407
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.4545,
-      "chefskills_average": 4.8182,
-      "delta": 1.3636
+      "baseline_average": 3.5185,
+      "chefskills_average": 4.8519,
+      "delta": 1.3333
     }
   ],
   "weakest_chefskills_criteria": [
     {
       "criterion": "communication",
-      "baseline_average": 4.1818,
-      "chefskills_average": 4.0909,
-      "delta": -0.0909
+      "baseline_average": 4.1111,
+      "chefskills_average": 4.1852,
+      "delta": 0.0741
     },
     {
       "criterion": "sensory_reasoning",
-      "baseline_average": 2.8182,
-      "chefskills_average": 4.7273,
-      "delta": 1.9091
+      "baseline_average": 2.9259,
+      "chefskills_average": 4.6667,
+      "delta": 1.7407
     },
     {
       "criterion": "ingredient_understanding",
-      "baseline_average": 3.4545,
-      "chefskills_average": 4.8182,
-      "delta": 1.3636
+      "baseline_average": 3.5185,
+      "chefskills_average": 4.8519,
+      "delta": 1.3333
     }
   ],
   "by_fixture": [
@@ -364,6 +375,51 @@
       "chefskills_average": 4.75,
       "delta": 1.0,
       "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-026-kimchi-too-salty",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-027-cloudy-carrot-brine",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 5.0,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-028-sluggish-sourdough-starter",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.875,
+      "delta": 1.125,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-029-cold-sauerkraut-stall",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "blockers": []
+    },
+    {
+      "fixture_id": "EVAL-030-fermented-hot-sauce-storage",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "blockers": []
     }
   ],
   "largest_fixture_gains": [
@@ -377,20 +433,20 @@
       "blockers": []
     },
     {
+      "fixture_id": "EVAL-027-cloudy-carrot-brine",
+      "report_id": "2026-09-02-fermentation-stabilization",
+      "decision": "keep",
+      "baseline_average": 3.75,
+      "chefskills_average": 5.0,
+      "delta": 1.25,
+      "blockers": []
+    },
+    {
       "fixture_id": "EVAL-016-curdled-cream-pan-sauce",
       "report_id": "2026-09-02-specialist-stabilization",
       "decision": "keep",
       "baseline_average": 3.625,
       "chefskills_average": 4.875,
-      "delta": 1.25,
-      "blockers": []
-    },
-    {
-      "fixture_id": "EVAL-002-thin-gravy",
-      "report_id": "2026-09-02-foundation-smoke",
-      "decision": "keep",
-      "baseline_average": 3.25,
-      "chefskills_average": 4.5,
       "delta": 1.25,
       "blockers": []
     }
@@ -425,12 +481,12 @@
     }
   ],
   "readiness": {
-    "status": "ready_for_fermentation_stabilization",
-    "rationale": "ChefSkills cleared the fermentation smoke pass with no blockers and a skill-enabled average above the release threshold. Expansion should still be limited because all report confidence values are medium and fermentation has only one smoke report.",
-    "next_milestone": "CHEFSKILLS-05C Fermentation Stabilization",
+    "status": "ready_for_next_05c_specialist",
+    "rationale": "ChefSkills cleared the fermentation stabilization pass with no blockers and a skill-enabled average above the release threshold. Expansion should still stay narrow because all report confidence values are medium and the next specialist needs its own smoke evidence.",
+    "next_milestone": "CHEFSKILLS-05C Equipment Specialist Expansion",
     "constraints": [
-      "Add lower-risk fermentation flavor and troubleshooting fixtures before broadening preservation claims.",
-      "Every new or stabilized specialist skill needs fixtures, routing cases, and scorecard coverage.",
+      "Add only one specialist domain before the next stabilization pass.",
+      "Every new specialist skill needs fixtures, routing cases, and scorecard coverage.",
       "Safety-critical specialist domains still require current authoritative source checks.",
       "Do not treat current medium-confidence reports as release-grade proof."
     ],
