@@ -2,6 +2,8 @@
 
 ChefSkills is a specialist skill framework for AI agents that need chef-like culinary reasoning.
 
+The project goal is to become a public open source repository when the framework is safe, reviewable, validated, and maintainable enough for outside users and contributors.
+
 The project should not start by collecting recipes. It should start by proving a reusable decision system:
 
 - classify culinary requests
@@ -45,3 +47,10 @@ The `CHEFSKILLS-05C Fermentation Stabilization` milestone adds lower-risk fermen
 The `CHEFSKILLS-05C Equipment Expansion` milestone adds `equipment-cookery` as the next specialist domain, with source-checked safety handling for slow cookers, microwaves, and pressure canning plus lower-risk coverage for sheet-pan browning and skillet substitution.
 
 The next major artifact should stabilize equipment with additional lower-risk fixtures before moving to pastry, cuisine, service, and costing work.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until equipment stabilization, evaluation credibility, CI/templates, public docs, publication audits, and `v0.1.0-alpha` release notes are complete.
+
+Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
+
+- Michelin / fine-dining intelligence: use public Michelin Guide concepts as one fine-dining analysis lens while avoiding star-prediction, certification, affiliation, or guarantee claims.
+- Canadian commercial food safety: support Canada-specific commercial safe-food-handling reasoning while preserving federal, provincial, territorial, regional, and municipal boundaries and refusing compliance certification.

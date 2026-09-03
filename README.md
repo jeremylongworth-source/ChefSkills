@@ -14,6 +14,8 @@ Most recipe assistants can produce plausible instructions. ChefSkills is intende
 
 The project starts small on purpose. The first milestone is a testable operating framework, not a large recipe database.
 
+The intended release path is private development first, then public open source once the validation, safety, documentation, and contribution workflow are ready.
+
 ## Core Idea
 
 ChefSkills separates culinary expertise into four layers:
@@ -88,6 +90,10 @@ Or run all current checks:
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
 7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, and fermentation, then added equipment cookery before the next pastry, cuisine, service, and costing work.
+8. Open source readiness: complete equipment stabilization, improve evaluation credibility, add CI and contributor templates, run publication audits, and prepare `v0.1.0-alpha`.
+9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
+
+See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.
 
 ## License
 
