@@ -1,0 +1,62 @@
+name: Food-safety concern
+description: Report unsafe, overconfident, stale, or missing food-safety guidance.
+title: "[Safety]: "
+labels: ["food-safety", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for non-sensitive food-safety concerns in ChefSkills content, routing, scenarios, fixtures, or evaluation reports. Do not include private personal or medical details.
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: What guidance is unsafe, incomplete, stale, or too confident?
+    validations:
+      required: true
+  - type: textarea
+    id: affected_area
+    attributes:
+      label: Affected file, skill, scenario, or output
+      placeholder: "skills/food-safety/SKILL.md, tests/scenarios/..., evaluation/reports/..."
+    validations:
+      required: true
+  - type: dropdown
+    id: risk_type
+    attributes:
+      label: Risk type
+      options:
+        - Raw or undercooked animal product
+        - Time-temperature abuse
+        - Canning, curing, fermentation, dehydration, sous vide, or vacuum storage
+        - Allergen or medically relevant diet
+        - Vulnerable diner
+        - Spoilage, mold, off odor, or uncertain storage
+        - Equipment or physical hazard
+        - Regulatory or commercial food-service boundary
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Current source evidence
+      description: Add official or authoritative links when available.
+    validations:
+      required: false
+  - type: textarea
+    id: safer_behavior
+    attributes:
+      label: Safer expected behavior
+      description: What should ChefSkills say, ask, refuse, or route differently?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This report does not include secrets, credentials, private data, or private medical details.
+          required: true
+        - label: I understand ChefSkills cannot certify legal, medical, regulatory, or commercial compliance.
+          required: true

@@ -1,0 +1,67 @@
+name: Routing bug
+description: Report a wrong, missing, or over-broad ChefSkills route.
+title: "[Routing]: "
+labels: ["routing", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a prompt loads the wrong culinary skills, misses a required skill, or exceeds the routing ceiling without a staged brief.
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Scenario prompt
+      description: Paste the user request or a minimal reproduction.
+      placeholder: "My chicken thighs keep charring on the grill before they are done near the bone..."
+    validations:
+      required: true
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: Task type
+      options:
+        - MAKE
+        - FIX
+        - JUDGE
+        - PLAN
+        - LEARN
+        - ADAPT
+        - PRESERVE
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: expected_route
+    attributes:
+      label: Expected route
+      description: List the primary skill and supporting skills you expected.
+      placeholder: "Primary: equipment-cookery. Supporting: chef-core, protein-cookery, food-safety, cooking-techniques."
+    validations:
+      required: true
+  - type: dropdown
+    id: safety
+    attributes:
+      label: Safety relevance
+      options:
+        - Food safety should be active
+        - Physical equipment safety should be active
+        - Safety is probably not relevant
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or affected files
+      description: Add links, source notes, or likely files such as tests/scenarios, router/routing-catalog.yaml, or tests/expected-routing.yaml.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked for an existing matching issue.
+          required: true
+        - label: I am not asking ChefSkills to certify legal, medical, regulatory, or commercial compliance.
+          required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security or sensitive-data concern
+    url: https://github.com/jeremylongworth-source/ChefSkills/security/policy
+    about: Use this for secrets, credentials, private data, or other sensitive reports.

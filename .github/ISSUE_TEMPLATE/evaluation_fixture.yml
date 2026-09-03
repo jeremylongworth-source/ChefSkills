@@ -1,0 +1,51 @@
+name: Evaluation fixture
+description: Suggest a realistic scenario for routing, state, or before/after evaluation.
+title: "[Fixture]: "
+labels: ["evaluation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good fixtures are realistic, narrow, and scoreable. Include the expected behavior and the failure modes that should block promotion.
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Scenario prompt
+      description: Write the request as a user would ask it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_route
+    attributes:
+      label: Expected route
+      description: List the task type, primary skill, supporting skills, and whether food-safety should be active.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What should a strong answer include?
+    validations:
+      required: true
+  - type: textarea
+    id: failure_modes
+    attributes:
+      label: Failure modes
+      description: What omissions or unsafe claims should fail the fixture?
+    validations:
+      required: true
+  - type: textarea
+    id: state
+    attributes:
+      label: Current and target state
+      description: Add current observations, target state, mechanism, intervention, and verification cues if known.
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source evidence
+      description: Add current official sources if the fixture involves safety, regulation, or manufacturer-dependent guidance.
+    validations:
+      required: false

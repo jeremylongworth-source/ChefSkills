@@ -2,6 +2,8 @@
 
 Reports document whether ChefSkills improves outputs on realistic culinary fixtures.
 
+Current reports use medium-confidence local reviewer simulations unless a report explicitly says otherwise. Treat them as structured review evidence, not live reproducibility proof.
+
 Each report should include:
 
 - decision

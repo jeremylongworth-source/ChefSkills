@@ -1,0 +1,62 @@
+name: Skill proposal
+description: Propose a new culinary skill or a substantial expansion to an existing skill.
+title: "[Skill]: "
+labels: ["skill-proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ChefSkills favors improving existing focused skills before adding broad new domains. Use this form to make the scope, boundaries, and validation path explicit.
+  - type: input
+    id: skill_name
+    attributes:
+      label: Proposed skill or expansion
+      placeholder: "fine-dining-evaluation"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem this should solve
+      description: Describe the culinary decisions this skill would improve.
+    validations:
+      required: true
+  - type: textarea
+    id: existing_gap
+    attributes:
+      label: Why existing skills are not enough
+      description: Name the current skills you considered and the specific gap that remains.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and non-goals
+      description: Include what the skill should refuse, defer, or route elsewhere.
+    validations:
+      required: true
+  - type: dropdown
+    id: safety
+    attributes:
+      label: Safety or compliance sensitivity
+      options:
+        - No clear safety or compliance risk
+        - Food-safety source checks are needed
+        - Legal, regulatory, commercial, or medical boundaries are likely
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation examples
+      description: Suggest scenarios, expected routes, fixtures, or failure modes.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source anchors
+      description: Add official or authoritative sources if the proposal depends on current rules, standards, or safety claims.
+    validations:
+      required: false

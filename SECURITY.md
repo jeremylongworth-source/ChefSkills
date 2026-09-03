@@ -17,3 +17,7 @@ Food-safety guidance should distinguish:
 - situations that need local regulatory or professional review
 
 Report security or safety concerns privately to the repository owner.
+
+Use a private report for secrets, credentials, private data, or sensitive security concerns.
+
+Use a public food-safety issue only when the report does not include private personal, medical, or sensitive data. ChefSkills cannot certify legal, medical, regulatory, commercial kitchen, allergen, or food-safety compliance.

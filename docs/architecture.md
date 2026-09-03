@@ -35,6 +35,6 @@ ChefSkills is a vertical specialist framework modeled on AgentSkills, but focuse
 
 `CHEFSKILLS-05C` begins and stabilizes limited specialist expansion with sauce work, baking structure, protein cookery, fermentation, and equipment cookery with routing, state, fixture, and scorecard coverage.
 
-`CHEFSKILLS-06` prepares the repository for public alpha with evaluation credibility work, CI, contributor templates, public documentation, publication audits, and release notes.
+`CHEFSKILLS-06` prepares the repository for public alpha with evaluation credibility labeling, CI, contributor templates, public documentation, publication audits, and release notes. The first pass adds GitHub Actions validation, issue forms, a pull request template, README updates, and draft alpha release notes.
 
 The public open source release path is tracked in `docs/open-source-roadmap.md`. Future expansion tracks after the current roadmap include Michelin / fine-dining intelligence and Canadian commercial food safety.

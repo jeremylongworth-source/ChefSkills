@@ -16,6 +16,14 @@ The project starts small on purpose. The first milestone is a testable operating
 
 The intended release path is private development first, then public open source once the validation, safety, documentation, and contribution workflow are ready.
 
+## Status
+
+ChefSkills is in public-alpha preparation. The current readiness state is `ready_for_public_alpha_readiness_work`.
+
+Current evidence: 9 reports, 38 evaluated fixtures, 0 blockers, a baseline average of 3.7599, a ChefSkills-enabled average of 4.8059, and a delta of 1.0461.
+
+Current caveat: before/after outputs are medium-confidence local reviewer simulations, not live captured model runs from a reproducible harness.
+
 ## Core Idea
 
 ChefSkills separates culinary expertise into four layers:
@@ -26,6 +34,8 @@ ChefSkills separates culinary expertise into four layers:
 - State model: structured cooking state and transformation concepts under `state/`
 
 Food safety is a hard gate. It is not averaged against good cooking advice.
+
+ChefSkills does not certify legal, medical, regulatory, commercial kitchen, allergen, or food-safety compliance. Safety-sensitive work should use current authoritative sources and conservative uncertainty wording.
 
 ## Current Skills
 
@@ -45,10 +55,42 @@ Food safety is a hard gate. It is not averaged against good cooking advice.
 | `recipe-scaling` | Scaling quantities, vessels, heat transfer, and workflow |
 | `food-safety` | Safety hazard recognition and conservative guidance |
 
+## Quick Start
+
+Requirements:
+
+- Python 3.10 or newer.
+- PowerShell for the wrapper script, or a shell that can run the individual Python validators.
+
+After cloning the repository, run:
+
+```powershell
+.\scripts\validate-all.ps1
+```
+
+If PowerShell is unavailable, run the individual Python commands listed in the validation section.
+
+## First Use
+
+Start with a skillset:
+
+- `skillsets/chef.yaml` for broad culinary reasoning.
+- `skillsets/recipe-development.yaml` for recipe design, adaptation, testing, and scaling.
+
+Then route a prompt through the smallest useful skill chain. Example:
+
+```text
+Prompt: My chicken thighs keep charring on the grill before they are cooked near the bone.
+Route: chef-core, equipment-cookery, protein-cookery, food-safety, cooking-techniques
+```
+
+That route keeps equipment behavior, protein doneness, and food safety active without loading unrelated specialist skills.
+
 ## Repository Structure
 
 ```text
 ChefSkills/
+|-- .github/
 |-- skills/
 |-- skillsets/
 |-- router/
@@ -94,6 +136,10 @@ Or run all current checks:
 9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
 
 See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.
+
+## Contributing
+
+Use the GitHub issue templates for routing bugs, skill proposals, food-safety concerns, and evaluation fixture ideas. Pull requests should run `.\scripts\validate-all.ps1` and update scorecards, docs, or release notes when reader expectations change.
 
 ## License
 

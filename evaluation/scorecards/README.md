@@ -2,6 +2,8 @@
 
 Scorecards are machine-readable JSON summaries of human-reviewed before/after reports.
 
+Current scorecards summarize medium-confidence local reviewer simulations unless a report explicitly says otherwise.
+
 Each registered report in `evaluation/reports/index.yaml` must point to one scorecard. The scorecard repeats the report decision, fixtures, blockers, per-criterion scores, fixture averages, overall averages, and validation result so trends can be aggregated without parsing Markdown tables.
 
 `summary.json` is the generated aggregate across registered scorecards. Regenerate it after changing report scorecards:

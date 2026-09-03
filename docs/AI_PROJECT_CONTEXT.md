@@ -50,7 +50,9 @@ The `CHEFSKILLS-05C Equipment Stabilization` milestone adds ovens, broilers, gri
 
 The next major artifact should start `CHEFSKILLS-06 Public Alpha Readiness Workflow` before moving to pastry, cuisine, service, costing, Michelin / fine-dining intelligence, or Canadian commercial food-safety work.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until evaluation credibility labeling, CI/templates, public docs, publication audits, and `v0.1.0-alpha` release notes are complete.
+The `CHEFSKILLS-06 Public Alpha Readiness` milestone has started with GitHub Actions validation, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, and draft `v0.1.0-alpha` release notes.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until remote CI confirmation, publication audits, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

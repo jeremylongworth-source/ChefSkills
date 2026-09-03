@@ -4,6 +4,12 @@ ChefSkills evaluation is a lightweight harness for deciding whether skills, rout
 
 It evaluates outputs against realistic culinary fixtures rather than checking prose style alone.
 
+## Current Evidence Confidence
+
+Current before/after outputs are medium-confidence local reviewer simulations. They are useful for regression tracking and roadmap decisions, but they are not live captured model outputs from a reproducible harness.
+
+Public-alpha documentation should keep this caveat visible until a live-output harness records route, prompt, model/context notes, output path, scorecard, reviewer decision, and rerun behavior.
+
 ## Files
 
 - `rubric.yaml`: scoring criteria, weights, thresholds, and hard gates.
