@@ -20,6 +20,8 @@ No publication blockers were found in tracked content or history.
 
 Public visibility should still wait for final repository settings review, branch or ruleset configuration, and a final release decision about whether `v0.1.0-alpha` can ship with medium-confidence simulated evaluation evidence.
 
+Update: the repository settings review is now recorded in `docs/audits/2026-09-03-repository-settings-review.md`, and the simulated-evidence release decision is now recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`.
+
 ## Evidence
 
 - `git status --short`: clean before audit changes.
@@ -103,6 +105,6 @@ External source material is linked as source evidence; no copied long-form third
 
 - Confirm GitHub branch protection or ruleset expectations.
 - Confirm the security-policy contact link behaves as expected after public visibility. The unauthenticated URL currently returns `404` while the repository is private.
-- Decide whether simulated evaluation evidence is acceptable for `v0.1.0-alpha`, or whether to build a live-output harness first.
+- Simulated evaluation evidence decision is recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`; live-output harness remains post-alpha work.
 - Run `.\scripts\validate-all.ps1` and confirm GitHub Actions before tagging.
 - Finalize release notes and tag `v0.1.0-alpha`.

@@ -19,6 +19,7 @@ This pass adds the first public-alpha workflow layer:
 - Remote GitHub Actions validation confirmed on `main`.
 - Publication audit for the current tracked tree and history.
 - Repository settings review with Dependabot alerts, automated security fixes, and GitHub Actions version updates enabled where available before public visibility.
+- Evidence-confidence decision approving simulated before/after evidence for `v0.1.0-alpha` with explicit public caveats.
 
 ## CI Assumptions
 
@@ -52,9 +53,12 @@ Evidence: `docs/audits/2026-09-03-publication-audit.md`.
 Given the repository settings are reviewed before public visibility, when GitHub plan and visibility constraints are checked, then maintainers should know which security and branch-policy settings are complete now and which settings must wait until the repository is public.
 Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
 
+Given the alpha evidence decision, when the release notes and public docs describe evaluation evidence, then they should state that current before/after outputs are medium-confidence local reviewer simulations and should not claim live benchmark, certification, or compliance proof.
+Evidence: `docs/releases/v0.1.0-alpha-evidence-decision.md`.
+
 ## Remaining Before Public Visibility
 
-- Decide whether `v0.1.0-alpha` can ship with simulated evaluation evidence or whether a live-output harness is required first.
+- Keep the simulated-evidence caveat visible in README, evaluation docs, and release notes.
 - Configure GitHub branch protection or ruleset settings after the repository is public; GitHub currently blocks these settings while the repository is private on the current plan.
 - Confirm the security-policy contact link behaves as expected after public visibility.
 - Finalize and tag `v0.1.0-alpha`.

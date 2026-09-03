@@ -24,3 +24,4 @@
 - Began `CHEFSKILLS-06` public-alpha readiness with GitHub Actions validation, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, and draft `v0.1.0-alpha` release notes.
 - Added a publication audit with no blockers found in tracked files or history and pinned GitHub Actions validation actions to exact release tags.
 - Added repository settings review evidence, enabled available Dependabot maintenance settings, and configured weekly GitHub Actions update checks.
+- Added the `v0.1.0-alpha` evidence-confidence decision, accepting simulated before/after evidence for public alpha with explicit caveats and a post-alpha live-output harness follow-up.

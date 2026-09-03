@@ -56,7 +56,9 @@ The publication audit in `docs/audits/2026-09-03-publication-audit.md` found no 
 
 The repository settings review in `docs/audits/2026-09-03-repository-settings-review.md` enabled available Dependabot maintenance settings and documented that branch protection or rulesets must wait until the repository is public or the GitHub plan changes.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until the simulated-evidence release decision, post-public branch/ruleset setup plan, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
+The `v0.1.0-alpha` evidence decision in `docs/releases/v0.1.0-alpha-evidence-decision.md` accepts medium-confidence simulated before/after evidence for public alpha while keeping live-output evaluation as post-alpha work.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until the post-public branch/ruleset setup plan, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

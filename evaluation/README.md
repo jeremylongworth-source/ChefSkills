@@ -10,6 +10,8 @@ Current before/after outputs are medium-confidence local reviewer simulations. T
 
 Public-alpha documentation should keep this caveat visible until a live-output harness records route, prompt, model/context notes, output path, scorecard, reviewer decision, and rerun behavior.
 
+The `v0.1.0-alpha` release decision accepts this evidence class for public alpha only. It should not be described as a live benchmark, external validation, certification, or guarantee of future model behavior.
+
 ## Files
 
 - `rubric.yaml`: scoring criteria, weights, thresholds, and hard gates.

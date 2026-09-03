@@ -22,7 +22,7 @@ ChefSkills is in public-alpha preparation. The current readiness state is `ready
 
 Current evidence: 9 reports, 38 evaluated fixtures, 0 blockers, a baseline average of 3.7599, a ChefSkills-enabled average of 4.8059, and a delta of 1.0461.
 
-Current caveat: before/after outputs are medium-confidence local reviewer simulations, not live captured model runs from a reproducible harness.
+Current caveat: before/after outputs are medium-confidence local reviewer simulations, not live captured model runs from a reproducible harness. The `v0.1.0-alpha` evidence decision accepts this for public alpha only because the limitation is visible and the release is not framed as a benchmark or certification claim.
 
 ## Core Idea
 
@@ -132,7 +132,7 @@ Or run all current checks:
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
 7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, fermentation, and equipment cookery before the next pastry, cuisine, service, and costing work.
-8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, and prepare `v0.1.0-alpha`.
+8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, document the alpha evidence decision, and prepare `v0.1.0-alpha`.
 9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
 
 See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.

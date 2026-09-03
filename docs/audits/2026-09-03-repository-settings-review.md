@@ -82,7 +82,7 @@ The project currently has no package dependency manifest or lockfile, so depende
 
 ## Remaining Follow-Ups
 
-- Make the repository public only after the simulated-evidence release decision is explicit.
+- The simulated-evidence release decision is recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`.
 - After public visibility, configure branch protection or a repository ruleset for `main`.
 - After public visibility, confirm the public Security policy page resolves from GitHub's Security and quality tab.
 - After public visibility, confirm issue forms appear in the public UI.
