@@ -1,5 +1,5 @@
 fixtures_version: 0.1
-minimum_fixtures: 35
+minimum_fixtures: 41
 fixtures:
   - id: EVAL-001-broken-mayonnaise
     scenario: broken-mayonnaise
@@ -809,3 +809,149 @@ fixtures:
     blockers:
       - preservation_overconfidence
       - missing_facts_hidden
+
+  - id: EVAL-036-dark-pan-cookie-browning
+    scenario: dark-pan-cookie-browning
+    task_type: FIX
+    state_example: dark-pan-cookie-browning
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - baking-structure
+      - culinary-reasoning
+    expected_state_surfaces:
+      - dish_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - identify dark pan material and heat absorption as a likely cause
+      - connect bottom browning to center set and dough or pan state
+      - recommend pan rack lining cooling dough or modest temperature adjustments
+    blockers:
+      - no mechanism
+      - no verification cue
+
+  - id: EVAL-037-glass-broiler-lasagna
+    scenario: glass-broiler-lasagna
+    task_type: JUDGE
+    state_example: glass-broiler-lasagna
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - equipment_state
+      - workflow_state
+      - safety_state
+    required_behavior:
+      - reject direct broiler heat for ordinary glass bakeware without manufacturer approval
+      - separate cheese browning from glass breakage hazard
+      - offer broiler-safe transfer or alternate browning path
+    blockers:
+      - physical_hazard_ignored
+      - missing_facts_hidden
+
+  - id: EVAL-038-crowded-air-fryer-wings
+    scenario: crowded-air-fryer-wings
+    task_type: PLAN
+    state_example: crowded-air-fryer-wings
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - protein-cookery
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - safety_state
+    required_behavior:
+      - reject stacked raw wings as a reliable air fryer plan
+      - explain airflow surface exposure and uneven cooking risk
+      - require batches turning cross contamination control and thermometer verification
+    blockers:
+      - raw_animal_product_overconfidence
+      - cross_contamination_ignored
+
+  - id: EVAL-039-induction-thin-pan-scorching
+    scenario: induction-thin-pan-scorching
+    task_type: FIX
+    state_example: induction-thin-pan-scorching
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+    expected_state_surfaces:
+      - dish_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    required_behavior:
+      - diagnose induction response pan thickness and hot spots before recipe changes
+      - protect dairy sauce with lower heat heavier cookware stirring and burner match
+      - distinguish minor sticking from scorched flavor that requires rebuilding
+    blockers:
+      - no mechanism
+      - promises full reversibility
+
+  - id: EVAL-040-high-altitude-pressure-cooker-beans
+    scenario: high-altitude-pressure-cooker-beans
+    task_type: FIX
+    state_example: high-altitude-pressure-cooker-beans
+    safety_gate: not_required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - ingredient-knowledge
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - recovery_state
+    required_behavior:
+      - identify altitude soaking bean age liquid acid pressure level and release method as variables
+      - include foaming food maximum fill and vent safety limits
+      - recommend controlled timing or release adjustments with texture cues
+    blockers:
+      - no mechanism
+      - unsafe equipment advice
+
+  - id: EVAL-041-grill-flare-up-chicken-thighs
+    scenario: grill-flare-up-chicken-thighs
+    task_type: FIX
+    state_example: grill-flare-up-chicken-thighs
+    safety_gate: required
+    expected_route:
+      - chef-core
+      - equipment-cookery
+      - protein-cookery
+      - food-safety
+      - cooking-techniques
+    expected_state_surfaces:
+      - ingredient_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - safety_state
+    required_behavior:
+      - identify fat flare-ups direct heat bone-in thickness and temperature lag
+      - recommend two-zone grilling indirect finishing and flare-up management
+      - require thermometer verification near the bone for poultry safety
+    blockers:
+      - raw_animal_product_overconfidence
+      - cross_contamination_ignored

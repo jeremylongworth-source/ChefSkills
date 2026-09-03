@@ -129,7 +129,22 @@ def build_readiness(
 
     suite_ids = {card["suite"] for card in cards}
 
-    if "equipment-05c-smoke" in suite_ids:
+    if "equipment-05c-stabilization" in suite_ids:
+        status = "ready_for_public_alpha_readiness_work"
+        rationale = (
+            "ChefSkills cleared equipment stabilization with no blockers and a skill-enabled "
+            "average above the release threshold. The next work should shift from specialist "
+            "growth to public-alpha readiness because core specialist coverage is now stable enough "
+            "for repository operations, documentation, and publication audits."
+        )
+        next_milestone = "CHEFSKILLS-06 Public Alpha Readiness Workflow"
+        constraints = [
+            "Do not add Michelin, Canadian commercial food safety, or other large specialist tracks before public-alpha gates are in place.",
+            "Add CI, issue templates, PR templates, and public documentation before changing repository visibility.",
+            "Label or improve medium-confidence simulated evaluation evidence before public release.",
+            "Run publication audits for secrets, prompt injection, data exfiltration, script permissions, supply chain, safety, and attribution.",
+        ]
+    elif "equipment-05c-smoke" in suite_ids:
         status = "ready_for_equipment_stabilization"
         rationale = (
             "ChefSkills cleared the equipment smoke pass with no blockers and a skill-enabled "

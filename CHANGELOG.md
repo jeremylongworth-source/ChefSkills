@@ -20,3 +20,4 @@
 - Stabilized the fermentation specialist with five more scenarios covering quality recovery, normal active-ferment triage, sourdough starter strength, low-temperature stalls, storage boundaries, and updated scorecard readiness for equipment expansion.
 - Expanded `CHEFSKILLS-05C` with an equipment cookery specialist, appliance and vessel routing, five equipment scenarios, source-checked slow cooker, microwave, and pressure-canning safety gates, and equipment smoke scorecard coverage.
 - Added an open source roadmap and captured future Michelin / fine-dining intelligence and Canadian commercial food-safety expansion tracks.
+- Stabilized the equipment cookery specialist with six more scenarios covering dark pans, glass under broilers, air-fryer crowding, induction scorching, high-altitude pressure cooking, grill flare-ups, and updated readiness for public-alpha workflow.

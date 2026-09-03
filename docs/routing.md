@@ -40,7 +40,7 @@ Keep `food-safety` active alongside `protein-cookery` when raw animal products, 
 
 Keep `food-safety` active alongside `fermentation` for home fermentation, reduced-salt adaptations, mold, slimy texture, off odors, gas pressure, canning, shelf-stable storage, or vulnerable diners.
 
-Keep `food-safety` active alongside `equipment-cookery` for raw animal products, reheating, holding, microwaves, slow cookers, pressure canning, damaged equipment, or uncertain time-temperature history.
+Keep `food-safety` active alongside `equipment-cookery` for raw animal products, reheating, holding, microwaves, slow cookers, pressure canning, broilers, grills, air fryers, direct heat, damaged or incompatible cookware, or uncertain time-temperature history.
 
 ## Confidence
 

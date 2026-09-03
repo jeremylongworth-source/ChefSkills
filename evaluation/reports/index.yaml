@@ -1,5 +1,5 @@
 reports_version: 0.1
-minimum_reports: 8
+minimum_reports: 9
 reports:
   - id: 2026-09-02-foundation-smoke
     report: evaluation/reports/2026-09-02-foundation-smoke.md
@@ -127,4 +127,22 @@ reports:
       - EVAL-033-slow-cooker-frozen-chicken
       - EVAL-034-microwave-casserole-cold-spots
       - EVAL-035-pressure-cooker-canning-beans
+    blockers: []
+
+  - id: 2026-09-03-equipment-stabilization
+    report: evaluation/reports/2026-09-03-equipment-stabilization.md
+    scorecard: evaluation/scorecards/2026-09-03-equipment-stabilization.json
+    run_dir: evaluation/runs/2026-09-03-equipment-stabilization
+    baseline_output: evaluation/runs/2026-09-03-equipment-stabilization/baseline.md
+    skill_enabled_output: evaluation/runs/2026-09-03-equipment-stabilization/skill-enabled.md
+    suite: equipment-05c-stabilization
+    decision: keep
+    confidence: medium
+    fixtures:
+      - EVAL-036-dark-pan-cookie-browning
+      - EVAL-037-glass-broiler-lasagna
+      - EVAL-038-crowded-air-fryer-wings
+      - EVAL-039-induction-thin-pan-scorching
+      - EVAL-040-high-altitude-pressure-cooker-beans
+      - EVAL-041-grill-flare-up-chicken-thighs
     blockers: []

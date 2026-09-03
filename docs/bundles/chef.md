@@ -57,4 +57,4 @@ Home cooks, recipe developers, culinary educators, operators, and agent builders
 - Troubleshooting outputs identify current state, target state, cause, intervention, side effects, and verification cues.
 - Specialist scenarios activate the relevant specialist skill while staying inside the routing ceiling.
 - Fermentation scenarios keep `food-safety` active when preservation controls or spoilage signs matter.
-- Equipment scenarios route to `equipment-cookery` and keep `food-safety` active for raw animal products, reheating, slow cookers, microwaves, and pressure canning.
+- Equipment scenarios route to `equipment-cookery` and keep `food-safety` active for raw animal products, reheating, slow cookers, microwaves, pressure canning, broilers, grills, air fryers, direct heat, and damaged or incompatible cookware.

@@ -55,4 +55,4 @@ Recipe developers, content creators, home cooks, culinary educators, and teams b
 - Safety review is triggered when relevant.
 - Sauce, baking, and protein cases route to the relevant specialist skill.
 - Fermentation cases route to `fermentation` and keep `food-safety` active when preservation or spoilage risks exist.
-- Equipment cases route to `equipment-cookery` and include safety gates for slow cookers, microwaves, reheating, raw animal products, and pressure canning.
+- Equipment cases route to `equipment-cookery` and include safety gates for slow cookers, microwaves, reheating, raw animal products, pressure canning, broilers, grills, air fryers, direct heat, and damaged or incompatible cookware.

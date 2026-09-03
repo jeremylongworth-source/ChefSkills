@@ -89,8 +89,8 @@ Or run all current checks:
 4. `CHEFSKILLS-04`: Evaluation engine for rubric scoring, fixtures, regression suites, and safety gates.
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
-7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, and fermentation, then added equipment cookery before the next pastry, cuisine, service, and costing work.
-8. Open source readiness: complete equipment stabilization, improve evaluation credibility, add CI and contributor templates, run publication audits, and prepare `v0.1.0-alpha`.
+7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, fermentation, and equipment cookery before the next pastry, cuisine, service, and costing work.
+8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, and prepare `v0.1.0-alpha`.
 9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
 
 See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.

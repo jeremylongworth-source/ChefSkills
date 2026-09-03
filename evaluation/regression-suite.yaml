@@ -82,3 +82,13 @@ suites:
       - EVAL-033-slow-cooker-frozen-chicken
       - EVAL-034-microwave-casserole-cold-spots
       - EVAL-035-pressure-cooker-canning-beans
+
+  - id: equipment-05c-stabilization
+    description: Equipment stabilization fixtures for ovens, broilers, grills, induction, air fryers, damaged cookware, thermometers, altitude, and capacity planning.
+    fixtures:
+      - EVAL-036-dark-pan-cookie-browning
+      - EVAL-037-glass-broiler-lasagna
+      - EVAL-038-crowded-air-fryer-wings
+      - EVAL-039-induction-thin-pan-scorching
+      - EVAL-040-high-altitude-pressure-cooker-beans
+      - EVAL-041-grill-flare-up-chicken-thighs

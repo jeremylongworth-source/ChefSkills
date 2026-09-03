@@ -9,29 +9,29 @@ This is a public-alpha readiness path, not a claim that the culinary guidance is
 ## Current State
 
 - Repository visibility: private.
-- Current readiness status: `ready_for_equipment_stabilization`.
+- Current readiness status: `ready_for_public_alpha_readiness_work`.
 - Current validation: `.\scripts\validate-all.ps1` passes.
-- Current scorecard evidence: 8 reports, 32 evaluated fixtures, 0 blockers, baseline average 3.7656, ChefSkills-enabled average 4.8125, delta 1.0469.
+- Current scorecard evidence: 9 reports, 38 evaluated fixtures, 0 blockers, baseline average 3.7599, ChefSkills-enabled average 4.8059, delta 1.0461.
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
 
 ## Pre-Public Workflow
 
-### 1. Complete Equipment Stabilization
+### 1. Completed Equipment Stabilization
 
-Finish `CHEFSKILLS-05C Equipment Specialist Stabilization` before adding another specialist.
+`CHEFSKILLS-05C Equipment Specialist Stabilization` is complete. Keep additional equipment depth in later specialist work unless public-alpha feedback shows recurring gaps.
 
-Required scope:
+Completed scope:
 
 - ovens, broilers, grills, induction, air fryers, damaged cookware, thermometers, altitude, and capacity planning
 - lower-risk equipment quality fixtures, not only safety rejections
 - source checks when equipment advice touches raw animal products, reheating, preservation, pressure, or manufacturer-dependent safety behavior
 
-Acceptance criteria:
+Acceptance evidence:
 
 Given the equipment stabilization scenarios, when validation runs, then every scenario should have an expected route, catalog entry, state example, fixture, regression suite, report, and scorecard.
 Evidence: `.\scripts\validate-all.ps1`.
 
-Given the equipment stabilization scorecard, when the aggregate summary is regenerated, then the readiness state should advance beyond `ready_for_equipment_stabilization` with no blockers.
+Given the equipment stabilization scorecard, when the aggregate summary is regenerated, then the readiness state should advance to `ready_for_public_alpha_readiness_work` with no blockers.
 Evidence: `evaluation/scorecards/summary.json`.
 
 ### 2. Improve Evaluation Credibility

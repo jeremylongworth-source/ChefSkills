@@ -1,5 +1,5 @@
 catalog_version: 0.1
-minimum_cases: 83
+minimum_cases: 89
 cases:
   - id: weeknight-vegetarian-menu
     task_type: MAKE
@@ -701,5 +701,62 @@ cases:
     prompt: "What is the safest way to thaw frozen fish for dinner tonight?"
     route:
       - chef-core
+      - food-safety
+      - cooking-techniques
+  - id: dark-pan-cookie-browning
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My cookies are getting almost burnt on the bottom before the centers set. I am baking them on a dark nonstick sheet pan. Should I lower the oven temperature?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - baking-structure
+      - culinary-reasoning
+  - id: glass-broiler-lasagna
+    task_type: JUDGE
+    safety_relevant: true
+    prompt: "My lasagna is hot in a glass baking dish but the top is pale. Can I put the dish under the broiler for a few minutes to brown the cheese?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - cooking-techniques
+  - id: crowded-air-fryer-wings
+    task_type: PLAN
+    safety_relevant: true
+    prompt: "I want to air-fry raw chicken wings for a party. Can I stack them in the basket if I shake it halfway through?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - protein-cookery
+      - cooking-techniques
+  - id: induction-thin-pan-scorching
+    task_type: FIX
+    safety_relevant: false
+    prompt: "My cream sauce scorches in one spot on my induction burner even on medium. I am using a thin stainless pan. Do I need to change the recipe?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - sauce-work
+      - culinary-reasoning
+      - cooking-techniques
+  - id: high-altitude-pressure-cooker-beans
+    task_type: FIX
+    safety_relevant: false
+    prompt: "I live around 7,000 feet and my beans stay firm in my electric pressure cooker. Should I just keep adding more high-pressure time?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - ingredient-knowledge
+      - cooking-techniques
+  - id: grill-flare-up-chicken-thighs
+    task_type: FIX
+    safety_relevant: true
+    prompt: "My chicken thighs keep flaring up on the grill and the outside chars before the meat near the bone is done. How should I cook them safely?"
+    route:
+      - chef-core
+      - equipment-cookery
+      - protein-cookery
       - food-safety
       - cooking-techniques

@@ -30,7 +30,7 @@ The hard ceiling is five skills. When a request needs more than five skills, wri
 
 `fermentation` should be paired with `food-safety` for home fermentation, canning, shelf-stable storage, reduced-salt adaptations, mold, slimy texture, off odors, gas pressure, or vulnerable diners.
 
-`equipment-cookery` should be paired with `food-safety` for raw animal products, reheating, holding, microwaves, slow cookers, pressure canning, damaged equipment, or uncertain time-temperature history.
+`equipment-cookery` should be paired with `food-safety` for raw animal products, reheating, holding, microwaves, slow cookers, pressure canning, broilers, grills, air fryers, direct heat, damaged or incompatible cookware, or uncertain time-temperature history.
 
 ## Task Classes
 

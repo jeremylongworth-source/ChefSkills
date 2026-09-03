@@ -130,3 +130,31 @@ examples:
       - chef-core
       - equipment-cookery
       - food-safety
+
+  glass_broiler_lasagna:
+    prompt: Can I put a glass baking dish under the broiler to brown lasagna?
+    task_type: JUDGE
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - cooking-techniques
+
+  crowded_air_fryer_wings:
+    prompt: Can I stack raw chicken wings in my air fryer basket for a party?
+    task_type: PLAN
+    route:
+      - chef-core
+      - equipment-cookery
+      - food-safety
+      - protein-cookery
+      - cooking-techniques
+
+  high_altitude_pressure_cooker_beans:
+    prompt: My beans stay firm in an electric pressure cooker at 7,000 feet.
+    task_type: FIX
+    route:
+      - chef-core
+      - equipment-cookery
+      - ingredient-knowledge
+      - cooking-techniques

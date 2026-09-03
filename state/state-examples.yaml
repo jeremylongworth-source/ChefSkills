@@ -848,3 +848,145 @@ examples:
       type: preserve
       action: use a tested pressure-canner process and do not convert bean canning times to an electric pressure cooker
     verification_cue: preservation plan names an approved pressure canner and tested bean process rather than copied appliance timing
+
+  - id: dark-pan-cookie-browning
+    surface:
+      - dish_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      food: cookies
+      vessel: dark nonstick sheet pan
+      visual: bottoms nearly burnt before centers set
+    target_state:
+      texture: set cookie centers with controlled bottom browning
+    likely_mechanism: dark pans absorb and transfer heat aggressively, so bottoms brown before the center structure sets
+    intervention:
+      type: rework
+      action: switch to a lighter pan or line the pan, move rack position, cool pans between batches, chill dough if needed, and adjust time or temperature modestly
+    verification_cue: edges and bottoms are browned but not burnt, centers are set, and cookies finish at the same time top and bottom
+
+  - id: glass-broiler-lasagna
+    surface:
+      - dish_state
+      - equipment_state
+      - workflow_state
+      - safety_state
+    safety_relevant: true
+    task_context: safety_review
+    workflow_stage: finishing
+    current_observation:
+      food: hot lasagna
+      vessel: glass baking dish
+      proposed_change: broil to brown cheese
+    target_state:
+      finish: browned cheese without vessel breakage risk
+    safety_gate:
+      status: unsafe
+      reason: ordinary glass bakeware should not be exposed to direct broiler heat unless current manufacturer guidance explicitly permits it
+    likely_mechanism: direct radiant heat can create thermal stress and breakage in incompatible glass bakeware
+    intervention:
+      type: transfer
+      action: move a portion or topping to broiler-safe cookware, use a torch if appropriate, or brown with a safer oven method supported by the vessel instructions
+    verification_cue: browning happens in cookware rated for the heat source, not in a direct-heat-incompatible glass dish
+
+  - id: crowded-air-fryer-wings
+    surface:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - safety_state
+    safety_relevant: true
+    task_context: planning
+    workflow_stage: active_cooking
+    current_observation:
+      food: raw chicken wings
+      equipment: air fryer
+      proposed_change: stack wings and shake halfway
+    target_state:
+      texture: crisp wings with verified safe internal temperature
+    safety_gate:
+      status: time_limited
+      reason: stacked raw poultry can block airflow and cook unevenly, so crispness or color cannot verify safety
+    likely_mechanism: air fryers depend on convective airflow and exposed surfaces; stacking slows browning and creates uneven heat exposure
+    intervention:
+      type: batch
+      action: cook wings in a single layer or small batches, turn or shake for exposure, prevent cross-contamination, and verify the thickest pieces by thermometer
+    verification_cue: wings are crisp, juices are not used as the safety test, and each batch reaches the safe poultry endpoint by thermometer
+
+  - id: induction-thin-pan-scorching
+    surface:
+      - dish_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: recovery
+    current_observation:
+      food: cream sauce
+      equipment: induction burner
+      vessel: thin stainless pan
+      defect: scorched spot on medium heat
+    target_state:
+      texture: smooth cream sauce without scorched dairy solids
+    likely_mechanism: induction responds quickly and a thin pan can concentrate heat over the magnetic zone, scorching dairy before heat disperses
+    intervention:
+      type: adjust_heat
+      action: use heavier compatible cookware, match pan size to burner, reduce power, stir continuously, pulse heat, and rebuild sauce if scorched flavor is present
+    verification_cue: sauce heats evenly, no brown residue forms, aroma stays clean dairy, and texture remains smooth
+
+  - id: high-altitude-pressure-cooker-beans
+    surface:
+      - ingredient_state
+      - equipment_state
+      - workflow_state
+      - transformation_state
+      - recovery_state
+    safety_relevant: false
+    task_context: troubleshooting
+    workflow_stage: active_cooking
+    current_observation:
+      food: beans
+      equipment: electric pressure cooker
+      elevation: around 7000 feet
+      texture: beans stay firm
+    target_state:
+      texture: tender beans without unsafe pressure-cooker loading
+    likely_mechanism: altitude, bean age, soaking, acid or salt timing, pressure level, liquid ratio, and release method can change tenderization and hydration
+    intervention:
+      type: extend_time
+      action: check bean age and soaking, avoid early acid, maintain liquid, respect maximum fill for foaming foods, and adjust pressure time or natural release in controlled steps
+    verification_cue: beans mash easily between fingers, skins soften without bursting excessively, cooker vents stay clear, and liquid remains sufficient
+
+  - id: grill-flare-up-chicken-thighs
+    surface:
+      - ingredient_state
+      - equipment_state
+      - transformation_state
+      - observation_state
+      - safety_state
+    safety_relevant: true
+    task_context: troubleshooting
+    workflow_stage: active_cooking
+    current_observation:
+      food: bone-in chicken thighs
+      equipment: grill
+      defect: flare-ups char outside before meat near bone is done
+    target_state:
+      texture: browned chicken thighs with verified safe doneness near the bone
+    safety_gate:
+      status: time_limited
+      reason: charring outside does not prove poultry near the bone has reached a safe internal temperature
+    likely_mechanism: dripping fat ignites over direct heat while bone-in thickness slows heat penetration at the center
+    intervention:
+      type: adjust_heat
+      action: use two-zone grilling, render over indirect heat, move away from flare-ups, manage lid and vents, and verify the thickest area with a thermometer
+    verification_cue: exterior is browned rather than burnt, fat flare-ups are controlled, and the thickest meat near the bone reaches the safe poultry endpoint

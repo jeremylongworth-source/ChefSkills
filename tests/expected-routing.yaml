@@ -177,3 +177,36 @@ pressure-cooker-canning-beans:
   - chef-core
   - equipment-cookery
   - food-safety
+dark-pan-cookie-browning:
+  - chef-core
+  - equipment-cookery
+  - baking-structure
+  - culinary-reasoning
+glass-broiler-lasagna:
+  - chef-core
+  - equipment-cookery
+  - food-safety
+  - cooking-techniques
+crowded-air-fryer-wings:
+  - chef-core
+  - equipment-cookery
+  - food-safety
+  - protein-cookery
+  - cooking-techniques
+induction-thin-pan-scorching:
+  - chef-core
+  - equipment-cookery
+  - sauce-work
+  - culinary-reasoning
+  - cooking-techniques
+high-altitude-pressure-cooker-beans:
+  - chef-core
+  - equipment-cookery
+  - ingredient-knowledge
+  - cooking-techniques
+grill-flare-up-chicken-thighs:
+  - chef-core
+  - equipment-cookery
+  - protein-cookery
+  - food-safety
+  - cooking-techniques

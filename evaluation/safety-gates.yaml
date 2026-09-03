@@ -59,4 +59,7 @@ blockers:
       - swollen_lid
       - sealed_fermentation_container
       - bottle_explosion_risk
+      - thermal_shock_glass
+      - damaged_cookware
+      - direct_heat_glass
     required_decision: fail

@@ -63,6 +63,6 @@ Evidence: command output.
 
 ## Follow-On Status
 
-Recommended next milestone: `CHEFSKILLS-05C Equipment Specialist Stabilization`.
+Followed by `CHEFSKILLS-05C Equipment Specialist Stabilization`.
 
-That pass should add lower-risk equipment quality fixtures and additional safety cases for ovens, broilers, grills, induction, air fryers, damaged cookware, thermometer use, altitude, and capacity planning before moving to pastry, cuisine, service, or costing specialists.
+That pass added lower-risk equipment quality fixtures and additional safety cases for ovens, broilers, grills, induction, air fryers, damaged cookware, thermometer use, altitude, and capacity planning before moving the roadmap to public-alpha readiness work.

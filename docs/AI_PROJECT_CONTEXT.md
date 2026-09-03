@@ -46,9 +46,11 @@ The `CHEFSKILLS-05C Fermentation Stabilization` milestone adds lower-risk fermen
 
 The `CHEFSKILLS-05C Equipment Expansion` milestone adds `equipment-cookery` as the next specialist domain, with source-checked safety handling for slow cookers, microwaves, and pressure canning plus lower-risk coverage for sheet-pan browning and skillet substitution.
 
-The next major artifact should stabilize equipment with additional lower-risk fixtures before moving to pastry, cuisine, service, and costing work.
+The `CHEFSKILLS-05C Equipment Stabilization` milestone adds ovens, broilers, grills, induction, air fryers, damaged or incompatible cookware, thermometers, altitude, and capacity planning coverage. The aggregate evidence covers 9 reports and 38 fixtures with no blockers.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until equipment stabilization, evaluation credibility, CI/templates, public docs, publication audits, and `v0.1.0-alpha` release notes are complete.
+The next major artifact should start `CHEFSKILLS-06 Public Alpha Readiness Workflow` before moving to pastry, cuisine, service, costing, Michelin / fine-dining intelligence, or Canadian commercial food-safety work.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until evaluation credibility labeling, CI/templates, public docs, publication audits, and `v0.1.0-alpha` release notes are complete.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

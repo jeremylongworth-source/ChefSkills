@@ -1,0 +1,208 @@
+{
+  "scorecard_version": "0.1",
+  "report_id": "2026-09-03-equipment-stabilization",
+  "report": "evaluation/reports/2026-09-03-equipment-stabilization.md",
+  "date": "2026-09-03",
+  "reviewer": "Codex",
+  "suite": "equipment-05c-stabilization",
+  "decision": "keep",
+  "confidence": "medium",
+  "blockers": [],
+  "overall": {
+    "baseline_average": 3.7292,
+    "chefskills_average": 4.7708,
+    "delta": 1.0417
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-036-dark-pan-cookie-browning",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 4.0,
+      "chefskills_average": 4.875,
+      "delta": 0.875,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills links dark pan heat absorption, rack position, dough state, and bake-through before changing oven temperature."
+    },
+    {
+      "fixture_id": "EVAL-037-glass-broiler-lasagna",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.5,
+      "chefskills_average": 4.625,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 3,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 4,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills rejects direct broiler heat for ordinary glass bakeware and offers broiler-safe transfer or alternate browning paths."
+    },
+    {
+      "fixture_id": "EVAL-038-crowded-air-fryer-wings",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills rejects stacked raw wings, explains blocked airflow and uneven heating, and requires single-layer batches plus thermometer checks."
+    },
+    {
+      "fixture_id": "EVAL-039-induction-thin-pan-scorching",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.875,
+      "chefskills_average": 4.875,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 5,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 5,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills diagnoses induction response, thin-pan hot spots, burner match, and dairy sensitivity before recipe changes."
+    },
+    {
+      "fixture_id": "EVAL-040-high-altitude-pressure-cooker-beans",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.75,
+      "chefskills_average": 4.75,
+      "delta": 1.0,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 4,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills handles altitude, bean age, soaking, acid timing, liquid, release method, foaming, and max-fill safety before adding time."
+    },
+    {
+      "fixture_id": "EVAL-041-grill-flare-up-chicken-thighs",
+      "decision": "keep",
+      "blockers": [],
+      "baseline_average": 3.625,
+      "chefskills_average": 4.75,
+      "delta": 1.125,
+      "scores": {
+        "baseline": {
+          "technical_accuracy": 4,
+          "culinary_reasoning": 3,
+          "ingredient_understanding": 3,
+          "workflow_quality": 4,
+          "sensory_reasoning": 3,
+          "safety": 4,
+          "constraint_handling": 4,
+          "communication": 4
+        },
+        "chefskills": {
+          "technical_accuracy": 5,
+          "culinary_reasoning": 5,
+          "ingredient_understanding": 5,
+          "workflow_quality": 5,
+          "sensory_reasoning": 4,
+          "safety": 5,
+          "constraint_handling": 5,
+          "communication": 4
+        }
+      },
+      "evidence_summary": "ChefSkills separates flare-up char from poultry safety and uses two-zone grilling plus thermometer verification near the bone."
+    }
+  ],
+  "validation": {
+    "command": ".\\scripts\\validate-all.ps1",
+    "result": "pass"
+  }
+}
