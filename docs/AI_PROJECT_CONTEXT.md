@@ -52,7 +52,9 @@ The next major artifact should start `CHEFSKILLS-06 Public Alpha Readiness Workf
 
 The `CHEFSKILLS-06 Public Alpha Readiness` milestone has started with GitHub Actions validation confirmed on `main`, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, and draft `v0.1.0-alpha` release notes.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until publication audits, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
+The publication audit in `docs/audits/2026-09-03-publication-audit.md` found no blockers in the current tracked tree or history.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until final repository settings review, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

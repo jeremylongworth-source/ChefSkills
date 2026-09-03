@@ -22,3 +22,4 @@
 - Added an open source roadmap and captured future Michelin / fine-dining intelligence and Canadian commercial food-safety expansion tracks.
 - Stabilized the equipment cookery specialist with six more scenarios covering dark pans, glass under broilers, air-fryer crowding, induction scorching, high-altitude pressure cooking, grill flare-ups, and updated readiness for public-alpha workflow.
 - Began `CHEFSKILLS-06` public-alpha readiness with GitHub Actions validation, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, and draft `v0.1.0-alpha` release notes.
+- Added a publication audit with no blockers found in tracked files or history and pinned GitHub Actions validation actions to exact release tags.

@@ -98,10 +98,12 @@ Run a final release-readiness audit before making the repository public:
 - safety-guidance review
 - license and attribution review
 
+Status: complete for the current tracked tree and history. No publication blockers were found. Remaining follow-ups are GitHub branch/ruleset settings, security-policy link confirmation after public visibility, and the release decision about simulated evaluation evidence.
+
 Acceptance criteria:
 
 Given the repository history and working tree, when the publication audit is complete, then no secrets, private project artifacts, unsafe safety claims, or unclear third-party attribution should remain in tracked public files.
-Evidence: audit notes, scan output, and final `git status --short`.
+Evidence: `docs/audits/2026-09-03-publication-audit.md`, scan output, and final `git status --short`.
 
 ### 6. Publish `v0.1.0-alpha`
 

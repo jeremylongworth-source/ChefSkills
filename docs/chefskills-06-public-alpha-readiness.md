@@ -17,12 +17,14 @@ This pass adds the first public-alpha workflow layer:
 - Evaluation docs that label current before/after evidence as medium-confidence local reviewer simulations.
 - Draft `v0.1.0-alpha` release notes.
 - Remote GitHub Actions validation confirmed on `main`.
+- Publication audit for the current tracked tree and history.
 
 ## CI Assumptions
 
 - Host: GitHub Actions.
 - Runner: `ubuntu-latest`.
-- Python: `3.13`, set explicitly through `actions/setup-python`.
+- Python: `3.13`, set explicitly through `actions/setup-python@v7.0.0`.
+- Actions: `actions/checkout@v7.0.1` and `actions/setup-python@v7.0.0`.
 - Permissions: read-only repository contents.
 - Secrets: none.
 - Primary gate: `./scripts/validate-all.ps1`.
@@ -42,9 +44,12 @@ Evidence: `.github/pull_request_template.md`.
 Given a public reader reviews the project, when they read the README and evaluation docs, then they should understand the alpha status, validation command, first useful skillset paths, safety boundaries, contribution paths, and simulated evidence caveat.
 Evidence: `README.md`, `CONTRIBUTING.md`, `evaluation/README.md`, `evaluation/reports/README.md`, and `evaluation/scorecards/README.md`.
 
+Given the repository is audited before public visibility, when secrets, prompt-injection, data-exfiltration, script-permission, supply-chain, safety-guidance, license, and attribution checks run, then no publication blockers should remain in tracked files or history.
+Evidence: `docs/audits/2026-09-03-publication-audit.md`.
+
 ## Remaining Before Public Visibility
 
-- Run publication audits for secrets, prompt injection, data exfiltration, script permissions, supply chain, safety guidance, license, and attribution.
 - Decide whether `v0.1.0-alpha` can ship with simulated evaluation evidence or whether a live-output harness is required first.
 - Review GitHub branch protection or ruleset settings after the repository is public.
+- Confirm the security-policy contact link behaves as expected after public visibility.
 - Finalize and tag `v0.1.0-alpha`.
