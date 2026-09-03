@@ -55,9 +55,11 @@ Add the public collaboration layer before flipping visibility:
 - GitHub Actions workflow for validation
 - issue templates for routing bugs, skill proposals, food-safety concerns, and evaluation fixtures
 - pull request template with validation, safety, source-check, and documentation checks
-- branch or ruleset policy reviewed after the repository becomes public
+- Dependabot version-update config for GitHub Actions
+- live repository settings review
+- branch or ruleset policy configured after the repository becomes public
 
-Status: started. GitHub Actions validation, issue forms, and a pull request template have been added. The remote Actions workflow has passed on `main`; branch protection remains to be configured in GitHub.
+Status: started. GitHub Actions validation, issue forms, a pull request template, Dependabot GitHub Actions monitoring, and repository settings review have been added. The remote Actions workflow has passed on `main`; branch protection or rulesets remain to be configured after the repository becomes public because GitHub currently blocks those settings while the repository is private on the current plan.
 
 Acceptance criteria:
 
@@ -66,6 +68,9 @@ Evidence: GitHub Actions run.
 
 Given a new public issue, when a contributor chooses a template, then the template should collect scenario, expected route, safety relevance, source evidence, and affected files where appropriate.
 Evidence: `.github/ISSUE_TEMPLATE/`.
+
+Given the repository operations layer, when maintainers review settings before public visibility, then live repository settings, security maintenance switches, community profile state, and branch-policy constraints should be documented.
+Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
 
 ### 4. Tighten Public Documentation
 
@@ -98,7 +103,7 @@ Run a final release-readiness audit before making the repository public:
 - safety-guidance review
 - license and attribution review
 
-Status: complete for the current tracked tree and history. No publication blockers were found. Remaining follow-ups are GitHub branch/ruleset settings, security-policy link confirmation after public visibility, and the release decision about simulated evaluation evidence.
+Status: complete for the current tracked tree and history. No publication blockers were found. Repository settings have also been reviewed. Remaining follow-ups are GitHub branch/ruleset configuration after public visibility, security-policy link confirmation after public visibility, and the release decision about simulated evaluation evidence.
 
 Acceptance criteria:
 

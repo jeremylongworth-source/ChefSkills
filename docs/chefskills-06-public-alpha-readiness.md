@@ -18,6 +18,7 @@ This pass adds the first public-alpha workflow layer:
 - Draft `v0.1.0-alpha` release notes.
 - Remote GitHub Actions validation confirmed on `main`.
 - Publication audit for the current tracked tree and history.
+- Repository settings review with Dependabot alerts, automated security fixes, and GitHub Actions version updates enabled where available before public visibility.
 
 ## CI Assumptions
 
@@ -29,6 +30,7 @@ This pass adds the first public-alpha workflow layer:
 - Secrets: none.
 - Primary gate: `./scripts/validate-all.ps1`.
 - Cache: none, because current validators use the Python standard library only.
+- Dependency maintenance: `.github/dependabot.yml` checks GitHub Actions weekly.
 
 ## Readiness Gates
 
@@ -47,9 +49,12 @@ Evidence: `README.md`, `CONTRIBUTING.md`, `evaluation/README.md`, `evaluation/re
 Given the repository is audited before public visibility, when secrets, prompt-injection, data-exfiltration, script-permission, supply-chain, safety-guidance, license, and attribution checks run, then no publication blockers should remain in tracked files or history.
 Evidence: `docs/audits/2026-09-03-publication-audit.md`.
 
+Given the repository settings are reviewed before public visibility, when GitHub plan and visibility constraints are checked, then maintainers should know which security and branch-policy settings are complete now and which settings must wait until the repository is public.
+Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
+
 ## Remaining Before Public Visibility
 
 - Decide whether `v0.1.0-alpha` can ship with simulated evaluation evidence or whether a live-output harness is required first.
-- Review GitHub branch protection or ruleset settings after the repository is public.
+- Configure GitHub branch protection or ruleset settings after the repository is public; GitHub currently blocks these settings while the repository is private on the current plan.
 - Confirm the security-policy contact link behaves as expected after public visibility.
 - Finalize and tag `v0.1.0-alpha`.

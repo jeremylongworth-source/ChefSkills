@@ -54,7 +54,9 @@ The `CHEFSKILLS-06 Public Alpha Readiness` milestone has started with GitHub Act
 
 The publication audit in `docs/audits/2026-09-03-publication-audit.md` found no blockers in the current tracked tree or history.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until final repository settings review, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
+The repository settings review in `docs/audits/2026-09-03-repository-settings-review.md` enabled available Dependabot maintenance settings and documented that branch protection or rulesets must wait until the repository is public or the GitHub plan changes.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until the simulated-evidence release decision, post-public branch/ruleset setup plan, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 
