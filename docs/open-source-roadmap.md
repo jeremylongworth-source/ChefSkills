@@ -10,7 +10,7 @@ This is a public-alpha readiness path, not a claim that the culinary guidance is
 
 - Repository visibility: private.
 - Current readiness status: `ready_for_public_alpha_readiness_work`.
-- Current validation: `.\scripts\validate-all.ps1` passes locally. GitHub Actions validation has been added and should be confirmed remotely after push.
+- Current validation: `.\scripts\validate-all.ps1` passes locally and through GitHub Actions on pushes and pull requests.
 - Current scorecard evidence: 9 reports, 38 evaluated fixtures, 0 blockers, baseline average 3.7599, ChefSkills-enabled average 4.8059, delta 1.0461.
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
 
@@ -57,7 +57,7 @@ Add the public collaboration layer before flipping visibility:
 - pull request template with validation, safety, source-check, and documentation checks
 - branch or ruleset policy reviewed after the repository becomes public
 
-Status: started. GitHub Actions validation, issue forms, and a pull request template have been added. Remote Actions results and branch protection remain to be confirmed in GitHub.
+Status: started. GitHub Actions validation, issue forms, and a pull request template have been added. The remote Actions workflow has passed on `main`; branch protection remains to be configured in GitHub.
 
 Acceptance criteria:
 

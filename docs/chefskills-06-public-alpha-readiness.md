@@ -16,6 +16,7 @@ This pass adds the first public-alpha workflow layer:
 - README quickstart, requirements, safety boundary, evaluation-confidence, and contribution paths.
 - Evaluation docs that label current before/after evidence as medium-confidence local reviewer simulations.
 - Draft `v0.1.0-alpha` release notes.
+- Remote GitHub Actions validation confirmed on `main`.
 
 ## CI Assumptions
 
@@ -30,7 +31,7 @@ This pass adds the first public-alpha workflow layer:
 ## Readiness Gates
 
 Given a pull request, when the GitHub Actions workflow runs, then the full validation suite should execute and fail on broken references, invalid routing, invalid scorecards, or stale scorecard summaries.
-Evidence: `.github/workflows/validate.yml` and the first remote Actions run after push.
+Evidence: `.github/workflows/validate.yml` and remote Actions validation on `main`.
 
 Given a contributor opens a new issue, when they choose a template, then the template should collect scenario, expected route, safety relevance, source evidence, and affected files where appropriate.
 Evidence: `.github/ISSUE_TEMPLATE/`.
@@ -43,7 +44,6 @@ Evidence: `README.md`, `CONTRIBUTING.md`, `evaluation/README.md`, `evaluation/re
 
 ## Remaining Before Public Visibility
 
-- Confirm the GitHub Actions workflow passes remotely.
 - Run publication audits for secrets, prompt injection, data exfiltration, script permissions, supply chain, safety guidance, license, and attribution.
 - Decide whether `v0.1.0-alpha` can ship with simulated evaluation evidence or whether a live-output harness is required first.
 - Review GitHub branch protection or ruleset settings after the repository is public.
