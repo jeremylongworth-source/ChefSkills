@@ -15,6 +15,7 @@ This remains a public-alpha path, not a claim that the culinary guidance is regu
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
 - Current release state: `v0.1.0-alpha` is tagged and published as the initial GitHub prerelease; `v0.1.0-public-preview` is the Copilot-facing GitHub skill-install distribution release.
 - Current GitHub skill status: `gh skill publish --dry-run` passes, direct `gh skill install` works, and pinned install works for atomic skills such as `chef-core`.
+- Current post-public evaluation status: `CHEFSKILLS-07` live-output harness scaffolding is in place; first captured live runs remain next.
 
 ## Pre-Public Workflow
 
@@ -140,6 +141,29 @@ Acceptance criteria:
 
 Given the repository is public, when an outside reader visits it, then README, license, contributing, code of conduct, security policy, templates, validation workflow, and alpha release notes should be visible and internally consistent.
 Evidence: `docs/audits/2026-09-03-public-launch-check.md`, GitHub repository community profile, and release page.
+
+## Post-Public Workflow
+
+### 7. Build Live Output Harness
+
+Status: harness scaffold complete; first captured live runs remain next.
+
+Completed scope:
+
+- provider-neutral live run packet generator
+- live run manifest validator
+- repository-wide validation hook
+- documented capture workflow and status model
+
+Acceptance criteria:
+
+Given a maintainer creates a live run packet from a suite or fixture list, when the script runs, then baseline prompts, ChefSkills prompts, route metadata, planned output paths, prompt hashes, and rerun instructions should be generated.
+Evidence: `scripts/create-live-evaluation-run.py`.
+
+Given live run manifests exist, when validation runs, then pending packets should validate prompt metadata, and captured/scored packets should require raw outputs, hashes, reviewer decisions, and report or scorecard links.
+Evidence: `scripts/validate-live-evaluation-runs.py` and `.\scripts\validate-all.ps1`.
+
+Next evidence step: capture and score the first live foundation smoke run before making stronger evidence claims.
 
 ## Future Expansion Tracks
 

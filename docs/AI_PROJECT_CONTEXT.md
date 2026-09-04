@@ -60,7 +60,9 @@ The public launch check in `docs/audits/2026-09-03-public-launch-check.md` confi
 
 ChefSkills is installable through GitHub CLI agent skills for GitHub Copilot at the atomic skill level. `gh skill publish --dry-run` passes, direct `gh skill install jeremylongworth-source/ChefSkills chef-core` works, and pinned install smoke tests passed for `chef-core`. The Copilot-facing distribution release is `v0.1.0-public-preview`; setup guidance lives in `docs/setup/github-copilot.md`.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. The next roadmap work should move to post-alpha improvement: live-output evaluation harness, first contributor-flow observations, and then the next specialist track.
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. The next roadmap work should move to post-alpha improvement: first live-output capture, first contributor-flow observations, and then the next specialist track.
+
+`CHEFSKILLS-07 Live Output Harness` starts the post-public evidence improvement track. It adds provider-neutral scripts and docs for creating live run prompt packets from existing fixtures, validating live run manifests, recording prompt and output hashes, and connecting captured raw outputs back into the report/scorecard workflow. The harness is scaffolding only until the first real model outputs are captured.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

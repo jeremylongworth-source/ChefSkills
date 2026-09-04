@@ -144,6 +144,7 @@ python .\scripts\validate-scenarios.py
 python .\scripts\validate-router.py
 python .\scripts\validate-state.py
 python .\scripts\validate-evaluation.py
+python .\scripts\validate-live-evaluation-runs.py
 python .\scripts\validate-evaluation-reports.py
 python .\scripts\validate-scorecards.py
 python .\scripts\summarize-scorecards.py --check .\evaluation\scorecards\summary.json
@@ -164,8 +165,9 @@ Or run all current checks:
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
 7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, fermentation, and equipment cookery before the next pastry, cuisine, service, and costing work.
-8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, document the alpha evidence decision, and publish `v0.1.0-alpha`.
-9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
+8. `CHEFSKILLS-06`: Open source readiness, public alpha launch, GitHub Copilot skill-install docs, and `v0.1.0-public-preview` distribution.
+9. `CHEFSKILLS-07`: Live-output harness scaffold for reproducible prompt packets, manifests, captured outputs, and rerun review.
+10. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
 
 See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.
 

@@ -12,6 +12,20 @@ Public-alpha documentation should keep this caveat visible until a live-output h
 
 The `v0.1.0-alpha` release decision accepts this evidence class for public alpha only. It should not be described as a live benchmark, external validation, certification, or guarantee of future model behavior.
 
+## Live Output Harness
+
+Live output capture packets live under `evaluation/live-runs/`.
+
+Create a packet from an existing regression suite:
+
+```powershell
+python .\scripts\create-live-evaluation-run.py --suite state-reasoning --run-id 2026-09-04-state-reasoning-live
+```
+
+The generated packet contains baseline prompts, ChefSkills-enabled prompts, planned raw output paths, hashes for stable inputs, model/context fields, reviewer decision fields, and rerun instructions.
+
+The harness is provider-neutral and does not call a model API. Run the prompts in the target host, save the raw outputs without rewriting them, update the manifest hashes and status, then score the captured outputs through the normal report and scorecard workflow.
+
 ## Files
 
 - `rubric.yaml`: scoring criteria, weights, thresholds, and hard gates.
@@ -21,6 +35,7 @@ The `v0.1.0-alpha` release decision accepts this evidence class for public alpha
 - `regression-suite.yaml`: named fixture groups for smoke, safety, and milestone checks.
 - `report-template.md`: before/after report format for human review.
 - `runs/`: raw baseline and skill-enabled outputs.
+- `live-runs/`: reproducible prompt packets and manifests for live model-output capture.
 - `reports/`: scored before/after evaluation reports.
 - `scorecards/`: machine-readable JSON summaries of registered reports.
 
@@ -42,6 +57,7 @@ Run:
 
 ```powershell
 python .\scripts\validate-evaluation.py
+python .\scripts\validate-live-evaluation-runs.py
 python .\scripts\validate-evaluation-reports.py
 python .\scripts\validate-scorecards.py
 python .\scripts\summarize-scorecards.py --check .\evaluation\scorecards\summary.json
