@@ -262,6 +262,8 @@ Fixtures:
 6. Add the report and scorecard through the existing `evaluation/reports/` and `evaluation/scorecards/` workflow.
 
 Do not edit model outputs after capture. Put reviewer notes in the report, not in the raw output files.
+
+Do not include API keys, account identifiers, private customer data, unpublished prompts, or confidential kitchen/business information in manifests, prompts, outputs, reports, or notes.
 """
 
 

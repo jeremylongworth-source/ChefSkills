@@ -15,7 +15,7 @@ This remains a public-alpha path, not a claim that the culinary guidance is regu
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
 - Current release state: `v0.1.0-alpha` is tagged and published as the initial GitHub prerelease; `v0.1.0-public-preview` is the Copilot-facing GitHub skill-install distribution release.
 - Current GitHub skill status: `gh skill publish --dry-run` passes, direct `gh skill install` works, and pinned install works for atomic skills such as `chef-core`.
-- Current post-public evaluation status: `CHEFSKILLS-07` live-output harness scaffolding is in place; first captured live runs remain next.
+- Current post-public evaluation status: `CHEFSKILLS-07` live-output harness scaffolding is in place, and the first foundation smoke capture packet exists at `evaluation/live-runs/2026-09-04-foundation-live-smoke`; raw model outputs remain next.
 
 ## Pre-Public Workflow
 
@@ -146,7 +146,7 @@ Evidence: `docs/audits/2026-09-03-public-launch-check.md`, GitHub repository com
 
 ### 7. Build Live Output Harness
 
-Status: harness scaffold complete; first captured live runs remain next.
+Status: harness scaffold complete; first foundation smoke capture packet created; raw model outputs remain next.
 
 Completed scope:
 
@@ -154,6 +154,7 @@ Completed scope:
 - live run manifest validator
 - repository-wide validation hook
 - documented capture workflow and status model
+- pending foundation smoke capture packet for `chefskills-04-smoke`
 
 Acceptance criteria:
 
@@ -163,7 +164,7 @@ Evidence: `scripts/create-live-evaluation-run.py`.
 Given live run manifests exist, when validation runs, then pending packets should validate prompt metadata, and captured/scored packets should require raw outputs, hashes, reviewer decisions, and report or scorecard links.
 Evidence: `scripts/validate-live-evaluation-runs.py` and `.\scripts\validate-all.ps1`.
 
-Next evidence step: capture and score the first live foundation smoke run before making stronger evidence claims.
+Next evidence step: capture and score the raw outputs for `evaluation/live-runs/2026-09-04-foundation-live-smoke` before making stronger evidence claims.
 
 ## Future Expansion Tracks
 
