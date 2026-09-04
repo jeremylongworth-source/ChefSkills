@@ -13,7 +13,8 @@ This remains a public-alpha path, not a claim that the culinary guidance is regu
 - Current validation: `.\scripts\validate-all.ps1` passes locally and through GitHub Actions on pushes and pull requests.
 - Current scorecard evidence: 9 reports, 38 evaluated fixtures, 0 blockers, baseline average 3.7599, ChefSkills-enabled average 4.8059, delta 1.0461.
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
-- Current release: `v0.1.0-alpha` is tagged and published as a GitHub prerelease.
+- Current release state: `v0.1.0-alpha` is tagged and published as the initial GitHub prerelease; `v0.1.0-public-preview` is the Copilot-facing GitHub skill-install distribution release.
+- Current GitHub skill status: `gh skill publish --dry-run` passes, direct `gh skill install` works, and pinned install works for atomic skills such as `chef-core`.
 
 ## Pre-Public Workflow
 
@@ -59,11 +60,12 @@ Add the public collaboration layer before flipping visibility:
 - GitHub Actions workflow for validation
 - issue templates for routing bugs, skill proposals, food-safety concerns, and evaluation fixtures
 - pull request template with validation, safety, source-check, and documentation checks
+- GitHub Copilot and `gh skill` setup docs
 - Dependabot version-update config for GitHub Actions
 - live repository settings review
 - branch or ruleset policy configured after the repository becomes public
 
-Status: complete for public alpha. GitHub Actions validation, issue forms, a pull request template, Dependabot GitHub Actions monitoring, repository settings review, and `main` branch protection are in place. Classic branch protection is the active control; no repository rulesets are configured at launch.
+Status: complete for public alpha. GitHub Actions validation, issue forms, a pull request template, GitHub Copilot and `gh skill` install docs, Dependabot GitHub Actions monitoring, repository settings review, and `main` branch protection are in place. Classic branch protection is the active control; no repository rulesets are configured at launch.
 
 Acceptance criteria:
 
@@ -78,6 +80,9 @@ Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
 
 Given the repository is public, when maintainers review launch state, then branch protection, security maintenance settings, community profile state, issue forms, release URL, and validation evidence should be documented.
 Evidence: `docs/audits/2026-09-03-public-launch-check.md`.
+
+Given a GitHub Copilot user wants to install ChefSkills, when they read setup documentation, then they should see `gh skill preview`, pinned `gh skill install`, scope guidance, and the limitation that `gh skill install` installs atomic skills rather than YAML skillsets.
+Evidence: `README.md`, `docs/setup/github-copilot.md`, `gh skill publish --dry-run`, and a pinned `gh skill install` smoke test.
 
 ### 4. Tighten Public Documentation
 
