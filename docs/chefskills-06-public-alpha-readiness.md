@@ -65,4 +65,4 @@ Evidence: `docs/audits/2026-09-03-public-launch-check.md`.
 - Keep the simulated-evidence caveat visible in README, evaluation docs, and release notes.
 - Monitor the first outside issue or pull request for template clarity.
 - Watch Dependabot and secret scanning alerts after public indexing has settled.
-- Build the live-output evaluation harness before beta or broader launch claims.
+- Build the live-output evaluation harness before beta or broader launch claims. Scaffold status: complete in `CHEFSKILLS-07`; first captured live outputs remain next.
