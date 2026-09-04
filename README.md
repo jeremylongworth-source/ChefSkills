@@ -18,7 +18,7 @@ The project started in private development and is now public for alpha review af
 
 ## Status
 
-ChefSkills is public as `v0.1.0-alpha`. The current readiness state is `ready_for_public_alpha_readiness_work`.
+ChefSkills is public. The current GitHub skill-install distribution release is `v0.1.0-public-preview`; the initial public alpha prerelease is `v0.1.0-alpha`. The current readiness state is `ready_for_public_alpha_readiness_work`.
 
 Current evidence: 9 reports, 38 evaluated fixtures, 0 blockers, a baseline average of 3.7599, a ChefSkills-enabled average of 4.8059, and a delta of 1.0461.
 
@@ -69,6 +69,38 @@ After cloning the repository, run:
 ```
 
 If PowerShell is unavailable, run the individual Python commands listed in the validation section.
+
+## GitHub Skill Install
+
+ChefSkills can be previewed and installed through GitHub CLI agent skills for GitHub Copilot.
+
+Preview a skill:
+
+```powershell
+gh skill preview jeremylongworth-source/ChefSkills chef-core
+```
+
+Install a skill for GitHub Copilot at project scope:
+
+```powershell
+gh skill install jeremylongworth-source/ChefSkills chef-core
+```
+
+Pin the public-preview release when reproducibility matters:
+
+```powershell
+gh skill install jeremylongworth-source/ChefSkills chef-core --agent github-copilot --scope project --pin v0.1.0-public-preview
+```
+
+Install the food-safety skill:
+
+```powershell
+gh skill install jeremylongworth-source/ChefSkills food-safety --agent github-copilot --scope project --pin v0.1.0-public-preview
+```
+
+`gh skill install` installs atomic skill folders from `skills/`, not YAML skillsets from `skillsets/`.
+
+See [GitHub Copilot and `gh skill` Setup](docs/setup/github-copilot.md) for examples, scope guidance, and verification prompts.
 
 ## First Use
 

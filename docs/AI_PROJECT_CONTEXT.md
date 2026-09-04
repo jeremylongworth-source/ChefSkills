@@ -58,6 +58,8 @@ The `v0.1.0-alpha` evidence decision in `docs/releases/v0.1.0-alpha-evidence-dec
 
 The public launch check in `docs/audits/2026-09-03-public-launch-check.md` confirms public repository visibility, `main` branch protection, security maintenance settings, public Security policy visibility, issue form files, and the GitHub prerelease.
 
+ChefSkills is installable through GitHub CLI agent skills for GitHub Copilot at the atomic skill level. `gh skill publish --dry-run` passes, direct `gh skill install jeremylongworth-source/ChefSkills chef-core` works, and pinned install smoke tests passed for `chef-core`. The Copilot-facing distribution release is `v0.1.0-public-preview`; setup guidance lives in `docs/setup/github-copilot.md`.
+
 The open source release workflow is tracked in `docs/open-source-roadmap.md`. The next roadmap work should move to post-alpha improvement: live-output evaluation harness, first contributor-flow observations, and then the next specialist track.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
