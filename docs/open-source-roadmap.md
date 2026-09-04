@@ -2,17 +2,18 @@
 
 ## Goal
 
-ChefSkills should become a public open source repository when the framework is safe, reviewable, validated, and maintainable enough for outside users and contributors.
+ChefSkills is a public open source repository because the framework is safe, reviewable, validated, and maintainable enough for outside public-alpha users and contributors.
 
-This is a public-alpha readiness path, not a claim that the culinary guidance is regulatory, medical, or professional advice.
+This remains a public-alpha path, not a claim that the culinary guidance is regulatory, medical, or professional advice.
 
 ## Current State
 
-- Repository visibility: private.
+- Repository visibility: public.
 - Current readiness status: `ready_for_public_alpha_readiness_work`.
 - Current validation: `.\scripts\validate-all.ps1` passes locally and through GitHub Actions on pushes and pull requests.
 - Current scorecard evidence: 9 reports, 38 evaluated fixtures, 0 blockers, baseline average 3.7599, ChefSkills-enabled average 4.8059, delta 1.0461.
 - Current confidence caveat: all registered reports are medium confidence because the before/after outputs are locally simulated.
+- Current release: `v0.1.0-alpha` is tagged and published as a GitHub prerelease.
 
 ## Pre-Public Workflow
 
@@ -62,7 +63,7 @@ Add the public collaboration layer before flipping visibility:
 - live repository settings review
 - branch or ruleset policy configured after the repository becomes public
 
-Status: started. GitHub Actions validation, issue forms, a pull request template, Dependabot GitHub Actions monitoring, and repository settings review have been added. The remote Actions workflow has passed on `main`; branch protection or rulesets remain to be configured after the repository becomes public because GitHub currently blocks those settings while the repository is private on the current plan.
+Status: complete for public alpha. GitHub Actions validation, issue forms, a pull request template, Dependabot GitHub Actions monitoring, repository settings review, and `main` branch protection are in place. Classic branch protection is the active control; no repository rulesets are configured at launch.
 
 Acceptance criteria:
 
@@ -74,6 +75,9 @@ Evidence: `.github/ISSUE_TEMPLATE/`.
 
 Given the repository operations layer, when maintainers review settings before public visibility, then live repository settings, security maintenance switches, community profile state, and branch-policy constraints should be documented.
 Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
+
+Given the repository is public, when maintainers review launch state, then branch protection, security maintenance settings, community profile state, issue forms, release URL, and validation evidence should be documented.
+Evidence: `docs/audits/2026-09-03-public-launch-check.md`.
 
 ### 4. Tighten Public Documentation
 
@@ -87,7 +91,7 @@ Before public release, update docs for outside readers:
 - maintainer review expectations
 - release notes for `v0.1.0-alpha`
 
-Status: started. README, contributing, security, evaluation docs, and draft alpha release notes have been updated for outside readers.
+Status: complete for public alpha. README, contributing, security, evaluation docs, and alpha release notes have been updated for outside readers.
 
 Acceptance criteria:
 
@@ -106,7 +110,7 @@ Run a final release-readiness audit before making the repository public:
 - safety-guidance review
 - license and attribution review
 
-Status: complete for the current tracked tree and history. No publication blockers were found. Repository settings have also been reviewed. Remaining follow-ups are GitHub branch/ruleset configuration after public visibility and security-policy link confirmation after public visibility.
+Status: complete for public alpha. No publication blockers were found. Repository settings, branch protection, public Security policy page, and release page have been reviewed.
 
 Acceptance criteria:
 
@@ -115,7 +119,7 @@ Evidence: `docs/audits/2026-09-03-publication-audit.md`, scan output, and final 
 
 ### 6. Publish `v0.1.0-alpha`
 
-Release only after the readiness gates above pass.
+Status: complete.
 
 Launch steps:
 
@@ -130,7 +134,7 @@ Launch steps:
 Acceptance criteria:
 
 Given the repository is public, when an outside reader visits it, then README, license, contributing, code of conduct, security policy, templates, validation workflow, and alpha release notes should be visible and internally consistent.
-Evidence: GitHub repository community profile and release page.
+Evidence: `docs/audits/2026-09-03-public-launch-check.md`, GitHub repository community profile, and release page.
 
 ## Future Expansion Tracks
 

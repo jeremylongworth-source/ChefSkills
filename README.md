@@ -14,11 +14,11 @@ Most recipe assistants can produce plausible instructions. ChefSkills is intende
 
 The project starts small on purpose. The first milestone is a testable operating framework, not a large recipe database.
 
-The intended release path is private development first, then public open source once the validation, safety, documentation, and contribution workflow are ready.
+The project started in private development and is now public for alpha review after validation, safety, documentation, and contribution workflow gates.
 
 ## Status
 
-ChefSkills is in public-alpha preparation. The current readiness state is `ready_for_public_alpha_readiness_work`.
+ChefSkills is public as `v0.1.0-alpha`. The current readiness state is `ready_for_public_alpha_readiness_work`.
 
 Current evidence: 9 reports, 38 evaluated fixtures, 0 blockers, a baseline average of 3.7599, a ChefSkills-enabled average of 4.8059, and a delta of 1.0461.
 
@@ -132,7 +132,7 @@ Or run all current checks:
 5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
 6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
 7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, fermentation, and equipment cookery before the next pastry, cuisine, service, and costing work.
-8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, document the alpha evidence decision, and prepare `v0.1.0-alpha`.
+8. Open source readiness: improve evaluation credibility, add CI and contributor templates, run publication audits, document the alpha evidence decision, and publish `v0.1.0-alpha`.
 9. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
 
 See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.

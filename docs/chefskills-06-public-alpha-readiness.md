@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This milestone prepares ChefSkills for a public `v0.1.0-alpha` release without changing repository visibility yet.
+This milestone prepared ChefSkills for a public `v0.1.0-alpha` release and records the public launch checks after repository visibility changed.
 
 The release surface is documentation, skill instructions, router data, state examples, evaluation artifacts, validation scripts, and public collaboration workflow files. ChefSkills remains a culinary reasoning framework, not a recipe database or compliance authority.
 
@@ -20,6 +20,7 @@ This pass adds the first public-alpha workflow layer:
 - Publication audit for the current tracked tree and history.
 - Repository settings review with Dependabot alerts, automated security fixes, and GitHub Actions version updates enabled where available before public visibility.
 - Evidence-confidence decision approving simulated before/after evidence for `v0.1.0-alpha` with explicit public caveats.
+- Public repository visibility, GitHub prerelease, branch protection, security settings, public Security policy page, and issue form presence confirmed after launch.
 
 ## CI Assumptions
 
@@ -56,9 +57,12 @@ Evidence: `docs/audits/2026-09-03-repository-settings-review.md`.
 Given the alpha evidence decision, when the release notes and public docs describe evaluation evidence, then they should state that current before/after outputs are medium-confidence local reviewer simulations and should not claim live benchmark, certification, or compliance proof.
 Evidence: `docs/releases/v0.1.0-alpha-evidence-decision.md`.
 
-## Remaining Before Public Visibility
+Given the repository is public, when launch checks run, then the public repository, release page, branch protection, security settings, community profile, Security policy page, issue forms, and validation evidence should be confirmed.
+Evidence: `docs/audits/2026-09-03-public-launch-check.md`.
+
+## Post-Launch Follow-Ups
 
 - Keep the simulated-evidence caveat visible in README, evaluation docs, and release notes.
-- Configure GitHub branch protection or ruleset settings after the repository is public; GitHub currently blocks these settings while the repository is private on the current plan.
-- Confirm the security-policy contact link behaves as expected after public visibility.
-- Finalize and tag `v0.1.0-alpha`.
+- Monitor the first outside issue or pull request for template clarity.
+- Watch Dependabot and secret scanning alerts after public indexing has settled.
+- Build the live-output evaluation harness before beta or broader launch claims.

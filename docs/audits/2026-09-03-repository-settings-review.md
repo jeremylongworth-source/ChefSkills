@@ -20,6 +20,8 @@ Approve with public-switch follow-up.
 
 The repository has enough operations scaffolding for the next public-alpha step, but branch protection or repository rulesets cannot be configured while this private repository is on the current GitHub plan. GitHub returned `403` for both branch protection and ruleset API checks with the message that the repository must be public or upgraded.
 
+Update: repository visibility is now public, and post-launch branch protection plus public checks are recorded in `docs/audits/2026-09-03-public-launch-check.md`.
+
 ## Live Repository Settings
 
 - Repository: `jeremylongworth-source/ChefSkills`
@@ -83,7 +85,5 @@ The project currently has no package dependency manifest or lockfile, so depende
 ## Remaining Follow-Ups
 
 - The simulated-evidence release decision is recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`.
-- After public visibility, configure branch protection or a repository ruleset for `main`.
-- After public visibility, confirm the public Security policy page resolves from GitHub's Security and quality tab.
-- After public visibility, confirm issue forms appear in the public UI.
-- Re-run local validation and GitHub Actions before creating the `v0.1.0-alpha` tag.
+- Public launch checks are recorded in `docs/audits/2026-09-03-public-launch-check.md`.
+- Keep monitoring Dependabot, secret scanning, and first contributor issue or pull request flow.

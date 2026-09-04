@@ -2,7 +2,7 @@
 
 ChefSkills is a specialist skill framework for AI agents that need chef-like culinary reasoning.
 
-The project goal is to become a public open source repository when the framework is safe, reviewable, validated, and maintainable enough for outside users and contributors.
+The project is now a public open source repository for alpha review because the framework is safe, reviewable, validated, and maintainable enough for outside users and contributors.
 
 The project should not start by collecting recipes. It should start by proving a reusable decision system:
 
@@ -48,17 +48,17 @@ The `CHEFSKILLS-05C Equipment Expansion` milestone adds `equipment-cookery` as t
 
 The `CHEFSKILLS-05C Equipment Stabilization` milestone adds ovens, broilers, grills, induction, air fryers, damaged or incompatible cookware, thermometers, altitude, and capacity planning coverage. The aggregate evidence covers 9 reports and 38 fixtures with no blockers.
 
-The next major artifact should start `CHEFSKILLS-06 Public Alpha Readiness Workflow` before moving to pastry, cuisine, service, costing, Michelin / fine-dining intelligence, or Canadian commercial food-safety work.
-
-The `CHEFSKILLS-06 Public Alpha Readiness` milestone has started with GitHub Actions validation confirmed on `main`, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, and draft `v0.1.0-alpha` release notes.
+The `CHEFSKILLS-06 Public Alpha Readiness` milestone is complete for `v0.1.0-alpha`, with GitHub Actions validation confirmed on `main`, issue forms, a pull request template, README quickstart updates, evaluation-confidence labeling, release notes, publication audit, repository settings review, evidence decision, public launch check, and GitHub prerelease.
 
 The publication audit in `docs/audits/2026-09-03-publication-audit.md` found no blockers in the current tracked tree or history.
 
-The repository settings review in `docs/audits/2026-09-03-repository-settings-review.md` enabled available Dependabot maintenance settings and documented that branch protection or rulesets must wait until the repository is public or the GitHub plan changes.
+The repository settings review in `docs/audits/2026-09-03-repository-settings-review.md` enabled available Dependabot maintenance settings and documented the branch-protection constraint that existed before public visibility.
 
 The `v0.1.0-alpha` evidence decision in `docs/releases/v0.1.0-alpha-evidence-decision.md` accepts medium-confidence simulated before/after evidence for public alpha while keeping live-output evaluation as post-alpha work.
 
-The open source release workflow is tracked in `docs/open-source-roadmap.md`. Public release should wait until the post-public branch/ruleset setup plan, final public docs, and finalized `v0.1.0-alpha` release notes are complete.
+The public launch check in `docs/audits/2026-09-03-public-launch-check.md` confirms public repository visibility, `main` branch protection, security maintenance settings, public Security policy visibility, issue form files, and the GitHub prerelease.
+
+The open source release workflow is tracked in `docs/open-source-roadmap.md`. The next roadmap work should move to post-alpha improvement: live-output evaluation harness, first contributor-flow observations, and then the next specialist track.
 
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 

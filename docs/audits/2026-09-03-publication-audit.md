@@ -22,6 +22,8 @@ Public visibility should still wait for final repository settings review, branch
 
 Update: the repository settings review is now recorded in `docs/audits/2026-09-03-repository-settings-review.md`, and the simulated-evidence release decision is now recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`.
 
+Update: the public launch check is now recorded in `docs/audits/2026-09-03-public-launch-check.md`.
+
 ## Evidence
 
 - `git status --short`: clean before audit changes.
@@ -101,10 +103,9 @@ The repository has an MIT license. Skill frontmatter uses `license: MIT`.
 
 External source material is linked as source evidence; no copied long-form third-party text or opaque binary assets were found.
 
-## Remaining Before Public Visibility
+## Follow-Up Status
 
 - Confirm GitHub branch protection or ruleset expectations.
 - Confirm the security-policy contact link behaves as expected after public visibility. The unauthenticated URL currently returns `404` while the repository is private.
 - Simulated evaluation evidence decision is recorded in `docs/releases/v0.1.0-alpha-evidence-decision.md`; live-output harness remains post-alpha work.
-- Run `.\scripts\validate-all.ps1` and confirm GitHub Actions before tagging.
-- Finalize release notes and tag `v0.1.0-alpha`.
+- Public launch checks are recorded in `docs/audits/2026-09-03-public-launch-check.md`.

@@ -25,3 +25,4 @@
 - Added a publication audit with no blockers found in tracked files or history and pinned GitHub Actions validation actions to exact release tags.
 - Added repository settings review evidence, enabled available Dependabot maintenance settings, and configured weekly GitHub Actions update checks.
 - Added the `v0.1.0-alpha` evidence-confidence decision, accepting simulated before/after evidence for public alpha with explicit caveats and a post-alpha live-output harness follow-up.
+- Published ChefSkills as a public `v0.1.0-alpha` repository, created the GitHub prerelease, enabled `main` branch protection, and recorded post-launch checks.
