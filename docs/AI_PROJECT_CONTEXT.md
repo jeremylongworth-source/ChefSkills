@@ -64,6 +64,8 @@ The open source release workflow is tracked in `docs/open-source-roadmap.md`. Th
 
 `CHEFSKILLS-07 Live Output Harness` starts the post-public evidence improvement track. It adds provider-neutral scripts and docs for creating live run prompt packets from existing fixtures, validating live run manifests, recording prompt and output hashes, and connecting captured raw outputs back into the report/scorecard workflow. The harness is scaffolding only until the first real model outputs are captured.
 
+The first live foundation smoke capture packet is `evaluation/live-runs/2026-09-04-foundation-live-smoke`. It covers the `chefskills-04-smoke` suite and is still `pending_capture`; do not treat it as scored evidence until baseline and ChefSkills raw outputs are captured, hashed, reviewed, and linked to a report and scorecard.
+
 Two future expansion tracks have been captured from the ChefSkills ChatGPT project notes:
 
 - Michelin / fine-dining intelligence: use public Michelin Guide concepts as one fine-dining analysis lens while avoiding star-prediction, certification, affiliation, or guarantee claims.

@@ -28,3 +28,4 @@
 - Published ChefSkills as a public `v0.1.0-alpha` repository, created the GitHub prerelease, enabled `main` branch protection, and recorded post-launch checks.
 - Added GitHub Copilot and `gh skill` install documentation, with pinned `chef-core` and `food-safety` install examples for `v0.1.0-public-preview`.
 - Added the `CHEFSKILLS-07` live-output harness scaffold with prompt-packet generation, manifest validation, and documented capture workflow.
+- Added the first pending live foundation smoke capture packet for the `chefskills-04-smoke` suite.

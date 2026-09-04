@@ -56,7 +56,7 @@ Evidence: `evaluation/README.md` and `evaluation/live-runs/README.md`.
 
 ## Remaining Work
 
-- Capture the first live foundation smoke run.
+- Capture raw outputs for the first live foundation smoke packet: `evaluation/live-runs/2026-09-04-foundation-live-smoke`.
 - Capture at least one safety-hard-gate live run before beta claims.
 - Add scored live reports only after raw outputs are captured and reviewed.
 - Compare rerun variance before using live evidence for stronger release claims.

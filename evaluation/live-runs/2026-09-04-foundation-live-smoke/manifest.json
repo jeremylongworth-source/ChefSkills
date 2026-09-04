@@ -1,0 +1,216 @@
+{
+  "schema_version": "0.1",
+  "run_id": "2026-09-04-foundation-live-smoke",
+  "created_utc": "2026-09-04T14:54:48Z",
+  "status": "pending_capture",
+  "suite": "chefskills-04-smoke",
+  "fixture_count": 5,
+  "capture": {
+    "agent_host": "pending-external-capture",
+    "baseline_model": "unspecified",
+    "chefskills_model": "unspecified",
+    "baseline_context": "No ChefSkills skill files, router expectations, state examples, evaluation rubric, expected route, required behavior list, or blocker list loaded.",
+    "chefskills_context": "Expected ChefSkills route loaded from fixture metadata; skill files installed through gh skill or loaded from this repository.",
+    "operator": "unspecified",
+    "skill_source_ref": "v0.1.0-public-preview",
+    "rerun_of": null,
+    "notes": ""
+  },
+  "review": {
+    "reviewer": null,
+    "decision": "pending",
+    "report": null,
+    "scorecard": null
+  },
+  "fixtures": [
+    {
+      "fixture_id": "EVAL-001-broken-mayonnaise",
+      "scenario": "broken-mayonnaise",
+      "task_type": "FIX",
+      "safety_gate": "not_required",
+      "expected_route": [
+        "chef-core",
+        "culinary-reasoning",
+        "cooking-techniques"
+      ],
+      "expected_state_surfaces": [
+        "dish_state",
+        "transformation_state",
+        "observation_state",
+        "recovery_state"
+      ],
+      "scenario_prompt_sha256": "e54ae1b59de9738e22a9fbf10154b30429795288c91d132ed6ca3f82c3f2646d",
+      "prompt_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/baseline/EVAL-001-broken-mayonnaise.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/chefskills/EVAL-001-broken-mayonnaise.md"
+      },
+      "prompt_sha256": {
+        "baseline": "1e6faf9032be53485b1601d4a7cb379518972f6cbe2b35f831e33bda863d2775",
+        "chefskills": "644274529da251cdebe133c0e97e250c6d1382a6efe86004d2e21ff7c6a28dd1"
+      },
+      "output_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/baseline/EVAL-001-broken-mayonnaise.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/chefskills/EVAL-001-broken-mayonnaise.md"
+      },
+      "output_sha256": {
+        "baseline": null,
+        "chefskills": null
+      },
+      "reviewer_decision": "pending",
+      "scorecard": null
+    },
+    {
+      "fixture_id": "EVAL-002-thin-gravy",
+      "scenario": "thin-gravy",
+      "task_type": "FIX",
+      "safety_gate": "not_required",
+      "expected_route": [
+        "chef-core",
+        "culinary-reasoning",
+        "cooking-techniques"
+      ],
+      "expected_state_surfaces": [
+        "dish_state",
+        "transformation_state",
+        "observation_state",
+        "recovery_state"
+      ],
+      "scenario_prompt_sha256": "b3cf666dc1857046b2d3b7193ff147d2cdac2f8aede408404c7f83757759aaa7",
+      "prompt_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/baseline/EVAL-002-thin-gravy.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/chefskills/EVAL-002-thin-gravy.md"
+      },
+      "prompt_sha256": {
+        "baseline": "d59344105b7525792c95fe43b578c6c3f9a34589cb1977cdf975da33b1f4bbc5",
+        "chefskills": "2c5dea04df4916ba365f8f53d58ad7cf8d8c2845cf45c302b4b0e0a4029c4e0f"
+      },
+      "output_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/baseline/EVAL-002-thin-gravy.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/chefskills/EVAL-002-thin-gravy.md"
+      },
+      "output_sha256": {
+        "baseline": null,
+        "chefskills": null
+      },
+      "reviewer_decision": "pending",
+      "scorecard": null
+    },
+    {
+      "fixture_id": "EVAL-005-sauce-for-forty",
+      "scenario": "sauce-for-forty",
+      "task_type": "ADAPT",
+      "safety_gate": "not_required",
+      "expected_route": [
+        "chef-core",
+        "recipe-development",
+        "recipe-scaling"
+      ],
+      "expected_state_surfaces": [
+        "dish_state",
+        "equipment_state",
+        "workflow_state",
+        "recovery_state"
+      ],
+      "scenario_prompt_sha256": "dbcb092d3f161fe65d561a08e63efdf68f832d05c2289555def1bfc48166e6b1",
+      "prompt_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/baseline/EVAL-005-sauce-for-forty.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/chefskills/EVAL-005-sauce-for-forty.md"
+      },
+      "prompt_sha256": {
+        "baseline": "abf50b46151a0468eb997ab9abe73ed251c78245f48b8295c017c4508d2d1b43",
+        "chefskills": "da312ee4f41d6cc6f01ed79ce1d53e0631372dce7fa32d65bdc6c3115b49cbd5"
+      },
+      "output_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/baseline/EVAL-005-sauce-for-forty.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/chefskills/EVAL-005-sauce-for-forty.md"
+      },
+      "output_sha256": {
+        "baseline": null,
+        "chefskills": null
+      },
+      "reviewer_decision": "pending",
+      "scorecard": null
+    },
+    {
+      "fixture_id": "EVAL-006-chicken-counter-overnight",
+      "scenario": "chicken-counter-overnight",
+      "task_type": "PRESERVE",
+      "safety_gate": "required",
+      "expected_route": [
+        "chef-core",
+        "food-safety"
+      ],
+      "expected_state_surfaces": [
+        "ingredient_state",
+        "workflow_state",
+        "safety_state"
+      ],
+      "scenario_prompt_sha256": "0c68a3af25d12b547a4a98e27249afa798943a0bc3fda2fdf19e461a6170cd53",
+      "prompt_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/baseline/EVAL-006-chicken-counter-overnight.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/chefskills/EVAL-006-chicken-counter-overnight.md"
+      },
+      "prompt_sha256": {
+        "baseline": "18e03efe9843d1581da9a7773774ca5366387718d61b05ec3d28060c1069006f",
+        "chefskills": "55ca2030275a4d4b0fded4505f3986b01b1db37bbb4f5ae3e5e7a65bbcf3d2bb"
+      },
+      "output_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/baseline/EVAL-006-chicken-counter-overnight.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/chefskills/EVAL-006-chicken-counter-overnight.md"
+      },
+      "output_sha256": {
+        "baseline": null,
+        "chefskills": null
+      },
+      "reviewer_decision": "pending",
+      "scorecard": null
+    },
+    {
+      "fixture_id": "EVAL-008-evaluate-ai-sushi-recipe",
+      "scenario": "evaluate-ai-sushi-recipe",
+      "task_type": "JUDGE",
+      "safety_gate": "required",
+      "expected_route": [
+        "chef-core",
+        "culinary-reasoning",
+        "food-safety"
+      ],
+      "expected_state_surfaces": [
+        "ingredient_state",
+        "dish_state",
+        "safety_state"
+      ],
+      "scenario_prompt_sha256": "846b2e9dfbcf86f60409f1a0c2820d1c4735c50f62f8575116ef73e338b14168",
+      "prompt_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/baseline/EVAL-008-evaluate-ai-sushi-recipe.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/prompts/chefskills/EVAL-008-evaluate-ai-sushi-recipe.md"
+      },
+      "prompt_sha256": {
+        "baseline": "77abde756333623feacbb3defc14a2a88d427c4989131459886afd769438de27",
+        "chefskills": "7dfa22cd4e62d43da149bea9b2e874e5e32cd49cb2157a3434fa802a793e46c1"
+      },
+      "output_files": {
+        "baseline": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/baseline/EVAL-008-evaluate-ai-sushi-recipe.md",
+        "chefskills": "evaluation/live-runs/2026-09-04-foundation-live-smoke/outputs/chefskills/EVAL-008-evaluate-ai-sushi-recipe.md"
+      },
+      "output_sha256": {
+        "baseline": null,
+        "chefskills": null
+      },
+      "reviewer_decision": "pending",
+      "scorecard": null
+    }
+  ],
+  "rerun": {
+    "stable_inputs": [
+      "fixture_id",
+      "scenario_prompt_sha256",
+      "expected_route",
+      "skill_source_ref",
+      "baseline_model",
+      "chefskills_model"
+    ],
+    "rerun_command": "python scripts/create-live-evaluation-run.py --suite chefskills-04-smoke --skill-source-ref v0.1.0-public-preview --agent-host pending-external-capture --baseline-model unspecified --chefskills-model unspecified --rerun-of 2026-09-04-foundation-live-smoke",
+    "comparison": "Compare raw output hashes, rubric scores, safety blockers, reviewer decision, and report notes across runs."
+  }
+}
