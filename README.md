@@ -1,180 +1,176 @@
 # ChefSkills
 
-Portable culinary Agent Skills, skillsets, routing rules, state models, and evaluation scenarios for AI agents that need to reason like a chef.
+Portable culinary Agent Skills for AI agents that need to reason about cooking as a changing physical system.
 
-## Why This Exists
+[GitHub Copilot setup](docs/setup/github-copilot.md) | [Wiki](https://github.com/jeremylongworth-source/ChefSkills/wiki) | [Contributing](CONTRIBUTING.md) | [Security](SECURITY.md)
 
-Most recipe assistants can produce plausible instructions. ChefSkills is intended to make an agent reason about food as a changing physical system:
+## What ChefSkills provides
 
-- ingredients and their functional roles
-- heat, time, moisture, fat, starch, acid, salt, texture, and aroma
-- observable cues rather than time-only instructions
-- substitutions, scaling, troubleshooting, planning, and safety boundaries
-- kitchen workflow and recovery decisions
+ChefSkills is a reviewable behavior framework for culinary AI. It gives an agent focused skills, routing rules, a cooking-state model, and evaluation fixtures so it can reason from the current situation to a useful and safe next step.
 
-The project starts small on purpose. The first milestone is a testable operating framework, not a large recipe database.
+It is designed for:
 
-The project started in private development and is now public for alpha review after validation, safety, documentation, and contribution workflow gates.
+- agent builders who need portable culinary behavior
+- contributors who want to improve one auditable decision at a time
+- evaluators who need scenarios, reports, scorecards, and safety gates
 
-## Status
+ChefSkills is not a recipe database, a culinary credential, or a substitute for current medical, regulatory, or food-safety advice.
 
-ChefSkills is public. The current GitHub skill-install distribution release is `v0.1.0-public-preview`; the initial public alpha prerelease is `v0.1.0-alpha`. The current readiness state is `ready_for_public_alpha_readiness_work`.
+## Current release
 
-Current evidence: 9 reports, 38 evaluated fixtures, 0 blockers, a baseline average of 3.7599, a ChefSkills-enabled average of 4.8059, and a delta of 1.0461.
+ChefSkills is public alpha software. The current GitHub skill-install distribution is [`v0.1.0-public-preview`](https://github.com/jeremylongworth-source/ChefSkills/releases/tag/v0.1.0-public-preview); the initial public alpha prerelease is [`v0.1.0-alpha`](https://github.com/jeremylongworth-source/ChefSkills/releases/tag/v0.1.0-alpha).
 
-Current caveat: before/after outputs are medium-confidence local reviewer simulations, not live captured model runs from a reproducible harness. The `v0.1.0-alpha` evidence decision accepts this for public alpha only because the limitation is visible and the release is not framed as a benchmark or certification claim.
+Current repository evidence includes 9 reports and 38 evaluated fixtures. The before/after outputs are medium-confidence local reviewer simulations, not live benchmark runs. A provider-neutral live-output capture packet is available under [`evaluation/live-runs/`](evaluation/live-runs/), and its first foundation packet is still pending capture.
 
-## Core Idea
+## Quick start
 
-ChefSkills separates culinary expertise into four layers:
-
-- Skills: focused reusable instructions under `skills/`
-- Skillsets: installable bundles under `skillsets/`
-- Router: task classification and minimum useful skill selection under `router/`
-- State model: structured cooking state and transformation concepts under `state/`
-
-Food safety is a hard gate. It is not averaged against good cooking advice.
-
-ChefSkills does not certify legal, medical, regulatory, commercial kitchen, allergen, or food-safety compliance. Safety-sensitive work should use current authoritative sources and conservative uncertainty wording.
-
-## Current Skills
-
-| Skill | Purpose |
-|---|---|
-| `chef-core` | Core chef operating model and safety-first behavior |
-| `culinary-reasoning` | Mechanism-based culinary diagnosis and intervention |
-| `ingredient-knowledge` | Ingredient roles, properties, and behavior |
-| `cooking-techniques` | Technique selection, cues, and failure points |
-| `sauce-work` | Sauce construction, finishing, scaling, and recovery |
-| `baking-structure` | Baked-good structure, crumb, rise, set, and texture recovery |
-| `protein-cookery` | Doneness, carryover, moisture, and safety-aware protein handling |
-| `fermentation` | Home fermentation, brines, pH, salt, gas, spoilage, and storage boundaries |
-| `equipment-cookery` | Appliances, vessels, heat transfer, capacity, airflow, pressure, and tool substitutions |
-| `ingredient-substitution` | Functional substitution reasoning |
-| `recipe-development` | Recipe design, formatting, and iteration |
-| `recipe-scaling` | Scaling quantities, vessels, heat transfer, and workflow |
-| `food-safety` | Safety hazard recognition and conservative guidance |
-
-## Quick Start
+### Install a skill for GitHub Copilot
 
 Requirements:
 
-- Python 3.10 or newer.
-- PowerShell for the wrapper script, or a shell that can run the individual Python validators.
+- GitHub CLI with `gh skill` support
+- a project or user scope where the skill should be installed
 
-After cloning the repository, run:
-
-```powershell
-.\scripts\validate-all.ps1
-```
-
-If PowerShell is unavailable, run the individual Python commands listed in the validation section.
-
-## GitHub Skill Install
-
-ChefSkills can be previewed and installed through GitHub CLI agent skills for GitHub Copilot.
-
-Preview a skill:
+Preview the pinned public-preview release:
 
 ```powershell
-gh skill preview jeremylongworth-source/ChefSkills chef-core
+gh skill preview jeremylongworth-source/ChefSkills chef-core@v0.1.0-public-preview
 ```
 
-Install a skill for GitHub Copilot at project scope:
-
-```powershell
-gh skill install jeremylongworth-source/ChefSkills chef-core
-```
-
-Pin the public-preview release when reproducibility matters:
+Install the core skill at project scope:
 
 ```powershell
 gh skill install jeremylongworth-source/ChefSkills chef-core --agent github-copilot --scope project --pin v0.1.0-public-preview
 ```
 
-Install the food-safety skill:
+Install the food-safety skill alongside it:
 
 ```powershell
 gh skill install jeremylongworth-source/ChefSkills food-safety --agent github-copilot --scope project --pin v0.1.0-public-preview
 ```
 
-`gh skill install` installs atomic skill folders from `skills/`, not YAML skillsets from `skillsets/`.
+`gh skill install` installs atomic skill folders from `skills/`. The YAML files under `skillsets/` describe repository bundles; they are not installed by this command.
 
-See [GitHub Copilot and `gh skill` Setup](docs/setup/github-copilot.md) for examples, scope guidance, and verification prompts.
+See [GitHub Copilot and `gh skill` Setup](docs/setup/github-copilot.md) for specialist skills, user scope, verification, and maintenance guidance.
 
-## First Use
+### Clone and validate the repository
 
-Start with a skillset:
+```powershell
+git clone https://github.com/jeremylongworth-source/ChefSkills.git
+cd ChefSkills
+python --version
+.\scripts\validate-all.ps1
+```
 
-- `skillsets/chef.yaml` for broad culinary reasoning.
-- `skillsets/recipe-development.yaml` for recipe design, adaptation, testing, and scaling.
+The repository requires Python 3.10 or newer. The full wrapper also requires PowerShell. It validates skill files, skillsets, routing, state, evaluation fixtures, live-run manifests, reports, scorecards, and the generated scorecard summary.
 
-Then route a prompt through the smallest useful skill chain. Example:
+If PowerShell is unavailable, run the individual Python commands in the [validation section of the evaluation documentation](evaluation/README.md#validation).
+
+### Try a first route
+
+ChefSkills routes a request to the smallest useful set of skills. For example:
 
 ```text
 Prompt: My chicken thighs keep charring on the grill before they are cooked near the bone.
 Route: chef-core, equipment-cookery, protein-cookery, food-safety, cooking-techniques
 ```
 
-That route keeps equipment behavior, protein doneness, and food safety active without loading unrelated specialist skills.
+The route combines equipment behavior, protein doneness, technique, and safety without loading every specialist skill. Start with [`skillsets/chef.yaml`](skillsets/chef.yaml) for broad culinary work or [`skillsets/recipe-development.yaml`](skillsets/recipe-development.yaml) for recipe design and adaptation.
 
-## Repository Structure
+## How the framework works
+
+| Layer | Role | Source |
+|---|---|---|
+| Skills | Focused, reusable behavior such as sauce recovery or fermentation triage | [`skills/`](skills/) |
+| Skillsets | YAML bundles for common work modes | [`skillsets/`](skillsets/) |
+| Router | Task classification and minimum useful skill selection | [`router/`](router/) |
+| State model | Ingredients, transformations, workflow, observations, recovery, and safety status | [`state/`](state/) |
+| Evaluation | Fixtures, regression suites, reports, scorecards, and hard safety gates | [`evaluation/`](evaluation/) |
+
+The operating pattern is:
+
+1. Classify the request.
+2. Select one primary skill and the smallest useful supporting set.
+3. Identify the observed cooking state and target state.
+4. Explain the mechanism behind the gap.
+5. Choose a staged intervention and verification cues.
+6. Apply the food-safety gate before giving final guidance.
+
+Read the [architecture guide](docs/architecture.md) for the full design and control flow.
+
+## Available skills
+
+### Foundation
+
+| Skill | Focus |
+|---|---|
+| [`chef-core`](skills/chef-core/SKILL.md) | Broad culinary reasoning, planning, troubleshooting, and safety-aware behavior |
+| [`culinary-reasoning`](skills/culinary-reasoning/SKILL.md) | Mechanism-based diagnosis and recovery |
+| [`ingredient-knowledge`](skills/ingredient-knowledge/SKILL.md) | Ingredient roles, properties, storage, and behavior |
+| [`cooking-techniques`](skills/cooking-techniques/SKILL.md) | Technique selection, heat control, sequence, and cues |
+| [`ingredient-substitution`](skills/ingredient-substitution/SKILL.md) | Functional substitution and side-effect analysis |
+| [`recipe-development`](skills/recipe-development/SKILL.md) | Recipe creation, testing, adaptation, and iteration |
+| [`recipe-scaling`](skills/recipe-scaling/SKILL.md) | Portions, vessels, heat transfer, seasoning, and service workflow |
+| [`food-safety`](skills/food-safety/SKILL.md) | Hazard recognition, conservative handling, storage, preservation, and discard guidance |
+
+### Specialist
+
+| Skill | Focus |
+|---|---|
+| [`sauce-work`](skills/sauce-work/SKILL.md) | Emulsions, reductions, starch, finishing, scaling, and recovery |
+| [`baking-structure`](skills/baking-structure/SKILL.md) | Gluten, starch, hydration, binders, leavening, pan geometry, and crumb |
+| [`protein-cookery`](skills/protein-cookery/SKILL.md) | Doneness, carryover, moisture, searing, braising, and safety-aware quality tradeoffs |
+| [`fermentation`](skills/fermentation/SKILL.md) | Brines, salt, pH, gas, spoilage, storage, and home-fermentation boundaries |
+| [`equipment-cookery`](skills/equipment-cookery/SKILL.md) | Appliances, vessels, capacity, airflow, pressure, heat transfer, and tool substitutions |
+
+See the [wiki skill catalog](https://github.com/jeremylongworth-source/ChefSkills/wiki/Skill-Catalog) for the full catalog and selection guidance.
+
+## Safety boundary
+
+Food safety is a hard gate, not an average score. Activate `food-safety` when a request involves raw or undercooked animal products, time-temperature handling, preservation, fermentation, allergens, vulnerable diners, spoilage, equipment hazards, or regulated food service.
+
+ChefSkills does not certify legal, medical, regulatory, commercial-kitchen, allergen, nutrition, or food-safety compliance. When exact thresholds or jurisdiction-specific requirements matter, use current authoritative sources and escalate to the relevant authority or qualified professional. When the safety history is uncertain, choose the conservative action.
+
+See [Safety and Source Checks](https://github.com/jeremylongworth-source/ChefSkills/wiki/Safety-and-Source-Checks), [`skills/food-safety/SKILL.md`](skills/food-safety/SKILL.md), and [`SECURITY.md`](SECURITY.md).
+
+## Evaluation and trust
+
+The evaluation system is intended for regression decisions, not marketing benchmarks. It scores technical accuracy, culinary reasoning, ingredient understanding, workflow quality, sensory reasoning, safety, constraint handling, and communication. Serious safety failures block an otherwise strong result.
+
+Use the [evaluation workflow](evaluation/README.md) to inspect fixtures and evidence, or the [live-output harness guide](docs/chefskills-07-live-output-harness.md) to create a provider-neutral prompt packet for external model capture.
+
+## Repository map
 
 ```text
 ChefSkills/
-|-- .github/
-|-- skills/
-|-- skillsets/
-|-- router/
-|-- state/
-|-- agents/
-|-- docs/
-|-- scripts/
-`-- tests/
+|-- skills/       focused Agent Skills and references
+|-- skillsets/    YAML bundles for common work modes
+|-- router/       classification schema and routing catalog
+|-- state/        culinary state schema and examples
+|-- evaluation/   fixtures, runs, reports, scorecards, and live packets
+|-- tests/        routing and behavior scenarios
+|-- scripts/      repository validators and evaluation tooling
+`-- docs/         architecture, setup, roadmap, audits, and release notes
 ```
 
-## Validation
+## Contributing
 
-Run the local validators from the repository root:
+Start with [`CONTRIBUTING.md`](CONTRIBUTING.md) and choose the smallest change that improves a decision, route, safety boundary, evaluation fixture, validator, or public explanation.
 
-```powershell
-python .\scripts\validate-skill-files.py
-python .\scripts\validate-skillsets.py
-python .\scripts\validate-scenarios.py
-python .\scripts\validate-router.py
-python .\scripts\validate-state.py
-python .\scripts\validate-evaluation.py
-python .\scripts\validate-live-evaluation-runs.py
-python .\scripts\validate-evaluation-reports.py
-python .\scripts\validate-scorecards.py
-python .\scripts\summarize-scorecards.py --check .\evaluation\scorecards\summary.json
-```
-
-Or run all current checks:
+Routing changes should update the relevant scenarios and expected routes. Behavior changes may also require state examples, fixtures, reports, scorecards, and documentation. Run the full validation suite before opening a pull request:
 
 ```powershell
 .\scripts\validate-all.ps1
 ```
 
-## Development Roadmap
+Use the issue forms for routing bugs, skill proposals, food-safety concerns, and evaluation fixture ideas. Review the [Code of Conduct](CODE_OF_CONDUCT.md) and [Security policy](SECURITY.md) before contributing.
 
-1. `CHEFSKILLS-01`: Foundation skills, skillsets, docs, and scenario checks.
-2. `CHEFSKILLS-02`: Culinary router specification with task classes, routing ceilings, ambiguity handling, confidence, and a broad routing catalog.
-3. `CHEFSKILLS-03`: Culinary state model for ingredients, dish state, transformations, workflow, observed cues, recovery actions, and safety status.
-4. `CHEFSKILLS-04`: Evaluation engine for rubric scoring, fixtures, regression suites, and safety gates.
-5. `CHEFSKILLS-05A`: Foundation before/after evaluation reports.
-6. `CHEFSKILLS-05B`: Targeted foundation skill improvements based on repeated evaluation gaps.
-7. `CHEFSKILLS-05C`: Specialist expansion has stabilized sauce work, baking structure, protein cookery, fermentation, and equipment cookery before the next pastry, cuisine, service, and costing work.
-8. `CHEFSKILLS-06`: Open source readiness, public alpha launch, GitHub Copilot skill-install docs, and `v0.1.0-public-preview` distribution.
-9. `CHEFSKILLS-07`: Live-output harness scaffold for reproducible prompt packets, manifests, captured outputs, and rerun review.
-10. Future expansion tracks: Michelin / fine-dining intelligence and Canadian commercial food-safety support after current roadmap gates are complete.
+## Roadmap
 
-See `docs/open-source-roadmap.md` for the public-release workflow and tracked future expansion ideas.
+The public-alpha foundation and GitHub Copilot distribution are complete. The next evidence milestone is to capture and score the pending live foundation packet. Future expansion tracks include Michelin / fine-dining intelligence and Canadian commercial food safety; both remain scoped proposals with explicit non-certification boundaries.
 
-## Contributing
-
-Use the GitHub issue templates for routing bugs, skill proposals, food-safety concerns, and evaluation fixture ideas. Pull requests should run `.\scripts\validate-all.ps1` and update scorecards, docs, or release notes when reader expectations change.
+See the [open-source roadmap](docs/open-source-roadmap.md) for acceptance criteria, evidence status, and release gates.
 
 ## License
 
-MIT
+ChefSkills is released under the [MIT License](LICENSE).
