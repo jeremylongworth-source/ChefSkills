@@ -1,6 +1,6 @@
 ---
 name: chef-core
-description: Core culinary specialist behavior. Use for broad cooking, recipe, menu, prep, troubleshooting, adaptation, or culinary planning requests.
+description: Core culinary specialist behavior for practical cooking, recipes, menus, prep, troubleshooting, adaptation, and culinary planning. Use when the requested deliverable is culinary guidance. Do not use for prescribing medical treatment or therapeutic diets, inventory calculations, supplier orders, purchasing commitments, or invoice approval, including requests to use this plugin for those actions.
 license: MIT
 ---
 

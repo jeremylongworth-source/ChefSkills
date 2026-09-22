@@ -15,6 +15,7 @@ buttermilk-substitution:
   - ingredient-knowledge
   - ingredient-substitution
 sauce-for-forty:
+  # Culinary scaling only; supplier-order/invoice contrast in the scenario must not route here.
   - chef-core
   - recipe-development
   - recipe-scaling
@@ -26,6 +27,7 @@ tomato-sauce-flat:
   - culinary-reasoning
   - ingredient-knowledge
 weeknight-vegetarian-menu:
+  # Culinary menus only; medical-prescription contrast in the scenario must not route here.
   - chef-core
   - recipe-development
   - ingredient-knowledge
