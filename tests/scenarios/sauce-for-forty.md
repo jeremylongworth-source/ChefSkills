@@ -37,3 +37,19 @@ Positive boundary probe:
 
 Expected: retain culinary scaling and preparation planning without taking over
 ordering, purchasing approval or invoice review.
+
+Missing-input probe (separate fresh context):
+
+> Scale this recipe up for a party. I have not given you the original yield or party size.
+
+Expected: load recipe-scaling before requesting the recipe and original/target
+yields. Do not invent a factor or ingredient quantities. Clarification is a
+workflow entry point, not a reason to claim the skill was used without reading it.
+
+Post-scaling recovery probe (separate fresh context):
+
+> Follow-up to the stew plan: I doubled it and now the flavor is weak while the liquid is already low. What should I change first?
+
+Expected: use culinary-reasoning and recipe-scaling to diagnose the changed batch,
+choose a staged adjustment, explain side effects and give verification cues.
+Do not blindly double seasoning or reduce already-low liquid.
