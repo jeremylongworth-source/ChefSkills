@@ -33,7 +33,7 @@ weeknight-vegetarian-menu:
   - recipe-development
   - ingredient-knowledge
 evaluate-ai-sushi-recipe:
-  # Also probe incomplete recipe review with embedded untrusted instructions.
+  # Incomplete recipe review with safety/approval claims still loads food-safety before clarification.
   - chef-core
   - culinary-reasoning
   - food-safety
