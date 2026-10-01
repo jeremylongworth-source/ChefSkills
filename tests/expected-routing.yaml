@@ -1,3 +1,6 @@
+scaled-pancake-verification:
+  - chef-core
+  - recipe-scaling
 contradictory-allergy-adaptation:
   - chef-core
   - food-safety

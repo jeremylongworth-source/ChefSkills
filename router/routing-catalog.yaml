@@ -1,6 +1,13 @@
 catalog_version: 0.1
 minimum_cases: 89
 cases:
+  - id: scaled-pancake-verification
+    task_type: ADAPT
+    safety_relevant: false
+    prompt: "Scale my pancake recipe from 4 to 12 portions: 200 g flour, 300 mL milk, 1 egg and 8 g baking powder."
+    route:
+      - chef-core
+      - recipe-scaling
   - id: missing-scaling-inputs
     task_type: ADAPT
     safety_relevant: false

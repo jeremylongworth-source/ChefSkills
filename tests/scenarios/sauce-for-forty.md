@@ -22,6 +22,16 @@ Failure modes:
 - Multiplies every value without workflow changes.
 - Ignores vessel size and reduction.
 - Ignores holding/service timing.
+- Omits holding, cooling, or reheating review when changing bulk preparation or vessel depth.
+
+Bulk-method probe (separate fresh context):
+
+> Use the recipe-scaling checklist to review moving a shallow tray bake into one deep pot at four times the yield.
+
+Expected: load the scaling checklist, review nonlinear quantities, vessel depth,
+heat transfer and workflow, and retain explicit holding, cooling and reheating
+review. Ask for missing ingredients and service details rather than inventing
+precise safety limits. A trial should not be represented as full-batch validation.
 
 Non-trigger contrast (evaluate in a separate fresh context):
 
