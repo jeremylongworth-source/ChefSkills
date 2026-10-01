@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Clarified culinary discovery boundaries and specialist handoffs for incomplete scaling, recipe review, and contradictory allergy adaptations; registered standalone routing regression scenarios.
+
 - Created the ChefSkills v0.1 foundation scaffold.
 - Added eight initial culinary skills with references and OpenAI interface metadata.
 - Added chef and recipe-development skillsets.

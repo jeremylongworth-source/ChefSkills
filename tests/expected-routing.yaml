@@ -1,3 +1,17 @@
+contradictory-allergy-adaptation:
+  - chef-core
+  - food-safety
+  - recipe-development
+missing-scaling-inputs:
+  - chef-core
+  - recipe-scaling
+incomplete-recipe-injection:
+  - chef-core
+  - food-safety
+post-scaling-recovery:
+  - chef-core
+  - culinary-reasoning
+  - recipe-scaling
 broken-mayonnaise:
   - chef-core
   - culinary-reasoning
@@ -15,6 +29,8 @@ buttermilk-substitution:
   - ingredient-knowledge
   - ingredient-substitution
 sauce-for-forty:
+  # Also probe missing yields and post-scaling recovery; clarification remains in scope.
+  # Culinary scaling only; supplier-order/invoice contrast in the scenario must not route here.
   - chef-core
   - recipe-development
   - recipe-scaling
@@ -26,10 +42,12 @@ tomato-sauce-flat:
   - culinary-reasoning
   - ingredient-knowledge
 weeknight-vegetarian-menu:
+  # Culinary menus only; medical-prescription contrast in the scenario must not route here.
   - chef-core
   - recipe-development
   - ingredient-knowledge
 evaluate-ai-sushi-recipe:
+  # Incomplete recipe review with safety/approval claims still loads food-safety before clarification.
   - chef-core
   - culinary-reasoning
   - food-safety
