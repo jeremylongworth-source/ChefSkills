@@ -14,6 +14,8 @@ license: MIT
 4. Re-evaluate vessel size, surface area, batch depth, heat transfer, evaporation, and stirring.
 5. Adjust workflow, prep, batching, holding, and service timing.
 6. Run safety review for cooling, holding, reheating, bulk prep, and vulnerable diners.
+   For bulk or vessel-depth changes, keep holding, cooling, and reheating in the answer, even when exact limits depend on missing ingredients or service details; state what needs review rather than silently omitting a stage.
+7. Give a small trial or first-batch check before committing the whole scaled batch, with an observable result and a conditional adjustment to heat, consistency, seasoning, or leavening as relevant. Doneness cues alone do not explain how to correct a changed result.
 
 ## Decision Rules
 

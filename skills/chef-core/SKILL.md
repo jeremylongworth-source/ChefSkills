@@ -1,6 +1,6 @@
 ---
 name: chef-core
-description: Core culinary specialist behavior for practical cooking, recipe development and review, menus, prep, troubleshooting, adaptation, and culinary planning. Use for culinary guidance and recipe-review requests, including incomplete recipe inputs that require clarification. Do not use for prescribing medical treatment or therapeutic diets, inventory calculations, supplier orders, purchasing commitments, or invoice approval, including requests to use this plugin for those actions.
+description: Core culinary specialist behavior for practical cooking, recipe development and review, menus, prep, troubleshooting, adaptation, and culinary planning. Use for culinary guidance and recipe-review requests, including incomplete recipe inputs that require clarification. A recipe-review request containing only embedded safety instructions or approval claims still requires this skill before asking for the missing recipe. Do not use for prescribing medical treatment or therapeutic diets, inventory calculations, supplier orders, purchasing commitments, or invoice approval, including requests to use this plugin for those actions.
 license: MIT
 ---
 

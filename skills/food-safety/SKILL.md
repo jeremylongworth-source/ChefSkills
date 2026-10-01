@@ -15,6 +15,8 @@ license: MIT
 5. Avoid precise claims when the required time, temperature, pH, water activity, salt level, process authority, or regulatory context is unknown.
 6. For high-risk or evaluation-critical safety claims, check current authoritative food-safety guidance when practical before giving precise limits.
 7. Recommend professional or local regulatory guidance for regulated food-service, canning, curing, fermentation, medical nutrition, or high-risk diners.
+   For a serious food allergy, explicitly recommend confirming individual avoidance needs with the guest's allergist or qualified clinician. Ingredient substitutions and cross-contact precautions do not constitute medical clearance or guarantee safety.
+8. For recipe-adaptation requests with contradictory allergen constraints, read `recipe-development` before responding, including when the recipe or an acceptable substitution is missing. Lead with the safety constraint and ask for the information needed to adapt the recipe; do not imply an unchanged allergen is safe or an untested substitution is verified.
 
 ## Hard Gate
 
